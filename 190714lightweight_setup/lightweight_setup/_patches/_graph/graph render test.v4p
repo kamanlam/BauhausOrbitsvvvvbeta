@@ -1,0 +1,237 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190320 vvvv stimulation project\_patches\_graph\graph render test.v4p" systemname="graph render test" filename="C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190205 vvvv stimulation project\_patches\_graph\graph render test.v4p" scrollx="0" scrolly="-360">
+   <BOUNDS type="Window" left="41895" top="1260" width="13095" height="9855">
+   </BOUNDS>
+   <NODE systemname="Render" filename="..\render\Render.v4p" nodename="C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190205 vvvv stimulation project\_patches\render\Render.v4p" componentmode="InAWindow" id="1">
+   <BOUNDS type="Node" left="1695" top="4110" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="41895" top="1260" width="13095" height="9855">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Page Layer" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 5" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Mousedebug" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 6" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer In FX free" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Skia text layer" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Graph Texture In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Right Screen" visible="1">
+   </PIN>
+   <PIN pinname="Left Screen" visible="1">
+   </PIN>
+   <PIN pinname="Texture In" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Gephi Texture In" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="nativemapping" filename="..\render\nativemapping.v4p" nodename="C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190205 vvvv stimulation project\_patches\render\nativemapping.v4p" componentmode="InAWindow" id="2">
+   <BOUNDS type="Node" left="1815" top="4830" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture Right" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Left" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Left 2" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="41970" top="3240" width="13680" height="11955">
+   </BOUNDS>
+   <PIN pinname="cameraSwitch" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Right Screen" dstnodeid="2" dstpinname="Texture Right">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Left Screen" dstnodeid="2" dstpinname="Texture Left 2">
+   </LINK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <LINK srcnodeid="1" srcpinname="Left Screen" dstnodeid="2" dstpinname="Texture Left">
+   </LINK>
+   <NODE systemname="globalController" filename="..\_globalController\globalController.v4p" nodename="..\_globalController\globalController.v4p" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="3690" top="780" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="R (Value)" nodename="R (Value)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="5190" top="765" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="5205" top="1215" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="X" visible="1">
+   </PIN>
+   <PIN pinname="Y" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Input Value" dstnodeid="5" dstpinname="XY">
+   </LINK>
+   <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="4620" top="2310" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4620" top="2310" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="17">
+   <BOUNDS type="Box" left="4650" top="1725" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4650" top="1725" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\..\interface\nativegraph-crop.png">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Output String" dstnodeid="16" dstpinname="Filename">
+   </LINK>
+   <NODE systemname="HSCB (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\HSCB.tfx" nodename="HSCB (DX11.TextureFX)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="4455" top="2700" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Contrast" visible="1">
+   </PIN>
+   <PIN pinname="Brightness" slicecount="1" values="1.34">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="16" srcpinname="Texture Out" dstnodeid="18" dstpinname="Texture In">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="19">
+   <BOUNDS type="Box" left="5685" top="2250" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5685" top="2250" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="18" dstpinname="Contrast">
+   </LINK>
+   <NODE systemname="Glow (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\Glow.tfx" nodename="Glow (DX11.TextureFX)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="3705" top="5220" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Shape" slicecount="1" values="0.13">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="21">
+   <BOUNDS type="Box" left="4695" top="4215" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4695" top="4215" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="cameraSwitch">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="2" dstpinname="cameraSwitch">
+   </LINK>
+   <NODE systemname="Writer (DX11.Texture 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Writer (DX11.Texture 2d)" componentmode="Hidden" id="22">
+   <BOUNDS type="Node" left="3585" top="6180" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3585" top="6180" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Format" slicecount="1" values="Jpg">
+   </PIN>
+   <PIN pinname="Filename" slicecount="1" values="..\..\..\..\interface\render2.png">
+   </PIN>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Write" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="23">
+   <BOUNDS type="Box" left="4290" top="5355" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4290" top="5355" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Y Output Value" dstnodeid="22" dstpinname="Write">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Texture Out" dstnodeid="20" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Texture Out" dstnodeid="22" dstpinname="Texture In">
+   </LINK>
+   <NODE systemname="lastfm_ROOT" filename="..\_forcedirected_lastfm\lastfm_ROOT.v4p" nodename="..\_forcedirected_lastfm\lastfm_ROOT.v4p" componentmode="InAWindow" id="24">
+   <BOUNDS type="Node" left="6900" top="2715" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <BOUNDS type="Window" left="28320" top="3555" width="19020" height="12375">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="DX9ToDX11 (DX11.Texture 2d)" filename="%VVVV%\packs\dx11\nodes\modules\DX9ToDX11 (DX11.Texture 2d).v4p" nodename="DX9ToDX11 (DX11.Texture 2d)" componentmode="Hidden" id="25">
+   <BOUNDS type="Node" left="6660" top="3285" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="24" srcpinname="Texture Out" dstnodeid="25" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="25" srcpinname="Texture Out" dstnodeid="1" dstpinname="Gephi Texture In">
+   </LINK>
+   <NODE systemname="TextureTransform (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\modules\TextureTransform (DX11.Layer).v4p" nodename="TextureTransform (DX11.Layer)" componentmode="Hidden" id="26">
+   <BOUNDS type="Node" left="6720" top="4680" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   </PATCH>

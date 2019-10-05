@@ -1,0 +1,471 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="C:\Users\kman\Desktop\lightweight_setup\_patches\_images\youngmooImageBrowser_API.v4p" systemname="youngmooImageBrowser_API" filename="C:\Users\kman\Desktop\lightweight_setup\_patches\_images\youngmooImageBrowser_API.v4p">
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="876" top="888" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="876" top="888" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="88" values="|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_6pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_8pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_8pg(3).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_9pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_9pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_10pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_10pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_11pg.png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_12pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_12pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_12pg(3).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_13pg.png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_14pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_14pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_14pg(3).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_15pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_15pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_16pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_16pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_16pg(3).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_18pg.png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_19pg.png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_20pg.png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_21pg.png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_22pg.png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_23pg.png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_24pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_24pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_25pg.png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_27pg.png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_28pg.png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_29pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_29pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_30pg.png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_31pg.png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_32pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_32pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_32pg(3).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_33pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_33pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_33pg(3).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_34pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_34pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_34pg(3).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_34pg(4).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_34pg(5).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_35pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_35pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_36pg.png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_37pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_37pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_39pg.png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_40pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_40pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_40pg(3).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_41pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_41pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_41pg(3).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_43pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_43pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_43pg(3).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_44pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_44pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_44pg(3).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_44pg(4).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_45pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_45pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_45pg(3).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_46pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_46pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_46pg(3).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_46pg(4).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_47pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_47pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_48pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_48pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_49pg.png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_50pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_50pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_50pg(3).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_51pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_51pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_51pg(3).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_52pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_52pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_53pg(1).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_53pg(2).png|,|C:\Users\Rahul\Downloads\Bialystok conference\190404 vvvv stimulation project\190404 vvvv stimulation project\database\Bauhausorbits\02_PedagogicalSketchbook_DE\02_PedagogicalSketchbook_DE_53pg(3).png|">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <BOUNDS type="Window" left="9852" top="4656" width="6972" height="8484">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <NODE systemname="API_call" filename="..\_server\API_call.v4p" nodename="..\_server\API_call.v4p" componentmode="InAWindow" id="23">
+   <BOUNDS type="Node" left="2580" top="3180" width="6168" height="276">
+   </BOUNDS>
+   <PIN pinname="Refresh" slicecount="1" values="0">
+   </PIN>
+   <BOUNDS type="Window" left="5112" top="3864" width="16872" height="13224">
+   </BOUNDS>
+   <PIN pinname="UniqueTopics" visible="1">
+   </PIN>
+   <PIN pinname="From" visible="1">
+   </PIN>
+   <PIN pinname="To" visible="1" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="refresh" visible="1">
+   </PIN>
+   <PIN pinname="querytermoutput" visible="1">
+   </PIN>
+   <PIN pinname="NOofQueryInputs" visible="1">
+   </PIN>
+   <PIN pinname="Xpath1_output" visible="1">
+   </PIN>
+   <PIN pinname="Xpath2_output" visible="1">
+   </PIN>
+   <PIN pinname="In Progress" visible="1">
+   </PIN>
+   <PIN pinname="IP" visible="1">
+   </PIN>
+   <PIN pinname="port" visible="1">
+   </PIN>
+   <PIN pinname="XPath1" visible="1">
+   </PIN>
+   <PIN pinname="XPath2" visible="1">
+   </PIN>
+   <PIN pinname="SinglequeryInput" visible="1">
+   </PIN>
+   <PIN pinname="ID1" visible="1">
+   </PIN>
+   <PIN pinname="ID2" visible="1">
+   </PIN>
+   <PIN pinname="GetElementsXpath" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Enum" visible="1">
+   </PIN>
+   <PIN pinname="Enum1" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="22" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3600" top="2472" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3600" top="2472" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="refresh">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Y Output Value" dstnodeid="23" dstpinname="refresh">
+   </LINK>
+   <NODE id="21" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="UniqueTopics">
+   </PIN>
+   <BOUNDS type="Box" left="7176" top="3944" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7176" top="3944" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="UniqueTopics" dstnodeid="21" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="20">
+   <BOUNDS type="Box" left="8772" top="3984" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8772" top="3984" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="querytermoutput">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="querytermoutput" dstnodeid="20" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="19">
+   <BOUNDS type="Box" left="10248" top="4056" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10248" top="4056" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="NOofQueryInputs">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="NOofQueryInputs" dstnodeid="19" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="18">
+   <BOUNDS type="Box" left="3000" top="3900" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3000" top="3900" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Xpath1_output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Xpath1_output" dstnodeid="18" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="17">
+   <BOUNDS type="Box" left="4188" top="3912" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4188" top="3912" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Xpath2_output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Xpath2_output" dstnodeid="17" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="16">
+   <BOUNDS type="Box" left="2088" top="4044" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2088" top="4044" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|In Progress|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="In Progress" dstnodeid="16" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="15">
+   <BOUNDS type="Box" left="1752" top="2580" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1752" top="2580" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="localhost">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="IP">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Output String" dstnodeid="23" dstpinname="IP">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="14">
+   <BOUNDS type="Box" left="2712" top="2604" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2712" top="2604" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="5000">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="port">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="14" srcpinname="Output String" dstnodeid="23" dstpinname="port">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="13">
+   <BOUNDS type="Box" left="4404" top="2520" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4404" top="2520" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="//text">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="XPath1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Output String" dstnodeid="23" dstpinname="XPath1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="12">
+   <BOUNDS type="Box" left="5304" top="2508" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5304" top="2508" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="//topic">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="XPath2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="12" srcpinname="Output String" dstnodeid="23" dstpinname="XPath2">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="11">
+   <BOUNDS type="Box" left="10236" top="1428" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10236" top="1428" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="main">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="SinglequeryInput">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Output String" dstnodeid="23" dstpinname="SinglequeryInput">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="10">
+   <BOUNDS type="Box" left="11688" top="2448" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11688" top="2448" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="ID1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Output String" dstnodeid="23" dstpinname="ID1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="9">
+   <BOUNDS type="Box" left="12684" top="2460" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12684" top="2460" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="ID2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Output String" dstnodeid="23" dstpinname="ID2">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="8">
+   <BOUNDS type="Box" left="5856" top="2844" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5856" top="2844" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="//topics">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="MyChildTag/MyChildsChildTag">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="GetElementsXpath">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Output String" dstnodeid="23" dstpinname="GetElementsXpath">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="7">
+   <BOUNDS type="Box" left="720" top="1848" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="720" top="1848" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Switch">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="23" dstpinname="Switch">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="6">
+   <BOUNDS type="Box" left="8196" top="2628" width="1596" height="276">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8196" top="2628" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="/sentencesAndTopics/&lt;bookId1&gt;/&lt;bookId2&gt;">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="/ldaTopicsForBooks/&lt;bookId1&gt;/&lt;bookId2&gt;">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enum2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Output Enum" dstnodeid="23" dstpinname="Enum2">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="5">
+   <BOUNDS type="Box" left="6444" top="2316" width="1596" height="276">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6444" top="2316" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="/sentencesAndTopics/&lt;bookId1&gt;/&lt;bookId2&gt;">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="/ldaTopicsForBooks/&lt;bookId1&gt;/&lt;bookId2&gt;">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enum1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output Enum" dstnodeid="23" dstpinname="Enum1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="4">
+   <BOUNDS type="Box" left="5304" top="6132" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5304" top="6132" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="From">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3">
+   <BOUNDS type="Box" left="6324" top="6144" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6324" top="6144" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="To">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="2">
+   <BOUNDS type="Node" left="4752" top="5436" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Output" dstnodeid="4" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="5628" top="5472" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Output" dstnodeid="3" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="2" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="From" dstnodeid="2" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="To" dstnodeid="1" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output String" dstnodeid="2" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="23" srcpinname="Xpath1_output" dstnodeid="1" dstpinname="Input 2">
+   </LINK>
+   </PATCH>

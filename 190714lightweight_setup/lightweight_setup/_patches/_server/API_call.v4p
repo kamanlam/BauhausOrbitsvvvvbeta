@@ -1,0 +1,1127 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="C:\Users\kman\Desktop\lightweight_setup\_patches\_server\API_call.v4p" scrollx="0" scrolly="9432" systemname="API_call" filename="C:\Users\kman\Desktop\lightweight_setup\_patches\_server\API_call.v4p">
+   <BOUNDS type="Window" left="2508" top="4560" width="15804" height="13224">
+   </BOUNDS>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="7" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1884" top="7833" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1884" top="7833" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="admin">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="8" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1884" top="8148" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1884" top="8148" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="secret">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="13" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="741" top="11358" width="1296" height="684">
+   </BOUNDS>
+   <BOUNDS type="Node" left="741" top="11358" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="14" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1125" top="10680" width="1632" height="300">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1125" top="10680" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="HTTPGet (Network)" componentmode="Hidden" id="21" systemname="HTTPGet (Network)" filename="%VVVV%\lib\packs\VL.CoreLib.VVVV.0.94.50-gf563f1b382\vvvv\nodes\vl\VVVV.Network.HTTP.vl">
+   <BOUNDS type="Node" left="729" top="9474" width="960" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="729" top="9474" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Reload" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="In Progress" visible="1">
+   </PIN>
+   <PIN pinname="Body" visible="1">
+   </PIN>
+   <PIN pinname="URL" visible="1" slicecount="1" values="https://vvvv.org??foo=vd">
+   </PIN>
+   <PIN pinname="Refresh" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Names" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Values" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="7" srcpinname="Output String" dstnodeid="21" dstpinname="Username">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output String" dstnodeid="21" dstpinname="Password">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Status" dstnodeid="13" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Header" dstnodeid="14" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="25" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="4335" top="9603" width="765" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4335" top="9603" width="1044" height="276">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; Refresh|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="29" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6" top="10038" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6" top="10038" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|In Progress|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="In Progress" dstnodeid="29" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="30" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="4305" top="10263" width="1110" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4305" top="10263" width="1110" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt; In Progress|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="AsString (Raw)" nodename="AsString (Raw)" componentmode="Hidden" id="31">
+   <BOUNDS type="Node" left="3744" top="11352" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Encoding" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Body" dstnodeid="31" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="32" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="3744" top="10836" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3744" top="10836" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="utf-8">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="32" srcpinname="Output Enum" dstnodeid="31" dstpinname="Encoding">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="33" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1572" top="13092" width="1464" height="780">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1572" top="13092" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="|&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;&lt;allBooks&gt;&lt;item&gt;&lt;series_number&gt;4&lt;/series_number&gt;&lt;book_id&gt;1&lt;/book_id&gt;&lt;color&gt;#ff0000&lt;/color&gt;&lt;title&gt;On Weaving&lt;/title&gt;&lt;year&gt;1974&lt;/year&gt;&lt;author&gt;Anni Albers&lt;/author&gt;&lt;/item&gt;&lt;item&gt;&lt;series_number&gt;13&lt;/series_number&gt;&lt;book_id&gt;2&lt;/book_id&gt;&lt;color&gt;#ff0000&lt;/color&gt;&lt;title&gt;Kubismus&lt;/title&gt;&lt;year&gt;1928&lt;/year&gt;&lt;author&gt;Albert Gleizes&lt;/author&gt;&lt;/item&gt;&lt;item&gt;&lt;series_number&gt;10&lt;/series_number&gt;&lt;book_id&gt;3&lt;/book_id&gt;&lt;color&gt;#ff0000&lt;/color&gt;&lt;title&gt;HolländischeArchitektur&lt;/title&gt;&lt;year&gt;1929&lt;/year&gt;&lt;author&gt;J.J.P Oud&lt;/author&gt;&lt;/item&gt;&lt;item&gt;&lt;series_number&gt;14&lt;/series_number&gt;&lt;book_id&gt;4&lt;/book_id&gt;&lt;color&gt;#ff0000&lt;/color&gt;&lt;title&gt;von Material zur Architektur&lt;/title&gt;&lt;year&gt;1929&lt;/year&gt;&lt;author&gt;László Moholy Nagy&lt;/author&gt;&lt;/item&gt;&lt;item&gt;&lt;series_number&gt;14&lt;/series_number&gt;&lt;book_id&gt;22&lt;/book_id&gt;&lt;color&gt;#ff0000&lt;/color&gt;&lt;title&gt;The New Vision and Abstract of an Artist&lt;/title&gt;&lt;year&gt;1947&lt;/year&gt;&lt;author&gt;László Moholy Nagy&lt;/author&gt;&lt;/item&gt;&lt;item&gt;&lt;series_number&gt;2&lt;/series_number&gt;&lt;book_id&gt;7&lt;/book_id&gt;&lt;color&gt;#ff0000&lt;/color&gt;&lt;title&gt;PedagogicalSketchbook&lt;/title&gt;&lt;year&gt;1953&lt;/year&gt;&lt;author&gt;Paul Klee&lt;/author&gt;&lt;/item&gt;&lt;item&gt;&lt;series_number&gt;11&lt;/series_number&gt;&lt;book_id&gt;10&lt;/book_id&gt;&lt;color&gt;#ff0000&lt;/color&gt;&lt;title&gt;Die gegenstandslose Welt&lt;/title&gt;&lt;year&gt;1927&lt;/year&gt;&lt;author&gt;Kasimir Malewitsch&lt;/author&gt;&lt;/item&gt;&lt;item&gt;&lt;series_number&gt;4&lt;/series_number&gt;&lt;book_id&gt;8&lt;/book_id&gt;&lt;color&gt;#ff0000&lt;/color&gt;&lt;title&gt;Die Bühne im Bauhaus&lt;/title&gt;&lt;year&gt;1924&lt;/year&gt;&lt;author&gt;Oskar Schlemmer&lt;/author&gt;&lt;/item&gt;&lt;item&gt;&lt;series_number&gt;5&lt;/series_number&gt;&lt;book_id&gt;35&lt;/book_id&gt;&lt;color&gt;#ff0000&lt;/color&gt;&lt;title&gt;Neue Gestaltung Neoplastizimus Nieuwe Beelding&lt;/title&gt;&lt;year&gt;1925&lt;/year&gt;&lt;author&gt;Piet Mondrian&lt;/author&gt;&lt;/item&gt;&lt;item&gt;&lt;series_number&gt;1&lt;/series_number&gt;&lt;book_id&gt;31&lt;/book_id&gt;&lt;color&gt;#ff0000&lt;/color&gt;&lt;title&gt;InternationaleArchitektur&lt;/title&gt;&lt;year&gt;1925&lt;/year&gt;&lt;author&gt;Walter Gropius&lt;/author&gt;&lt;/item&gt;&lt;item&gt;&lt;series_number&gt;2&lt;/series_number&gt;&lt;book_id&gt;20&lt;/book_id&gt;&lt;color&gt;#ff0000&lt;/color&gt;&lt;title&gt;PädagogischesSkizzenbuch&lt;/title&gt;&lt;year&gt;1925&lt;/year&gt;&lt;author&gt;Paul Klee&lt;/author&gt;&lt;/item&gt;&lt;item&gt;&lt;series_number&gt;3&lt;/series_number&gt;&lt;book_id&gt;32&lt;/book_id&gt;&lt;color&gt;#ff0000&lt;/color&gt;&lt;title&gt;ein Versuch Haus des Bauhausler&lt;/title&gt;&lt;year&gt;1924&lt;/year&gt;&lt;author&gt;Adolf Meyer&lt;/author&gt;&lt;/item&gt;&lt;item&gt;&lt;series_number&gt;8&lt;/series_number&gt;&lt;book_id&gt;15&lt;/book_id&gt;&lt;color&gt;#ff0000&lt;/color&gt;&lt;title&gt;Painting Photography Film&lt;/title&gt;&lt;year&gt;1969&lt;/year&gt;&lt;author&gt;László Moholy Nagy&lt;/author&gt;&lt;/item&gt;&lt;item&gt;&lt;series_number&gt;8&lt;/series_number&gt;&lt;book_id&gt;40&lt;/book_id&gt;&lt;color&gt;#ff0000&lt;/color&gt;&lt;title&gt;Malerei Fotografie Film&lt;/title&gt;&lt;year&gt;1925&lt;/year&gt;&lt;author&gt;László Moholy Nagy&lt;/author&gt;&lt;/item&gt;&lt;item&gt;&lt;series_number&gt;9&lt;/series_number&gt;&lt;book_id&gt;36&lt;/book_id&gt;&lt;color&gt;#ff0000&lt;/color&gt;&lt;title&gt;Point Line to Plane Contribution to the Analysis of the Pictorial Elements&lt;/title&gt;&lt;year&gt;1947&lt;/year&gt;&lt;author&gt;Wassily Kandinsky&lt;/author&gt;&lt;/item&gt;&lt;item&gt;&lt;series_number&gt;9&lt;/series_number&gt;&lt;book_id&gt;41&lt;/book_id&gt;&lt;color&gt;#ff0000&lt;/color&gt;&lt;title&gt;Punkt und Linie zu Fläche Beitrag zur Analyse der malerischen Elemente&lt;/title&gt;&lt;year&gt;1926&lt;/year&gt;&lt;author&gt;Wassily Kandinsky&lt;/author&gt;&lt;/item&gt;&lt;item&gt;&lt;series_number&gt;4&lt;/series_number&gt;&lt;book_id&gt;12&lt;/book_id&gt;&lt;color&gt;#ff0000&lt;/color&gt;&lt;title&gt;Mechanization Takes Command&lt;/title&gt;&lt;year&gt;1948&lt;/year&gt;&lt;author&gt;Sigfried Giedion&lt;/author&gt;&lt;/item&gt;&lt;/allBooks&gt;|">
+   </PIN>
+   </NODE>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="43">
+   <BOUNDS type="Node" left="1224" top="888" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="localhost:">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="5000">
+   </PIN>
+   <PIN pinname="Input 3" slicecount="1" visible="1" values="5000">
+   </PIN>
+   <PIN pinname="Intersperse" visible="1" slicecount="1" values="Colon">
+   </PIN>
+   <PIN pinname="Input 4" visible="1" slicecount="1" values="all">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="45">
+   <BOUNDS type="Box" left="1356" top="5568" width="2652" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1356" top="5568" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="/sentencesAndTopics/main">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="47">
+   <BOUNDS type="Box" left="12" top="12" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12" top="12" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="localhost">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="IP">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="48">
+   <BOUNDS type="Box" left="1224" top="12" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1224" top="12" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="5000">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="port">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="31" srcpinname="Output" dstnodeid="33" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="58">
+   <BOUNDS type="Node" left="972" top="5940" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="localhost:">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="5000">
+   </PIN>
+   <PIN pinname="Input 3" slicecount="1" values="/">
+   </PIN>
+   <PIN pinname="Intersperse" visible="1" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Input 4" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="45" srcpinname="Output String" dstnodeid="58" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="59">
+   <BOUNDS type="Box" left="1212" top="6336" width="3672" height="252">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1212" top="6336" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="58" srcpinname="Output" dstnodeid="59" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="47" srcpinname="Output String" dstnodeid="43" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="48" srcpinname="Output String" dstnodeid="43" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="62">
+   <BOUNDS type="Node" left="1224" top="1356" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Count" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Input 1" slicecount="1" visible="1" values="http://">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="5000">
+   </PIN>
+   <PIN pinname="Input 3" slicecount="1" visible="1" values="5000">
+   </PIN>
+   <PIN pinname="Intersperse" visible="1" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Input 4" visible="1" slicecount="1" values="all">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="43" srcpinname="Output" dstnodeid="62" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="62" srcpinname="Output" dstnodeid="58" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="58" srcpinname="Output" dstnodeid="21" dstpinname="URL">
+   </LINK>
+   <NODE systemname="Writer (String)" filename="%VVVV%\lib\nodes\modules\String\Writer (String).v4p" nodename="Writer (String)" componentmode="Hidden" id="124">
+   <BOUNDS type="Node" left="4344" top="12408" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" slicecount="1" visible="1" values="..\..\server\kmani\helpfiles\file.xml">
+   </PIN>
+   <PIN pinname="Write" visible="1">
+   </PIN>
+   <PIN pinname="Content" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="125">
+   <BOUNDS type="Box" left="4980" top="11688" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4980" top="11688" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="125" srcpinname="Y Output Value" dstnodeid="124" dstpinname="Write">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="Output" dstnodeid="124" dstpinname="Content">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="126">
+   <BOUNDS type="Box" left="6036" top="11796" width="1800" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6036" top="11796" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\server\kmani\helpfiles\bookid.xml">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="file.txt">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Text Formats (*.csv, *.dtd, *.html, *.txt, *.xml)||*.csv;*.dtd;*.html;*.htm;*.txt;*.xml||Text (*.txt)||*.txt||XML (*.xml)||*.xml||CSV (*.csv)||*.csv||DTD (*.dtd)||*.dtd||HTML (*.html, *.htm)||*.html;*.htm|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="126" srcpinname="Output String" dstnodeid="124" dstpinname="Filename">
+   </LINK>
+   <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="127">
+   <BOUNDS type="Node" left="1656" top="6792" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="45" srcpinname="Output String" dstnodeid="127" dstpinname="Input">
+   </LINK>
+   <NODE systemname="OR (Boolean)" nodename="OR (Boolean)" componentmode="Hidden" id="129">
+   <BOUNDS type="Node" left="1872" top="7188" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="127" srcpinname="OnChange" dstnodeid="129" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="130">
+   <BOUNDS type="Box" left="7752" top="13104" width="1092" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7752" top="13104" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="//topics">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="MyChildTag/MyChildsChildTag">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="GetElementsXpath">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="133">
+   <BOUNDS type="Box" left="2388" top="6816" width="300" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2388" top="6816" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="refresh">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="133" srcpinname="Y Output Value" dstnodeid="129" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="129" srcpinname="Output" dstnodeid="21" dstpinname="Refresh">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="153">
+   <BOUNDS type="Box" left="4848" top="18420" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4848" top="18420" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="From">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="154">
+   <BOUNDS type="Box" left="6012" top="18396" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6012" top="18396" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="To">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="41" values="|In the &apos;sixties already the seats of sulky plows, mowers, and reapers were being bracketed to the frame hy a single support that projected diagonally into the air.|,|It wholly contra­ dicts the organic, based on growth and change, to suffer antomatization.|,|476), with its proudly displayed pipes and small inter­ vals between the fixtures, already seems to announce the compact bathroom.|,|But above all, sugar is &apos;the source of crust mlor .&apos;|,|The oily substance of the germ penetrated the mixture, making it oily to the touch and frequently unpleas­ ant in appearance.|,|Here, again, furniture appears in movable form before its modern, stable form prevails.|,|We do not know what was the appearance of these early chairs; bnt like their frf­ teenth- and sixteenth-century successors, they were doubtless for honorific pur­ poses.&quot;|,|As the century advanced, reproduction hy electroplating (invented hy the Russian Professor Jacobi, of Dorpat, 1837) grew on a large scale.|,|113, 114), which bas heen kept almost without change to the present day.|,|These examples, drawn at random from many others, indicate that the postu­ lates of experiment still waver between catering to a capricious market and thinking along more universal lines.|,|Geographic and other external con- ditions not are the important ones in this connection (at least not the only ones) but, rather, it is the differences in inner content of the &quot;nations&quot; particularly in the field of art—which are, in the first instance, the deciding factor.|,|of forces upon the point such way that one force II.|,|It is especially interesting that, as has been said, this detailed knowl- edge is unquestionably necessary—not only for the purpose of the material production of the BP, but also for the purpose of its dematerialization in 144|,|The rules and regulations given here retain, nevertheless, their full validity and point the way in which this special theme should be treated.|,|PHOTOGRAPHY WITHOUT CAMERA 6 THE PHOTOGRAM&apos; This potentiality can be practically utilised in the following manner: the light is allowed to fall on to a screen (photographic plate, light-sensitive paper) through objects with different coefficients of refraction or to be deflected from its original path by various contrivances; certain parts of the screen are shaded, etc.|,|But he gradually began to discover the vision-time element and thus his first work to be constructed as a drama of forms became an ABC of motion phenomena in chiaroscuro and variation of direction.|,|Texture. The resulting outward surface we may call texture. The epidermis is an organic texture.|,|But attending to social, economic, and hygienic problems does not absolve the architect from the responsibility of further effort and thought.|,|This is biologically deter- mined. As in every other field, one has to accumulate much experience before a real appreciation of the essential content, articulated space, can be enjoyed.|,|3. through the sense of equilibrium by circles, curves, windings (spiral stairwa (Figs. 35, 39).|,|Such coincidences are valuable as laboratory data, but they should not lead to the assumption that a well functioning construction always has analogies.|,|But how about technical progress?|,|Thus the observer must first learn to acknowledge in his own life the ruling biological principle, and to strive, in spite of social restrictions, to let it have its way.|,|This is the common denominator of the many art &quot;isms” which have sprung up in the last hundred years: naturalism, realism, impressionism, pointillism, neo-impressionism, expressionism, cubism, futurism, suprematism, neo-plasticism, purism, constructivism, dadaism, surrealism, etc.|,|The use of transparencies, the ability of the colors to change with subtlest differentiation through a nearby color, etc., enriches considerably the scope of new space relationships.|,|This latter led the cubists to a more conscious analysis of their new spatial expression, which became the basis of a new visual orientation.|,|That was itself another factor in the degeneration of the housepainter&apos;s craft.|,|Almost no one could grasp the technical wit or the future promise of the experiment.|,|But Metzinger, clear- headed as a physicist, had already discovered those rudiments of construction without which nothing can be done.|,|relationships of illusionistic the space by illusionistic of producing method of con- general tendencies the a part of to become experiments seemed my this way 1946.|,|render a service in this such as telepathy, may ness, proceeds through a functional capacity for grasping space.|,|What we grasp of kinetics today which the actual architectural creation.|,|As much a Iimiting factor as price, for instance, is the matter of produc­tion .|,|In fact practically all known methods of weaving had been employed in ancient Peru, and also some types now discontinued.|,|There are also triple weaves and quadruple weaves, and multiple-layered fabrics can be constructed, though they are rarely found.|,|Chapter One, &quot;Weaving, Hand,&quot; copyright© 1963 by Encyclopedia Britannica, Inc.; reprinted by permission.|,|A unique method, for instance, is that of interlocking not only the weft but the warp itself.|,|It was an important next step, for this, now, weaving.|,|Here we have, instead for instance of one plain weave, two, the layers lying one on top of the other.|,|41 Detail of ancient looped bag, Salta, northern Argentina.|,|CHAPTER ONE Weaving, Hand ONE of the most ancient crafts, hand weaving is a method of forming a pliable plane of threads by interlacing them rectangularly.|">
+   </PIN>
+   </NODE>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="158">
+   <BOUNDS type="Node" left="3432" top="492" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Receive String" slicecount="1" visible="1" values="QueriesConstructor">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="159">
+   <BOUNDS type="Box" left="4848" top="1032" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4848" top="1032" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Index">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="162">
+   <BOUNDS type="Node" left="6252" top="468" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6252" top="468" width="816" height="672">
+   </BOUNDS>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Input String" slicecount="2" values="1,2">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="BookIndexStr">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Unzip (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Unzip (String)" componentmode="Hidden" id="164">
+   <BOUNDS type="Node" left="5988" top="1608" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5988" top="1608" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output 2" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="162" srcpinname="Output String" dstnodeid="164" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Substitute (String)" nodename="Substitute (String)" componentmode="Hidden" id="165">
+   <BOUNDS type="Node" left="4152" top="2064" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="From" slicecount="1" visible="1" values="@">
+   </PIN>
+   <PIN pinname="To" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Substitute (String)" nodename="Substitute (String)" componentmode="Hidden" id="166">
+   <BOUNDS type="Node" left="5280" top="2040" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="From" slicecount="1" visible="1" values="#">
+   </PIN>
+   <PIN pinname="To" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="164" srcpinname="Output 2" dstnodeid="166" dstpinname="To">
+   </LINK>
+   <LINK srcnodeid="164" srcpinname="Output 1" dstnodeid="165" dstpinname="To">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="168">
+   <BOUNDS type="Box" left="4440" top="2832" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4440" top="2832" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="169">
+   <BOUNDS type="Node" left="5124" top="2460" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Intersperse" slicecount="1" values="UnixPath">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="165" srcpinname="Output" dstnodeid="169" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="166" srcpinname="Output" dstnodeid="169" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="169" srcpinname="Output" dstnodeid="168" dstpinname="Input String" linkstyle="VHV">
+   <LINKPOINT x="5124" y="2556">
+   </LINKPOINT>
+   <LINKPOINT x="4236" y="2556">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="170">
+   <BOUNDS type="Node" left="3348" top="4464" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Intersperse" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="171">
+   <BOUNDS type="Box" left="7968" top="3912" width="2064" height="1248">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7968" top="3912" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|let $items := document(&quot;doc.xml&quot;)/sentencesWithTopics/item/topics&cr;&lf;let $count := count($items/item)&cr;&lf;return&cr;&lf;&lt;result&gt;&cr;&lf;   &lt;count&gt;{$count}&lt;/count&gt;&cr;&lf;   &cr;&lf;   &lt;items&gt;&cr;&lf;      {&cr;&lf;&tab;     for $item in $items&cr;&lf;         return &lt;item&gt;{$item}&lt;/item&gt;&cr;&lf;      }&cr;&lf;   &lt;/items&gt;&cr;&lf;   &cr;&lf;&lt;/result&gt;|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="XQuery">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="176">
+   <BOUNDS type="Node" left="7164" top="5088" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="177">
+   <BOUNDS type="Box" left="7344" top="4740" width="348" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7344" top="4740" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="177" srcpinname="Y Output Value" dstnodeid="176" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="159" srcpinname="Y Output Value" dstnodeid="176" dstpinname="Input 1" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="4884" y="3168">
+   </LINKPOINT>
+   <LINKPOINT x="7164" y="3168">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="178">
+   <BOUNDS type="Node" left="7176" top="5544" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="171" srcpinname="Output String" dstnodeid="178" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="176" srcpinname="Output" dstnodeid="178" dstpinname="Switch">
+   </LINK>
+   <NODE systemname="XMLParser" filename="XMLParser.v4p" nodename="XMLParser.v4p" componentmode="Hidden" id="179">
+   <BOUNDS type="Node" left="3744" top="14088" width="3840" height="276">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3744" top="14088">
+   </BOUNDS>
+   <BOUNDS type="Window" left="6816" top="4308" width="16872" height="13224">
+   </BOUNDS>
+   <PIN pinname="XPath1" visible="1" slicecount="1" values="//book_id">
+   </PIN>
+   <PIN pinname="XPath2" visible="1" slicecount="1" values="//book_id">
+   </PIN>
+   <PIN pinname="Xpath1_output" visible="1">
+   </PIN>
+   <PIN pinname="UniqueTopics" visible="1">
+   </PIN>
+   <PIN pinname="Xpath2_output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="31" srcpinname="Output" dstnodeid="179" dstpinname="XML Input">
+   </LINK>
+   <LINK srcnodeid="130" srcpinname="Output String" dstnodeid="179" dstpinname="GetElementsXpath">
+   </LINK>
+   <LINK srcnodeid="178" srcpinname="Output" dstnodeid="179" dstpinname="XQuery">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="180">
+   <BOUNDS type="Box" left="3780" top="3408" width="372" height="276">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3780" top="3408" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="double">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="181">
+   <BOUNDS type="Node" left="7944" top="5568" width="852" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7944" top="5568" width="852" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Xquery ON|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="182">
+   <BOUNDS type="Node" left="5448" top="3216" width="852" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5448" top="3216" width="1236" height="444">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|single Or double argument&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="183">
+   <BOUNDS type="Node" left="3792" top="4044" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="craft">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="180" srcpinname="Y Output Value" dstnodeid="183" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="168" srcpinname="Output String" dstnodeid="183" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="184">
+   <BOUNDS type="Box" left="7392" top="1032" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7392" top="1032" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="craft">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="SingleArg">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="183" srcpinname="Output" dstnodeid="170" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="170" srcpinname="Output" dstnodeid="45" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="API_storePage&amp;SentenceID" filename="API_storePage&amp;SentenceID.v4p" nodename="API_storePage&amp;SentenceID.v4p" componentmode="Hidden" id="205">
+   <BOUNDS type="Node" left="8292" top="15238" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6204" top="12916" width="4176" height="4644">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12672" top="5136" width="8232" height="5268">
+   </BOUNDS>
+   <PIN pinname="caseIndex" visible="1">
+   </PIN>
+   <PIN pinname="dataSrc" visible="1">
+   </PIN>
+   <PIN pinname="selectedSentenceIndexFromSpread" visible="1">
+   </PIN>
+   <PIN pinname="sentenceID" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Page" visible="1">
+   </PIN>
+   <PIN pinname="BookID" visible="1">
+   </PIN>
+   <PIN pinname="sentenceTxt" visible="1">
+   </PIN>
+   <PIN pinname="TxtSrc" visible="1">
+   </PIN>
+   <PIN pinname="Xpath" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="159" srcpinname="Y Output Value" dstnodeid="205" dstpinname="caseIndex" linkstyle="Bezier" hiddenwhenlocked="1">
+   <LINKPOINT x="4872" y="8250">
+   </LINKPOINT>
+   <LINKPOINT x="9360" y="8250">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="179" srcpinname="Xpath2_output" dstnodeid="205" dstpinname="dataSrc">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="207">
+   <BOUNDS type="Box" left="9336" top="1248" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9336" top="1248" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="sentenceID">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Input String" visible="1" slicecount="41" values="13294,13141,11590,10642,10590,9859,9858,9330,9105,7440,26574,26218,26176,26028,18977,18905,22184,22087,22072,22062,21832,21452,21400,21394,21124,20864,2343,2116,2029,1993,1572,1496,601,479,454,413,402,260,238,131,48">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="208">
+   <BOUNDS type="Box" left="9228" top="18324" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9228" top="18324" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Page">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="205" srcpinname="Page" dstnodeid="208" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="209">
+   <BOUNDS type="Node" left="8952" top="2952" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="craft">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="211">
+   <BOUNDS type="Box" left="11292" top="18276" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="11292" top="18276" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="BookID">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="205" srcpinname="BookIDofsentence" dstnodeid="211" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="EQ (Value)" nodename="EQ (Value)" componentmode="Hidden" id="213">
+   <BOUNDS type="Node" left="8940" top="2400" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="5">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="159" srcpinname="Y Output Value" dstnodeid="213" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="213" srcpinname="Output" dstnodeid="209" dstpinname="Switch">
+   </LINK>
+   <NODE systemname="FrameDelay (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="FrameDelay (String)" componentmode="Hidden" id="218">
+   <BOUNDS type="Node" left="8892" top="1992" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8892" top="1992" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output 1" visible="1">
+   </PIN>
+   <PIN pinname="Initialize" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="207" srcpinname="Output String" dstnodeid="218" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="209" srcpinname="Output" dstnodeid="183" dstpinname="Input 1">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="219">
+   <BOUNDS type="Node" left="10800" top="1812" width="192" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10800" top="1812" width="1608" height="456">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|!case 3&cr;&lf;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="14">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="179" srcpinname="Xpath1_output" dstnodeid="205" dstpinname="TxtSrc">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="220">
+   <BOUNDS type="Box" left="3468" top="96" width="1596" height="276">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3468" top="96" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="QueriesConstructor">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Automata_raw">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="220" srcpinname="Output Enum" dstnodeid="158" dstpinname="Receive String">
+   </LINK>
+   <NODE systemname="GetRow (DataTable Dynamic)" filename="..\plugins\DataTable V1.2 AnyCPU\plugins\Table.dll" nodename="GetRow (DataTable Dynamic)" componentmode="Hidden" id="157">
+   <BOUNDS type="Node" left="3444" top="1476" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Table" visible="1">
+   </PIN>
+   <PIN pinname="Name" slicecount="7" values="id,query,double,argument,xpath,xquery,xpath2">
+   </PIN>
+   <PIN pinname="Type" slicecount="7" values="System.Int32,System.String,System.Boolean,System.String,System.String,System.String,System.String">
+   </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="argument" visible="1">
+   </PIN>
+   <PIN pinname="query" visible="1">
+   </PIN>
+   <PIN pinname="xquery" visible="1">
+   </PIN>
+   <PIN pinname="double" visible="1">
+   </PIN>
+   <PIN pinname="xpath" visible="1">
+   </PIN>
+   <PIN pinname="xpath2" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="158" srcpinname="Input Value" dstnodeid="157" dstpinname="Table">
+   </LINK>
+   <LINK srcnodeid="159" srcpinname="Y Output Value" dstnodeid="157" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="157" srcpinname="argument" dstnodeid="165" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="157" srcpinname="argument" dstnodeid="166" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="157" srcpinname="argument" dstnodeid="165" dstpinname="From">
+   </LINK>
+   <LINK srcnodeid="157" srcpinname="argument" dstnodeid="166" dstpinname="From">
+   </LINK>
+   <LINK srcnodeid="157" srcpinname="query" dstnodeid="170" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="157" srcpinname="double" dstnodeid="180" dstpinname="Y Input Value" linkstyle="VHV">
+   <LINKPOINT x="3288" y="3148">
+   </LINKPOINT>
+   <LINKPOINT x="4320" y="3032">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="157" srcpinname="xpath" dstnodeid="179" dstpinname="XPath1">
+   </LINK>
+   <LINK srcnodeid="157" srcpinname="xpath2" dstnodeid="179" dstpinname="XPath2">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="221">
+   <BOUNDS type="Node" left="11328" top="9636" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="11328" top="9636" width="792" height="240">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="bookName">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="222">
+   <BOUNDS type="Node" left="4356" top="16716" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="2" values="|On Weaving|,|Pedagogical Sketchbook|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Input 3" visible="1" slicecount="2" values="|On Weaving|,|Pedagogical Sketchbook|">
+   </PIN>
+   <PIN pinname="Input 4" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input 5" visible="1" slicecount="1" values="extend">
+   </PIN>
+   <PIN pinname="Input 6" visible="1" slicecount="1" values="|In the &apos;sixties already the seats of sulky plows, mowers, and reapers were being bracketed to the frame hy a single support that projected diagonally into the air.|">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="223">
+   <BOUNDS type="Node" left="6264" top="16716" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 1" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="10" values="main,way,engin,primit,easili,thing,graphic,horn,rotat,european">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="6">
+   </PIN>
+   <PIN pinname="Input 3" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input 4" visible="1">
+   </PIN>
+   <PIN pinname="Input 5" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Input 6" visible="1" slicecount="41" values="|In the &apos;sixties already the seats of sulky plows, mowers, and reapers were being bracketed to the frame hy a single support that projected diagonally into the air.|,|It wholly contra­ dicts the organic, based on growth and change, to suffer antomatization.|,|476), with its proudly displayed pipes and small inter­ vals between the fixtures, already seems to announce the compact bathroom.|,|But above all, sugar is &apos;the source of crust mlor .&apos;|,|The oily substance of the germ penetrated the mixture, making it oily to the touch and frequently unpleas­ ant in appearance.|,|Here, again, furniture appears in movable form before its modern, stable form prevails.|,|We do not know what was the appearance of these early chairs; bnt like their frf­ teenth- and sixteenth-century successors, they were doubtless for honorific pur­ poses.&quot;|,|As the century advanced, reproduction hy electroplating (invented hy the Russian Professor Jacobi, of Dorpat, 1837) grew on a large scale.|,|113, 114), which bas heen kept almost without change to the present day.|,|These examples, drawn at random from many others, indicate that the postu­ lates of experiment still waver between catering to a capricious market and thinking along more universal lines.|,|Geographic and other external con- ditions not are the important ones in this connection (at least not the only ones) but, rather, it is the differences in inner content of the &quot;nations&quot; particularly in the field of art—which are, in the first instance, the deciding factor.|,|of forces upon the point such way that one force II.|,|It is especially interesting that, as has been said, this detailed knowl- edge is unquestionably necessary—not only for the purpose of the material production of the BP, but also for the purpose of its dematerialization in 144|,|The rules and regulations given here retain, nevertheless, their full validity and point the way in which this special theme should be treated.|,|PHOTOGRAPHY WITHOUT CAMERA 6 THE PHOTOGRAM&apos; This potentiality can be practically utilised in the following manner: the light is allowed to fall on to a screen (photographic plate, light-sensitive paper) through objects with different coefficients of refraction or to be deflected from its original path by various contrivances; certain parts of the screen are shaded, etc.|,|But he gradually began to discover the vision-time element and thus his first work to be constructed as a drama of forms became an ABC of motion phenomena in chiaroscuro and variation of direction.|,|Texture. The resulting outward surface we may call texture. The epidermis is an organic texture.|,|But attending to social, economic, and hygienic problems does not absolve the architect from the responsibility of further effort and thought.|,|This is biologically deter- mined. As in every other field, one has to accumulate much experience before a real appreciation of the essential content, articulated space, can be enjoyed.|,|3. through the sense of equilibrium by circles, curves, windings (spiral stairwa (Figs. 35, 39).|,|Such coincidences are valuable as laboratory data, but they should not lead to the assumption that a well functioning construction always has analogies.|,|But how about technical progress?|,|Thus the observer must first learn to acknowledge in his own life the ruling biological principle, and to strive, in spite of social restrictions, to let it have its way.|,|This is the common denominator of the many art &quot;isms” which have sprung up in the last hundred years: naturalism, realism, impressionism, pointillism, neo-impressionism, expressionism, cubism, futurism, suprematism, neo-plasticism, purism, constructivism, dadaism, surrealism, etc.|,|The use of transparencies, the ability of the colors to change with subtlest differentiation through a nearby color, etc., enriches considerably the scope of new space relationships.|,|This latter led the cubists to a more conscious analysis of their new spatial expression, which became the basis of a new visual orientation.|,|That was itself another factor in the degeneration of the housepainter&apos;s craft.|,|Almost no one could grasp the technical wit or the future promise of the experiment.|,|But Metzinger, clear- headed as a physicist, had already discovered those rudiments of construction without which nothing can be done.|,|relationships of illusionistic the space by illusionistic of producing method of con- general tendencies the a part of to become experiments seemed my this way 1946.|,|render a service in this such as telepathy, may ness, proceeds through a functional capacity for grasping space.|,|What we grasp of kinetics today which the actual architectural creation.|,|As much a Iimiting factor as price, for instance, is the matter of produc­tion .|,|In fact practically all known methods of weaving had been employed in ancient Peru, and also some types now discontinued.|,|There are also triple weaves and quadruple weaves, and multiple-layered fabrics can be constructed, though they are rarely found.|,|Chapter One, &quot;Weaving, Hand,&quot; copyright© 1963 by Encyclopedia Britannica, Inc.; reprinted by permission.|,|A unique method, for instance, is that of interlocking not only the weft but the warp itself.|,|It was an important next step, for this, now, weaving.|,|Here we have, instead for instance of one plain weave, two, the layers lying one on top of the other.|,|41 Detail of ancient looped bag, Salta, northern Argentina.|,|CHAPTER ONE Weaving, Hand ONE of the most ancient crafts, hand weaving is a method of forming a pliable plane of threads by interlacing them rectangularly.|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="179" srcpinname="UniqueTopics" dstnodeid="222" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="222" srcpinname="Output" dstnodeid="153" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="179" srcpinname="Xpath1_output" dstnodeid="223" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="179" srcpinname="Xpath1_output" dstnodeid="223" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="179" srcpinname="Xpath1_output" dstnodeid="223" dstpinname="Input 5">
+   </LINK>
+   <LINK srcnodeid="179" srcpinname="Xpath1_output" dstnodeid="223" dstpinname="Input 6">
+   </LINK>
+   <LINK srcnodeid="223" srcpinname="Output" dstnodeid="154" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="GetSpread (String)" nodename="GetSpread (String)" componentmode="Hidden" id="225">
+   <BOUNDS type="Node" left="5796" top="16092" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Count" slicecount="1" values="100">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="179" srcpinname="Xpath1_output" dstnodeid="225" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="225" srcpinname="Output" dstnodeid="223" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="159" srcpinname="Y Output Value" dstnodeid="222" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="159" srcpinname="Y Output Value" dstnodeid="223" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="184" srcpinname="Output String" dstnodeid="222" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="184" srcpinname="Output String" dstnodeid="222" dstpinname="Input 3">
+   </LINK>
+   <LINK srcnodeid="221" srcpinname="Output String" dstnodeid="222" dstpinname="Input 5">
+   </LINK>
+   <LINK srcnodeid="221" srcpinname="Output String" dstnodeid="222" dstpinname="Input 6">
+   </LINK>
+   <LINK srcnodeid="184" srcpinname="Output String" dstnodeid="222" dstpinname="Input 4">
+   </LINK>
+   <LINK srcnodeid="179" srcpinname="Xpath1_output" dstnodeid="205" dstpinname="Xpath">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="227">
+   <BOUNDS type="Box" left="8304" top="18360" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8304" top="18360" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="sentenceID">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="205" srcpinname="sentenceID" dstnodeid="227" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="205" srcpinname="sentenceTxt" dstnodeid="223" dstpinname="Input 4">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="228">
+   <BOUNDS type="Box" left="9444" top="1644" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9444" top="1644" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="228" srcpinname="Y Output Value" dstnodeid="213" dstpinname="Input 2">
+   </LINK>
+   <NODE systemname="TogEdge (Animation)" nodename="TogEdge (Animation)" componentmode="Hidden" id="230">
+   <BOUNDS type="Node" left="9792" top="2436" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Up Edge" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="213" srcpinname="Output" dstnodeid="230" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="230" srcpinname="Up Edge" dstnodeid="218" dstpinname="Initialize">
+   </LINK>
+   <LINK srcnodeid="218" srcpinname="Output 1" dstnodeid="209" dstpinname="Input 2">
+   </LINK>
+   </PATCH>

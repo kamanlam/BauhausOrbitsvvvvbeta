@@ -1,0 +1,80 @@
+//@author: timpernagel,mburk
+//@help: Generating a Light/Shadow-texture based on a 2D texture.  
+//@tags: texture
+//@credits:
+//Ported from a super well documented OpenGL version by Matt DesLauriers:
+//https://github.com/mattdesl/lwjgl-basics/wiki/2D-Pixel-Perfect-Shadows
+
+Texture2D texture2d : PREVIOUS;
+#define PI 3.14
+
+float2 lightPos;
+float2 lightSize;
+
+float2 resolution = float2(512,512);
+
+//alpha threshold for our occlusion map
+static float THRESHOLD = 0.75;
+
+SamplerState Sampler : IMMUTABLE
+{
+	Filter = MIN_MAG_MIP_LINEAR;
+	AddressU = Clamp;
+	AddressV = Clamp;
+};
+
+struct psInput
+{
+	float4 p : SV_Position;
+	float2 uv : TEXCOORD0;
+};
+
+
+float4 PS(psInput input) : SV_Target
+{
+	
+	float distance = 1.0;
+	
+	for (float y=0.0; y<resolution.y; y+=1.0) {
+		
+		//rectangular to polar filter		
+		float2 norm = float2(input.uv.x, y/resolution.y) * 2.0 - 1.0;
+//		norm *=1/lightSize;
+		float theta = PI*1.5 + norm.x * PI;
+		float r = (1.0 + norm.y) * 0.5;
+		
+		//coord which we will sample from occlude map
+		float2 coord = (float2(-r * sin(theta), -r * cos(theta))*lightSize)/2.0 + 0.5;
+				
+		coord +=  lightPos * float2(1,-1);
+		
+		//sample the occlusion map
+		float4 data = texture2d.Sample(Sampler,coord);
+		
+		//the current distance is how far from the top we've come
+		float dst = y/resolution.y;
+		
+		//if we've hit an opaque fragment (occluder), then get new distance
+		//if the new distance is below the current, then we'll use that for our ray
+		float caster = data.a;
+		if (caster > THRESHOLD) {
+			distance = min(distance, dst);
+			//NOTE: we could probably use "break" or "return" here
+		}
+	}
+	//distance=0.8;
+	
+	float4 c = float4(distance,distance,distance, 1.0);
+	return c;
+}
+
+technique10 Process
+{
+	pass P0
+	{
+		SetPixelShader(CompileShader(ps_4_0,PS()));
+	}
+}
+
+
+

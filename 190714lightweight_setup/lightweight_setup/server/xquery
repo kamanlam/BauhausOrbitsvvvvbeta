@@ -1,0 +1,14 @@
+let $items := document("doc.xml")/sentencesWithTopics/item/topics
+let $count := count($items/item)
+return
+<result>
+   <count>{$count}</count>
+   
+   <items>
+      {
+	     for $item in $items
+         return <item>{$item}</item>
+      }
+   </items>
+   
+</result>

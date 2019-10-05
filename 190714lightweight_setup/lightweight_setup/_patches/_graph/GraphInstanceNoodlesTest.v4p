@@ -1,0 +1,179 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="C:\Users\kman\Desktop\lightweight_setup\_patches\_graph\GraphInstanceNoodlesTest.v4p" systemname="GraphInstanceNoodlesTest" filename="C:\Users\kman\Desktop\lightweight_setup\_patches\_graph\GraphInstanceNoodlesTest.v4p" scrollx="1296" scrolly="1212">
+   <BOUNDS type="Window" left="1128" top="2796" width="10452" height="10464">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <NODE systemname="_nativeForceDirected_render" filename="_nativeForceDirected_render.v4p" nodename="_nativeForceDirected_render.v4p" componentmode="InAWindow" id="0">
+   <BOUNDS type="Node" left="2784" top="3492" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="1128" top="2796" width="10452" height="10464">
+   </BOUNDS>
+   <PIN pinname="Pipe" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="From XYZ" visible="1">
+   </PIN>
+   <PIN pinname="To XYZ" visible="1">
+   </PIN>
+   <PIN pinname="AllPositions" visible="1">
+   </PIN>
+   <PIN pinname="sentence node" visible="1">
+   </PIN>
+   <PIN pinname="topic node" visible="1">
+   </PIN>
+   <PIN pinname="sentence" visible="1">
+   </PIN>
+   <PIN pinname="Translate XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="csvParser_sentences_booksquery" filename="..\_data\csvParser_sentences_booksquery.v4p" nodename="..\_data\csvParser_sentences_booksquery.v4p" componentmode="InAWindow" id="1">
+   <BOUNDS type="Node" left="2772" top="1716" width="4848" height="276">
+   </BOUNDS>
+   <BOUNDS type="Window" left="1128" top="2796" width="10452" height="10464">
+   </BOUNDS>
+   <PIN pinname="BookIndex_A" visible="1" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="BookIndex_B" visible="1" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="File" visible="1" slicecount="1" values="..\..\database\csv\orbits_sentences_cleanbooks.csv">
+   </PIN>
+   <PIN pinname="TopTopicsinA+B" visible="1">
+   </PIN>
+   <PIN pinname="TO" visible="1">
+   </PIN>
+   <PIN pinname="FROM" visible="1">
+   </PIN>
+   <PIN pinname="AllTopicsA+B" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InAWindow" id="2">
+   <BOUNDS type="Node" left="2388" top="5988" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2388" top="5988" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12348" top="1416" width="10440" height="9708">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="View" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="ForceDirected (Graph)" filename="%VVVV%\plugins\ForceDirected_3\ForceDirected\plugins\ForceDirected\ForceDirected.csproj" nodename="ForceDirected (Graph)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="3048" top="2556" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3048" top="2556" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="From ID" visible="1">
+   </PIN>
+   <PIN pinname="To ID" visible="1">
+   </PIN>
+   <PIN pinname="From XYZ" visible="1">
+   </PIN>
+   <PIN pinname="To XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Reset" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Positions XYZ" visible="1">
+   </PIN>
+   <PIN pinname="Is 2d" visible="1">
+   </PIN>
+   <PIN pinname="Attraction Force" slicecount="1" values="Eades">
+   </PIN>
+   <PIN pinname="Repulsion Force" slicecount="1" values="Eades">
+   </PIN>
+   <PIN pinname="Speed" slicecount="1" values="0.3">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="TO" dstnodeid="3" dstpinname="To ID">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="FROM" dstnodeid="3" dstpinname="From ID">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="From XYZ" dstnodeid="0" dstpinname="From XYZ">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="To XYZ" dstnodeid="0" dstpinname="To XYZ">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Positions XYZ" dstnodeid="0" dstpinname="AllPositions">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4">
+   <BOUNDS type="Box" left="4608" top="1980" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4608" top="1980" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="3" dstpinname="Is 2d">
+   </LINK>
+   <NODE systemname="UniformScale (Transform)" nodename="UniformScale (Transform)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="3852" top="4728" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Transform Out" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" slicecount="1" values="0.31">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Transform Out" dstnodeid="2" dstpinname="View">
+   </LINK>
+   <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="2868" top="4224" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2868" top="4224" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Layer 1" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   <PIN pinname="Input Count" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Layer 3" visible="1">
+   </PIN>
+   <PIN pinname="Layer 4" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Pipe" dstnodeid="7" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="sentence node" dstnodeid="7" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="Layer Out" dstnodeid="2" dstpinname="Layers">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="topic node" dstnodeid="7" dstpinname="Layer 3">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="sentence" dstnodeid="7" dstpinname="Layer 4">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8">
+   <BOUNDS type="Box" left="1800" top="2592" width="792" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1800" top="2592" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" visible="1" values="0.36,0.02,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Y Output Value" dstnodeid="0" dstpinname="Translate XYZ">
+   </LINK>
+   </PATCH>

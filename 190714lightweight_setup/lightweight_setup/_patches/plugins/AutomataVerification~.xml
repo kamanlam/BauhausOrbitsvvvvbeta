@@ -1,0 +1,175 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190315 vvvv stimulation project\_patches\plugins\AutomataVerification.v4p" systemname="AutomataVerification" filename="C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190315 vvvv stimulation project\_patches\plugins\AutomataVerification.v4p" scrollx="0" scrolly="660">
+   <NODE systemname="R (String)" nodename="R (String)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1500" top="2010" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Receive String" visible="1">
+   </PIN>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE componentmode="Hidden" id="1" nodename="Enum2String (Enumerations)" systemname="Enum2String (Enumerations Explicit)">
+   <BOUNDS height="0" left="3525" top="1980" type="Node" width="0">
+   </BOUNDS>
+   <PIN pinname="Enum" visible="1" slicecount="1" values="IdleMode">
+   </PIN>
+   <PIN pinname="String Value" visible="1">
+   </PIN>
+   <PIN pinname="Enumeration" slicecount="1" values="Automata_StateNames">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="2" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="3555" top="1500" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3555" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="IdleMode">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Init">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enum">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Output Enum" dstnodeid="1" dstpinname="Enum">
+   </LINK>
+   <BOUNDS type="Window" left="40635" top="6375" width="8835" height="8280">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="3">
+   <BOUNDS type="Box" left="1545" top="1560" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1545" top="1560" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Automata_StateName">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Automata_StateName">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Receive String|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Output Enum" dstnodeid="0" dstpinname="Receive String">
+   </LINK>
+   <NODE systemname="EQ (String)" nodename="EQ (String)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="2310" top="2760" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Inverse Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Input Value" dstnodeid="4" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="String Value" dstnodeid="4" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="5">
+   <BOUNDS type="Box" left="1815" top="4035" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1815" top="4035" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="On">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8">
+   <BOUNDS type="Box" left="3360" top="3930" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3360" top="3930" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Off">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="22">
+   <BOUNDS type="Node" left="5040" top="2340" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Receive String" slicecount="1" values="Automata_raw">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetState (AutomataUI Animation)" filename="..\plugins\AutomataUI 1.7\AutomataUI.dll" nodename="GetState (AutomataUI Animation)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="5160" top="3240" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5160" top="3240" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="AutomataUI" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="State" slicecount="1" visible="1" values="IdleMode">
+   </PIN>
+   <PIN pinname="StateActive" visible="1">
+   </PIN>
+   <PIN pinname="FadeInOut" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Input Value" dstnodeid="21" dstpinname="AutomataUI">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="23">
+   <BOUNDS type="Box" left="5925" top="2715" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5925" top="2715" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="IdleMode">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Init">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="State">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="23" srcpinname="Output Enum" dstnodeid="21" dstpinname="State">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="27">
+   <BOUNDS type="Box" left="5370" top="3915" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5370" top="3915" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="FadeInOut">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="FadeInOut" dstnodeid="27" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="5" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Inverse Output" dstnodeid="8" dstpinname="Y Input Value">
+   </LINK>
+   </PATCH>

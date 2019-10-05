@@ -1,0 +1,665 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="C:\Users\kman\OneDrive\Documents\___vvvv project\181224 vvvv stimulation project\180210 vvvv stimulation project\_patches\data\PDFParse.v4p" scrollx="270" scrolly="90" systemname="PDFParse" filename="C:\Users\kman\OneDrive\Documents\___vvvv project\181212 vvvv stimulation project\181127 vvvv stimulation project\180210 vvvv stimulation project\180210 vvvv stimulation project\_patches\data\PDFParse.v4p">
+   <BOUNDS type="Window" left="12135" top="3750" width="14640" height="10320">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <NODE id="17" nodename="IOBox (String)" componentmode="InABox" systemname="IOBox (String)" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Box" left="1830" top="2085" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1830" top="2085" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" pintype="Input" values="..\..\..\..\..\..\..\Desktop\Reimbursement_Form_PR-YDTA14-013b_Carmen_Lam[2260]-signed.pdf">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" pintype="Configuration" values="|Meeting with Tim_ Agenda.pdf|">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" pintype="Configuration" values="|All Files (*.*)||*.*|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" pintype="Configuration" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" pintype="Configuration" values="Filename">
+   </PIN>
+   <BOUNDS type="Window" left="0" top="0" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="Path">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Pin Visibility" pintype="Configuration" slicecount="1" values="True">
+   </PIN>
+   <PIN pinname="SliceCount Mode" pintype="Configuration" slicecount="1" values="Input">
+   </PIN>
+   <PIN pinname="Columns" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Rows" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Pages" pintype="Configuration" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Font" pintype="Configuration" slicecount="1" values="|Lucida Sans Unicode|">
+   </PIN>
+   <PIN pinname="Size" pintype="Configuration" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Show Grid" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Show Characters [#0..#32,#127]" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SliceOffset" pintype="Input" visible="-1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Output String" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Changed" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="22">
+   <BOUNDS type="Node" left="6975" top="3720" width="2640" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6975" top="3720" width="2640" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|custom node ParsePDF is not ready|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="ParsePDF (String)" filename="%VVVV%\plugins\DynamicPlugins\plugins\StringParsePDF\StringParsePDF.csproj.csproj" nodename="ParsePDF (String)" componentmode="Hidden" id="26">
+   <BOUNDS type="Node" left="4755" top="3795" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4755" top="3795" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Path" visible="1" slicecount="1" values="..\..\media\02_PedagogicalSketchbook_DE.pdf">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="PageNumber" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="S+H (String)" nodename="S+H (String)" componentmode="Hidden" id="27">
+   <BOUNDS type="Node" left="5520" top="4785" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="|@@cl &lf;uf @dauhaus β cher &lf;schriftleitung: &lf;w. gropius &lf;l. m oh oly-ini a g v &lf;2 &lf;raul klee &lf;pädagogisches skizzenbuch @paul klee &lf;buch &lf;albert langen verlag münchen &lf;κ&apos;-t&apos; í · &gt;l &lf;7 &lf;1 &lf;11t&gt; &lf;1 @ohlenroth&apos;sche &lf;buchdruckerei &lf;erfurt &lf;klischees &lf;von lobbecke u. co &lf;erfurt &lf;umschlagentwurf &lf;und &lf;typographie &lf;von &lf;l. moholy-nagy &lf;dieses buch wurde im &lf;sommer 1924 zusammen-&lf;gestellt. technische &lf;schwierigkeiten verhin-&lf;d e rte η das rechtzeitige &lf;erscheinen. &lf;das personengremium des &lf;bisherigen staatlichen &lf;bauhauses hat seine tä-&lf;tigkeit in weimar abge-&lf;schlössen und setzt sie &lf;unter dem namen: &lf;das bauhaus in &lf;dessau (anhalt) &lf;fort. &lf;copyright 1925 by albert langen, münchen @ursprünglich e grundlage zu einem &lf;tei l des th eoretisc h en unterrichtes &lf;a m staatlichen bauhaus zu weimar @θ &lf;eine aktive linie, die sich frei ergeht, ein spaziergang um seiner selbst &lf;willen, ohne ziel. das agens ist ein punkt, der sich verschiebt (fig. 1): &lf;fig. 1 &lf;dieselbe linie mit begleitungsformen (fig. 2 und 3): &lf;r @l o &lf;dieselbe linie, sich umschreibend (fig. •4): &lf;fig. 4 &lf;zwei nebenlinien, die hauptlinie imaginär (fig. 5) @ι.θθ &lf;θ &lf;eine aktive linie, die, befristet, sich zwischen bestimmten punkten &lf;bewegt (fig. 6): &lf;fig. 6 &lf;θ &lf;eine mediale linie, welche zwischen punktbewegung und flächen-&lf;wirkung steht (fig. 7): &lf;im werden haben diese figuren linearen &lf;charakter: zu ende geformt aber wird diese &lf;lineare eigenschaft von der flächenvor-&lf;fig. stellung unverzüglich abgelöst. @passive linien, die aus einem flächenactivum (fortschreitende &lf;linie) resultieren (fig. 8): &lf;fig. θ &lf;passive viereckslinien und passive kreislinie, zugleich aktive flächen-&lf;bildung. @zusammengefaßt (fig. 9—12): &lf;θ &lf;erste r fall: &lf;aktive linien, passive flächen; lineare energie (ursache), linearer &lf;effekt (wirkung), flächen-nebenwirkung. &lf;zweite r fall: &lf;χι α ο &lf;fig. ιο &lf;mediale linien; lineare energie (ursache), flächeneffekt (wirkung). &lf;dritte r fall: &lf;. a m &lf;fig. 11 &lf;aktive fläche, passive linie; flächenenergie (ursache), fiächenwirkung &lf;und lineare nebenwirkung. @di e drei fälle: &lf;fig. 12 &lf;sprachliche erläuterung &lf;zu den begriffen aktiv, medial und passiv: &lf;aktiv: ich fälle (der mann fällte mit der &lf;axt den baum), &lf;medial: ich falle (der baum fiel unter dem &lf;hieb des mannes), &lf;passiv: ich werde gefällt (der baum liegt &lf;gefällt). @struktur. &lf;(dividuelle gliederung.) &lf;1 &lf;+ &lf;:1+1+1+1+ 1 &lf;von &lf;von links nach rechts. &lf;+ oben &lf;1 &lf;nach &lf;+ &lf;unten. &lf;1 &lf;+ &lf;1 &lf;flg. 13 &lf;fig. 13: primitivste strukturale rhythmen, welche auf der wiederholung &lf;derselben einheit in der richtung links —recht s oder oben — unten &lf;beruhen. &lf;fig. 15: dieser rhythmus steht eine &lf;fig. 14: sehr primitiver &lf;stufe höher. seine einheit heilet eins &lf;strukturaler rhythmus in &lf;plus zwei (1 + 2). &lf;der doppelten richtung &lf;links —rechts und oben — &lf;unten. &lf;-u-i -&lf;ι ί * ί11 ł μ &lf;1+ 2 + 1 + 2 in m a !^-darstellung &lf;1 &lf;1 &lf;1 &lf;1+ 2 + 1 + 2 in gewichts-darstellung &lf;1 &lf;fig. 15 &lf;1 &lf;1 1 1 1 &lf;schreibe ich an stelle von 1 + 2 + 1 + 2: &lf;fig. 14 &lf;(1+2)+(1 + 2), so ist das gleic h = 3+3+3+3 . &lf;also wieder die repetition einer einheit. @l® &lf;g ew ichts str u kt u r nach zwei dimensionen. &lf;(das schachbrett.) &lf;* » - * &lf;v. &lf;l &lf;1 &lf;«- &gt;— -» &lf;,* &lf;1 1 &lf;l &lf;1 &lf;l *.?.u . &lf;1 &lf;\ 1 &lf;1 &lf;1 &lf;l &lf;/ &lf;11* m &lf;10+ &lf;1h ρ &lf;il· &lf;/(φ bimenl1&apos;1n\ &lf;s-uv^c^-^cwictrtr &lf;horizontale und vertikale summen (fig. 16): &lf; + 11 + 10 + 11 + 10 = (11 + 10) + (11 + 10) + (11 + 1c» = 21 + 21 + 2 1 = 1 + 1 + 1. &lf;1 1 + 1 0&lf;fig. 17: beide &lf;dimensionen &lf;zusammen. &lf;fig. 17 a &lf;fig.17: wenn man das teilstück 17a als sechswertige einheit auffaßt, &lf;so kommt man zu folgender zahlendarstellung von fig. 17: &lf;6+6+6+ 6 =111 1 &lf;+ + + + &lf;rein wiederholend, &lf;6+6+6+ 6 =111 1 &lf;+ + + + &lf;also struktural. &lf;6+6+6+ 6 =111 1 &lf;+ + + + &lf;6+6+6+ 6 =111 1 @fig. 18: beide dimensionen zusammen, diagonal gesehen. &lf;fig. 19 &lf;r^i allen diesen zahlenreihen kann ma n teil e wegnehmen oder hinzu-&lf;füge n .ohne rhythmische n charakter, der auf der repet.t.on beruh, &lf;zu verändern. &lf;der strukturale &lf;,.ε &lf;i ł γ* t * σ r i • &lf;i j . m . &lf;i f m r charakter ist &lf;fi j« /4 &lf;!.. jiwłjntnłi&apos; &lf;somit dlviduel. &lf;* îïr oltjjtiímf tolwřr « λ * &lf;ar - : : ·**(**-* « &lf;• fhoœxjcr· &lf;fig. 20 @individuelle gliederun! &lf;individuelle gliederungen werden im gegensatz zu den strukturen nie &lf;bis auf i reduziert werden können, sondern bei proportionen &lf;wie 2:3:5, &lf;oder 7:11 :13:17, &lf;oder a : b = b :( á + b) (goldener schnitt), &lf;halt machen müssen. @í &lf;materielle strukturen &lf;o) &lf;in der natur. &lf;strukturalbegriff in der natur: die gruppierung der erkennbar kleinsten &lf;körperchen der materie: &lf;knochenkörperchen sind zellenartig &lf;oder röhrchenartig. &lf;bänderstruktur ist sehnig-faseriges &lf;gewebe. &lf;bei den muskeln gehen die sehnen-&lf;fasern über in muskelfasern, wobei noch &lf;eine querstreifung hinzutritt. @« &lf;der natürliche bewegungsorganismus &lf;als bewegungswille und bewegungsvollzug• &lf;(abermateriell•) &lf;knochen wirken untereinander zum skelett zusammen. &lf;a &lf;sie bedürfen, selbst in der ruhelage, eines gegenseitigen haltes. &lf;das besorgen die bänder. &lf;diese funktion ist untergeordnet; man kann von einem struktural &lf;der funktion sprechen. &lf;der nächste bewegungsorganisatorische schritt führt vom &lf;knochen zum muskel. &lf;zwischen diesen beiden vermittelt die sehne. &lf;fig. 22 &lf;1 7 @fig. 23 &lf;und wie verhält sich der muskel zum knochen? &lf;der muskel bringt durch seine kontraktions- oder verkürzungs-&lf;fähigkeit zwei knochen in ein neues winkelverhältnis. &lf;bedenkt man weiter, im bereich des bewegungsorganismus, das &lf;verhältnis von knochen zu muskel, so erkennt man die zwischen &lf;knochen und muskel vermittelnde tätigkeit der sehne. &lf;die winkellage zweier knochen mu ß sich verändern, wenn der &lf;muskel es will. &lf;der muskel funktioniert höher als der knochen; die knochen-&lf;funktion ist im verhältnis zur muskelfunktion passiv. &lf;die knochen stützen das ganze, auch in der bewegung. &lf;muskeln funktionieren höher.auch insofern.als sie nebeneinander &lf;selbständig arbeiten. einer beugt, der andere streckt. &lf;ein knochen allein richtet nichts aus. @^ ^ die selbständige muskelfunktion ist relativ, im verhältnis zur &lf;knochenfunktio n gedacht. an sic h ist auc h der muske l nicht selb-&lf;stân d ig. sonder n er gehorch t eine m befehl,der vo m gehirn ausgeht. &lf;er will nicht handeln, sondern muf5 handeln, er will höchstens &lf;gehorchen. &lf;die befehlsübermittlung des gehirn s läftt sich mit einem &lf;telegram m vergleichen: die nerve n vermitteln drahtartig. &lf;u m nun die relativitä t von dienen zu herrschen , von strukturalem &lf;zu individuellem funktionieren zu kennzeichnen , ist in fig. 2 4 ei n &lf;schem a von der art der schachte l in schachtelspielzeug e angelegt. &lf;fig. &lf;* dabei ist die gewichtsanordnung beobachtet, mit einer wertsteigerung nach dem &lf;zentrum hin ; die maljanordnung würde umgekehrt dem gehirn den raum der haupt-&lf;sächlichen ausdehnung anweisen und die kräfte umgekehrt anordnen. @121 übungsaufgaben &lf;(auf grund der dreigliederung): erstes organ aktiv (hirn). &lf;zweites organ medial (muskel), &lf;drittes organ passiv (knochen). &lf;i das wassergefäll (aktiv). ii das räderwerk (medial). iii der hamme r (passiv). &lf;i ! i i &lf;wasserkästen des grofjen rades. speichen des kleinen rades. &lf;! i &lf;treibriemen. @1 2 &lf;i . &lf;b) die wassermühle (fig. 26): &lf;fig. 26 &lf;i die beiden kräfte: a) schwerkraft, b) der hindernde berg (aktiv). &lf;ii die diagonale zu den kräften ia und ib: das wassergefälle (medial). &lf;iii das gedrehte rad (passiv). @u© &lf;c) die pflanze (fig. 27): &lf;/ &lf;fig. 27 &lf;d) (ohne figur) die fortpflanzung: &lf;i männliche organe (staubgefäße), aktiv. &lf;ii vermittelnde insekten, medial. &lf;iii die weiblichen organe (frucht), passiv. &lf;e) der kreislauf (fig. 28): &lf;i das herz pumpt(aktiv). &lf;iii das blut wird bewegt &lf;(passiv). &lf;ii die lunge empfängt &lf;und gibt verändert &lf;weiter, beteiligt sich &lf;(medial). &lf;i das herz pumpt. &lf;iii das blut wird vo n &lf;neuem in bewegung &lf;gesetzt und kehrt zum &lf;herzen, seinem aus-&lf;gangspunkt, zurück. fig. 28 @i. ® &lf;produktiv rezeptiv &lf;mitfh&gt;^ ) •as werk &lf;π ω γ j j &lf; w rc&lf;í ..stein auf &lf;stein&quot; &lf;((addition &lf;oder &lf;vom block: &lf;stück von &lf;stück&quot; &lf;(subtraktion) &lf;die beiden &lf;vorgänge, das &lf;baue n und &lf;jfeîd &lf;das behauen, &lf;ftol &lf;spielen sich in &lf;fig. 29 &lf;der zeit ab. &lf;schon im anfang der produktiven handlung, kurz nach der initialen pro-&lf;duktivbewegung, setzt schon die erste gegenbewegung ein, die initiale &lf;rezeptivbewegung. das heiftt: der &lf;schaffende kontrolliert, was er bis &lf;dahin schuf, ob es gut so war. &lf;das werk als menschliche handlung (genesis) ist, sowohl produktiv &lf;als rezeptiv: bewegung. rezeptiv liegt es a n der begren-&lf;produktiv liegt es an der manu- zung des aufnehmenden auges, &lf;eilen begrenzung des schaffen- die begrenzung des auges ist die &lf;den (er hat nur zwei hände). unmöglichkeit, eine auch ganz &lf;klein gemessene fläche zu glei-&lf;eher zeit scharf zu sehen. da s &lf;aug e muf3 die fläche abgrasen, &lf;eine partie nach der anderen ab-&lf;grasend schärfen, eine nach der &lf;anderen dem gehirn in erinnerung &lf;geben, welches die eindrücke &lf;sammelt und aufspeichert. &lf;das auge begeht die ihm im werk eingerichteten wege. @@dimensionen &lf;fig. 30 dimension: links (rechts) &lf;2. dimension: oben (unten) &lf;3. dimension: vorn (hinten) @zweidimensional : &lf;a) zwei parallele linien, wen n das auge sie recht-&lf;winklig trifft: &lf;b) eisenbahnschienen, wenn das auge sie recht-&lf;winklig trifft: &lf;, &lf;c) zwei parallele linien bei abweichendem &lf;gesichtswinkel: &lf;fig. 31 &lf;die dritte d) fig.32: eisenbahnschienen, seitwärts gesehen, &lf;dimension &lf;mit schwellen als maßsta b für di e perspek-&lf;dem schein &lf;tivische progression von hinten nach vorn: &lf;nach hinzu-&lf;gezogen. &lf;fig. 33 @ιι.θθ &lf;operation in drei dimensionen (fig. 34): &lf;θ &lf;fig. 34 &lf;die senkrechte. &lf;θ &lf;fig. 35 : eisenbahnschienen frontal gesehen, eine &lf;ferne und eine nahe schwelle gleichartig &lf;geteilt. &lf;fig. 36 : die perspektivische progression durchlinien &lf;in der richtung der schienen veran-&lf;schaulicht, mit betonung des frontalen lotes &lf;(senkrechte zu den schwellen). &lf;fig. 35 fig. 36 @ii.® &lf;die senkrechte (fortsetzung). &lf;wandernde senkrechte bei iinks-rechtsbewegiichem subjekt. &lf;fig. 37 : nach links verschobener standpunkt des subjekts. &lf;fig. 38 : nach rechts verschobener standpunkt. &lf;fig. 37 fig. 38 &lf;die senkrechte bedeutet den rechten weg auf der fläche. @die wagrechte bedeutet das höhenmai3 des subjekts. &lf;diese verbindung aller auf augenhöhe liegender punkte des raumes &lf;heilet augenlinie. @beweis der aussage über die wagrechte. &lf;fig. 41 &lf;fig. 41: der eingebaute raum ge-&lf;fig. 42 : diese r eingebaut e rau m ge-&lf;währt dem subjekt einen aufblick &lf;währ t dem subjekt eine untersicht &lf;auf seine obere fläche, also liegt &lf;unter seine obere fläche, also liegt &lf;dies e fläch e unter seine m augen-&lf;hier diese fläche über seinem &lf;punkt. in der tat befindet sich die &lf;augenpunkt . in der tat befindet &lf;horizontale oberhalb. &lf;sich die horizontale unterhalb. &lf;fig. 43 &lf;fig. 43 : in diese m falle aber erkennt das auge die obere fläche weder &lf;von oben, noch vo n unten als solche.sonder n sieerscheintals wagrechte &lf;linie. also liegt sie genau in augenhöhe. in der tat fällt diese linie &lf;der oberen fläche mit der horizontalen zusammen. @[20] nochmals die senkrechte. &lf;warum ist fig. 4 4 als bild einer &lf;senkrechten hauswan d falsch? &lf;es ist nicht logisch falsch; &lf;denn die unteren fensterbreiten &lf;sind dem auge näher als die &lf;oberen fensterbreiten, wa s per-&lf;spektivisch größer&quot; bedeutet. &lf;als darstellung eines bodens &lf;würde diese perspektive glatt &lf;akzeptiert. &lf;dieses bild ist also nicht &lf;logisch falsch, sondern &lf;psychologisch falsch ! fig. 44 &lf;weil das animal im interess e &lf;seines gleichgewichtes sämtliche senkrechten der wirklichkeit auch &lf;projiziert als senkrechte sehen will. &lf;fig. 45 fig. 46 &lf;der seiltänzer mit seiner balan- wagrecht: der horizont &lf;cierstange. wagrecht: der hori- als vorstellung, &lf;zont als erscheinung. &lf;die senkrechte bedeutet den geraden weg und die auf-&lf;rechte haltung oder den stand des animals, die wagrechte &lf;bedeutet seine höhe, seinen horizont. beide sind ganz dies-&lf;seitige, statische angelegenheit. @der seiltänzer kümmert sich gesteigert um sein &lf;gleichgewicht. er wägt die schwerkraft hüben &lf;und drüben. er ist wage. &lf;der geist der wage ist kreuzung von lotrecht und &lf;wagrecht. &lf;störun g des gleichgewichtes und ihr effekt. &lf;korrektur durch gegenbelastung und ihr gegen-&lf;effekt. &lf;kombinatio n beider effekte oder diagonalkreuz &lf;(symmetrisches gleichgewicht als wiederher &lf;stellung). @[231 nicht symmetrisches gleichgewicht &lf;(symbol:) &lf;1•* + &lf;í/íu İ ,ah &lf;1*t &lf;fig. 4-8 &lf;wiederhergestelltes &lf;gestörtes &lf;gleichgewicht. &lf;gleichgewicht. &lf;a) maß: &lf;sr^y &lf;j«*»?!? cunxit &lf;attt &lf;b) gewicht: &lf;not u &lf;not &lf;y / &lf;c) charakter: &lf;/ i » &lf;f * @ιι.θ &lf;gestaltungs-schemata zu 23• &lf;θ &lf;fig. 50a : die durch das schwerere dunkel überlastete achse &lf;α β hat sich von a nach a gesenkt und von b nach β &lf;gehoben. ursprünglich lag sie auf der horizontalen ab. den &lf;beiden achsen a b und a b ist der punkt c gemeinsam: als &lf;drehpunkt. infolge der drehung steht links dunkel tiefer als &lf;rechts hell. nun tritt rechts zum ausgleich schwarz hinzu. &lf;oder: ich bin nach links ins schwanken geraten, habe rechts &lf;mit der hand ausgegriffen, um nicht zu fallen. &lf;fig. 50b : mein oberkörper ist z u schwer , die vertikale legt &lf;sich nach links und ich falle, wenn links unten nicht recht-&lf;zeitig die korrektur eintritt und die basis gebreitet wird durch &lf;das ausgreifen mit dem linken bein. @5] turmbau. &lf;fig. 51: auf dem grundstein steht &lf;der stein i. dieser stört das gleich-&lf;gewicht nach links. zu m ausgleich &lf;und zu neuer störung nach rechts &lf;tritt der stein ii hinzu. in diesem &lf;sinne folgt der stein iii. nach links &lf;ziehend, der stein iv, wieder aus-&lf;gleichend und nach rechts störend, &lf;usw., bis endlich der schlußstein &lf;die gleichgewichts-verhältnisse &lf;definitiv in ordnung bringt. &lf;fig. 51 &lf;fig. 52: c!, c , c usw. sind die &lf;2 3&lf;drehpunkte der kippenden steine, &lf;welche linear verbunde n eine zick-&lf;zackform ergeben, welche die &lf;vertikalachse umspielt. @@symbole des statischen gebietes sind lot (stand) und wage. das &lf;lot richtet sich nach dem erdmittelpunkt, wo das irdisch-gebundene &lf;schicksal verknüpft ist. &lf;es gibt aber regionen mit anderen gesetzen und neuen symbolen, &lf;gelösterer bewegung und beweglicherer ortlichkeit entsprechend. &lf;als zwischenreich mögen wasser und atmosphäre gelten. @2 7 28 29 &lf;28) erde (berg). &lf;27 1 luft. &lf;fig. 54 : ein steil ab-&lf;fig. 55 &lf;gefeuertes geschoß &lf;steigt mit abnehmen-&lf;derenergie in dieluft, &lf;wendet, undfälltmit &lf;zunehmende r ener-&lf;gie zur erde zurück. &lf;(lose gliederung.) &lf;fig. 54 &lf;fig. 55 : ein treppen-&lf;steiger, mit stufen-&lf;weise gesteigerter &lf;anstrengung empor-&lf;steigend. &lf;(feste gliederung.) &lf;(29 ) wasser . &lf;fig. 53 &lf;die beinstöße eines schwimmers, ein rhythmus mit loser gliederung. @3 0 (31 )(32 ) &lf;[30 ) erde (berg) und &lf;w luft kombiniert. &lf;-wr » &lf;&apos; :* ^βα&amp;ττομ &lf;ein freiballon tritt steigend von einer &lf;&amp; v ý!íl-^·uicrtciwj) &lf;warme n in eine kühle luftschicht, &lf;dan n wieder in eine wärmere un d &lf;endlich in eine ganz warme. &lf;(lose gliederung). &lf;fig. 57 &lf;kosmisch und atmo-&lf;sphärisch kombiniert. &lf;ein stein fällt, sprungweise ge-&lf;steigert, einen steilen hang &lf;hinunter. &lf;(gliederung teils fest,teils lose.) &lf;fig. 59 : ein meteor beschreibt &lf;seine bahn, wird in erdnähe &lf;geführt, aus seiner bahn ab -&lf;gelenkt, zum schneiden der &lf;!erdatmosphäre veranlaßt; ent-&lf;fig. 59 &lf;geht als erglühende stern-&lf;schnuppe gerade noch der ge-&lf;fahr, an der erde für immer haften zu müssen, und zieht, im luftleeren &lf;raum erkaltend und erlöschend, weiter dahin. &lf;(lose gliederung). &lf;39 &lf;İ — @@symbole der bewegungsformung. &lf;{33} der kreisel. &lf;nimmt man von der stehenden wage aie irdische stütze bis auf einen &lf;punkt weg, so wird sie, auch bei der feinsten verteilung der gewichte &lf;schwanken und fallen (fig. 60): &lf;in horizontal &lf;dreh en d e schwing-&lf;bewegung ge-&lf;bracht, wird dieses &lf;spielzeug vor dem &lf;fallen bewahrt. &lf;und wir haben den &lf;kreisel vor uns. &lf;(fig. 61). &lf;fig. 60 &lf;der doppel - kreisel tanzt sogar &lf;auf der gespannten schnur ohne &lf;zu fallen (fig. 62). @34 &lf;341 das pendel. &lf;wird durch hin- und &lf;aus dem lot: &lf;herschwingen das &lf;pendel, &lf;fig. 63 &lf;fig. 63 a &lf;au s bewegung und gegenbewegung des pendels &lf;entsteht der bewegungsausgleich (fig. 64), &lf;bei festem &lf;oder die pendelbewegungsform &lf;führungspunkt (fig. 65). &lf;fig• 64 fig. 63 @3s ) (36) &lf;35 || der kreis. &lf;die letztere bewegungsform kann erweitert werden durch eine bewegte &lf;führung des pendels.der zu beobachtendesinn solcherwanderform des &lf;führungspunktes überträgt sich auch auf die erweiterten bewegungs-&lf;formen. &lf;die reinste bewegungsform, die kosmische, entsteht ab r erst durch die &lf;aufhebung der schwerkraft. (durch den wegfall irdischergebundenheit.) &lf;mitten in einem pendelschwunge &lf;(fig.66) sei dies ereignis gedacht. &lf;und das pendel wird im kreis &lf;herumschwingen, welcher die &lf;reinste der bewegten formen ist. &lf;es fällt die notwendigkeit einer &lf;hin- und herbewegung weg: die &lf;neue form (fig. 66a ) bleibt die-&lf;selbe, ob rechts-oder linksherum &lf;geschlagen. &lf;fig. 66 a &lf;fig. 66 &lf;[36) die spirale. &lf;beweglichkeit der radiuslänge mit der peripheralen bewegung kom-&lf;biniert, bildet den kreis in die spirale um. aus der radiusverlängerung &lf;erfolgt die lebendig e spirale. die radiusverkürzun g verengt de n &lf;umschwung mehr und mehr, bis das schöne schauspiel im punkte &lf;ruckartig stirbt; die bewegung ist hier nicht mehr unendlich, so daß die &lf;frage nach der richtung an &lf;bedeutung wieder gewinnt. si e &lf;gibt den ausschla g entweder über er&amp;eér , oér &lf;ein sichloslösen vom zentrum in &lf;immer freiere bewegung oder &lf;über ein sich steigerndes ge-&lf;bundensein an ein schließlich &lf;vernichtendes zentrum. &lf;diese frage heißt leben odertod. &lf;und die entscheidun g hierüber &lf;liegt an dem kleinen pfeil (fig.67). fig. 67 @3 7 38 &lf;371 der pfeil. &lf;der vater des pfeils ist der gedanke: wie erweitere ich meine reich-&lf;weite dorthin? über diesen fluß, diesen see, jenen berg! &lf;die ideelle fähigkeit des menschen , irdisches und überirdisches beliebig &lf;zu durchmessen, ist im gegensatz zu seiner physischen ohnmacht &lf;der ursprung der menschlichen tragik. dieser widerstreit von macht &lf;und ohnmacht ist zwiespältigkeit &lf;menschlichen seins. halb beflügel-&lf;ter, halb gefangener ist cer mensch. &lf;fig. 68 &lf;der gedanke als medium zwischen &lf;erde und welt. je weiter die reise, &lf;desto empfindlicher die tragik. &lf;bewegung werden zu müssen und &lf;nicht schon zu sein! &lf;fig. 69 &lf;der verlau f entspricht. wie überwin-&lf;detderpfeil die reibendehemmung? &lf;nie ganz dorthin zu gelangen, wo bewegung ohne ende! &lf;die erkenntnis, daß da. wo ein anfang, nie eine unendlichkeit. &lf;trost: ein wenig weiter als üblich! als möglich? &lf;laßt euch beflügeln, ihr pfeile, damit ihr trefft und mündet, wenn ihr &lf;auc h ermüden und nicht münden werdet. &lf;[38) der wirkliche pfeil besteht aus schaft &lf;spitze &lf;und steuer &lf;der symbolische pfeil ist bahn &lf;und spitze &lf;und steuer &lf;fig.70 &lf;vereint &lf;als spitzensteuer. &lf;gleiche längen der spitzensteuer &lf;und gleiche winkelabstände von der &lf;bah n ergeben eine gerade bahn. &lf;(fig. 71 a = b; a = ß.) &lf;fig. 71 @(der pfeil.) &lf;ungleiche längen und ungleiche winkelabstände der spitzensteuer &lf;ergeben eine nach oben oder nach unten abgebogene bahn (fig. 72). &lf;je kräftiger das steigesteuer, &lf;desto höher der anstieg. &lf;je kräftiger das fallsteuer, &lf;desto tiefer der fall. @fig.74: 1 der irdischen wirk-&lf;lichkeit folgt auf den anstieg &lf;immer der abfall, wenn die &lf;anziehungskraft der erde &lf;bei langsamerer bahn das &lf;steigesteuer mehr und mehr &lf;überholt. so endet die irdi-&lf;sehe kurve als gerade (theo-&lf;retisch im erdmittelpunkt). &lf;im gegensatz zu fig. 74 &lf;würde sich die kosmische &lf;kurve als schließlich un-&lf;endliche bewegung von der &lf;erde mehr und mehr ent-&lf;fernen und dann in de n kreis &lf;oder zum mindesten in die &lf;ellipse übergehen. @m &lf;[40] gestaltung &lf;pfeils (f &lf;fig. 76 &lf;néiss &lf;sie besteht in de r gesteigerten energieentwicklung aus gegebenem &lf;oder zuständlichem oder gegenwärtigem weiß nach eintretend handeln-&lf;dem oder zukünftigem schwarz hin. warum nicht umgekehrt? antwort: &lf;es liegt der akzent auf der minoren besonderheit gegenüber der &lf;majoren allgemeinheit. letztere wirkt zuständlich, gewohnt, erstere un-&lf;gewohnt, handelnd. und der pfeil fliegt in der richtung der handlung. &lf;bei wohlgeordneter gliederung in beid e charaktere manifestiert sich &lf;die bewegungsrichtung so zwingend , daß das verfängliche symbol &lf;wegfallen darf. &lf;das weißgegebene, das viel- und sattgesehene weiß, wird als ein ge-&lf;wohntes vom auge mit wenig akklamation aufgenommen: auf das &lf;gegensätzlich besondere der eintretenden handlung hin aber steigert &lf;sich die lebendigkeit des blickes bis zum gipfel oder zum ende &lf;dieser handlung. &lf;dieses außerordentliche anwachsen von energie (im produktiven &lf;sinne) oder von energiekost (im rezeptiven sinne) ist zwingen d in &lf;bezug auf die bewegungsrichtung. @40 &lf;,t :má &lf;der schwarze rfeil. fig. 77 a &lf;(gestaltungs-&lf;schemata). &lf;qeqeéai&amp;čbotjté fig. 77 b &lf;der rote pfeil. &lf;fig. 77 c &lf;der heige pfeil. &lf;erhitzungspfeil &lf;von heizung &lf;zu entflammung. &lf;fig. 77 d &lf;der kalte pfeil. cjtygutowuł &lf;v&quot; i( ííí91 &lf;löschung &lf;eines brandes. &lf;fig. 78 &lf;der grün-rote pfeil &lf;farbig. &lf;fig. 79 &lf;der rot-grüne pfeil &lf;farbig. @41 ) 42 &lf;-í.j\nt. ^&quot;&quot; &lf;- hiau. lut &lf;θ &lf;vm, w &lf;ν**. οία nuc &lf;flg flg flg flg.... 8 8 8 8 0 0 0 0 &lf;tabelle der &lf;vn. vulttt &lf;y. αμ &lf;farbigen heizung &lf;ť v &lf;0&gt;\ &lf;(hauptsächlich blau-orange). &lf;ju •(tla-u. &lf;flg. 81 &lf;tabelle der &lf;farbigen kühlung &lf;y. in osttb. &lf;(hauptsächlich orange-blau). &lf;der bewegungs-organismus• &lf;θ &lf;die vorangehenden schemata (fig. 76—81) sind vorschläge für die &lf;gestaltung der bewegungsorgane der komposition. die komposition &lf;selber: der bewegungs-organismu s ist ei n höhere r begriff und erfordert &lf;eine anlage von höhere r entwicklung. als norm für dies e komposition &lf;möge gelten: ein zusammenwirke n der organ e zu einem in sich selb-&lf;ständigen, ruhigbewegten oder bewegtruhigen ganzen. diese kom-&lf;position kann sich erst dann vollenden, wenn zu de n bewegungen &lf;gegenbewegungen kommen, oder wenn eine bewegungsunendliche &lf;lösung sich findet. (zum ersten falle fig. 82.0sieh e auch fig. 65. ) @zur unendlichen bewegung übergehend, wo die bewegungsrichtung &lf;belanglos wird, lasse ich also zunächst den pfeil weg. dadurch ver-&lf;einigen sich z.b. die fälle erhitzung und abkühlung. das pathos (die &lf;tragik) verwandelt sich in ein ethos, welches kraft und gegenkraft &lf;geeinigt in sich begreift. &lf;zunächs t bewegung und gegenbewegung, so —» oder so. &lf;dabei bereitet sich ein zentrum, das zentrale grau (fig. 83). &lf;je reiner die darstellung des grau, desto enger sein bereich, theo-&lf;retisch bis zum punkte eng. &lf;links vom graupunkt überwiegt schon grün, rechts, dicht beim punkte, &lf;schon rot. infolgedessen könnte man sich zu folgender darstellung &lf;(fig. 85 ) versucht fühlen. &lf;s o &lf;m @ι &lf;flg. 85 f&quot;9- θ6 &lf;es ist indessen nicht logisch, die schritte grünrot und violettgelb zum &lf;blauorange schritt in einen gegensatz zu bringen (fig. 85). also ist die &lf;diagonale darstellung der äußeren skalen geboten (fig. 86). @» &lf;•: ••}••• • eeram &lf;— @im alber t langen verlag münchen &lf;erscheine n serienweise die &lf;bauhausbüche r &lf;schriftleitung: gropius und moholy-nagy &lf;die erste serie besteht aus 8 bänden &lf;1 internationale architektur von walter gropius &lf;1&lf;2 pädagogisches skizzenbuch von paul klee &lf;3 ein versuchshaus des bauhauses &lf;4 die bühne im bauhaus &lf;5 neue gestaltung von piet mondrian (holland) &lf;6 grundbegriffe der neuen kunst von theo van doesburg (holland) &lf;7 neue arbeiten der bauhauswerkstätten &lf;8 malerei, photographie, film von l. moholy-nagy &lf;in vorbereitung: &lf;kleinwohnungen von der architekturabteilung des bauhauses &lf;merz-buch von kurt schwitters &lf;bildermagazin der zeit von oskar schlemmer &lf;schöpferische musikerziehung von heinrich jacoby &lf;amerika? —europa? von georg muche &lf;die arbeit der stijl-gruppe von theo van doesburg &lf;konstruktive biologie von martin schäfer &lf;die holländische architektur von j. j. p. oud (holland) &lf;futurismus von f.t. marinetti und e. prampolini ^italien) &lf;die arbeit der μα-gruppe von l. kassák und e. kallai (ungarn) &lf;plastik der gestaltungen von m. burchartz &lf;punkt, linie, fläche von wassily kandinsky &lf;russland von adolf behne &lf;reklame und typographie &lf;neue architekturdarstellung von walter gropius &lf;bildnerische mechanik von paul klee &lf;werkarbeit der gestaltungen von l. moholy-nagy &lf;architektur, malerei, plastik aus den werkstatten des bauhauses &lf;die neuen materialien von adolf meyer &lf;architektur von le corbusier-saugnier (frankreich) &lf;bildermagazin der zeit ii von joost schmidt &lf;violett (bühnenstück mit einleitung und szenerie) von kandinsky &lf;jeder band enthält zirka 16 bis 32 seiten text und 32 bis 96 ganzseitige &lf;abbildungen oder 48 bis 60 seiten text · format 18x23 cm · @@@@@@|">
+   </PIN>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="28">
+   <BOUNDS type="Box" left="6300" top="3510" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6300" top="3510" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Set">
+   </LINK>
+   <NODE systemname="IOBox (String)" nodename="IOBox (String)" componentmode="InABox" id="31">
+   <BOUNDS type="Node" left="5490" top="2445" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5490" top="2445" width="960" height="345">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="32">
+   <BOUNDS type="Node" left="4665" top="3165" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Output String" dstnodeid="32" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="31" srcpinname="Output String" dstnodeid="32" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="32" srcpinname="Output" dstnodeid="26" dstpinname="Path">
+   </LINK>
+   <NODE systemname="Separate (String)" nodename="Separate (String)" componentmode="Hidden" id="35">
+   <BOUNDS type="Node" left="4320" top="10245" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Intersperse String" visible="1">
+   </PIN>
+   <PIN pinname="Ignore between" slicecount="1" values="Question">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Keep Quotes" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Intersperse" slicecount="1" values="Space">
+   </PIN>
+   </NODE>
+   <NODE systemname="Sift (String)" nodename="Sift (String)" componentmode="Hidden" id="36">
+   <BOUNDS type="Node" left="8625" top="6450" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="GlyphInfo (String)" nodename="GlyphInfo (String)" componentmode="Hidden" id="37">
+   <BOUNDS type="Node" left="8580" top="5610" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="38">
+   <BOUNDS type="Box" left="4920" top="9675" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4920" top="9675" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="@">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="38" srcpinname="Output String" dstnodeid="35" dstpinname="Intersperse String">
+   </LINK>
+   <NODE systemname="Find (String)" nodename="Find (String)" componentmode="Hidden" id="39">
+   <BOUNDS type="Node" left="6525" top="8775" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Substring" visible="1">
+   </PIN>
+   <PIN pinname="Occurence Mode" slicecount="1" values="All">
+   </PIN>
+   <PIN pinname="Position" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="38" srcpinname="Output String" dstnodeid="39" dstpinname="Substring">
+   </LINK>
+   <NODE systemname="SplitAt (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="SplitAt (String)" componentmode="Hidden" id="40">
+   <BOUNDS type="Node" left="5865" top="10275" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5865" top="10275" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="Index" visible="1" slicecount="60" values="0,1,9,118,194,681,792,1010,1121,1478,1661,2051,2323,3082,3742,4154,4407,4760,5234,5992,6840,7156,7379,7884,9007,9008,9113,9541,9911,10189,10327,11064,11967,12353,12596,13324,13897,13898,14240,14678,15468,15469,15943,16220,17659,18945,19203,19666,20719,21066,21983,22668,22896,22921,24613,24614,24615,24616,24617,24618">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="RegExpr (String)" nodename="RegExpr (String)" componentmode="Hidden" id="41">
+   <BOUNDS type="Node" left="8595" top="6045" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="43">
+   <BOUNDS type="Box" left="7500" top="11910" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7500" top="11910" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="getPageNo">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="MonoFlop (Animation)" nodename="MonoFlop (Animation)" componentmode="Hidden" id="49">
+   <BOUNDS type="Node" left="4245" top="1815" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Set" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Output" dstnodeid="32" dstpinname="Switch">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="50">
+   <BOUNDS type="Node" left="4230" top="810" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4230" top="810" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Set">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="50" srcpinname="Y Output Value" dstnodeid="49" dstpinname="Set">
+   </LINK>
+   <LINK srcnodeid="50" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="51">
+   <BOUNDS type="Box" left="4215" top="2415" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4215" top="2415" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="49" srcpinname="Output" dstnodeid="51" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="52">
+   <BOUNDS type="Box" left="3930" top="12525" width="1455" height="1020">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3930" top="12525" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="String">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="7">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Show SliceIndex" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Clean (String)" nodename="Clean (String)" componentmode="Hidden" id="54">
+   <BOUNDS type="Node" left="4755" top="4440" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="Output" dstnodeid="54" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Reader (String)" filename="%VVVV%\lib\nodes\modules\String\Reader (String).v4p" nodename="Reader (String)" componentmode="Hidden" id="56" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="1500" top="6300" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" slicecount="1" visible="1" values="..\..\media\FromPointLineToPlane.txt">
+   </PIN>
+   <PIN pinname="Content" visible="1">
+   </PIN>
+   <PIN pinname="Read" slicecount="1" visible="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Length (String)" nodename="Length (String)" componentmode="Hidden" id="57">
+   <BOUNDS type="Node" left="5160" top="15225" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Writer (String)" filename="%VVVV%\lib\nodes\modules\String\Writer (String).v4p" nodename="Writer (String)" componentmode="Hidden" id="65" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="1680" top="4905" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Content" visible="1">
+   </PIN>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Write" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="54" srcpinname="Output" dstnodeid="65" dstpinname="Content" hiddenwhenlocked="1">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="67" hiddenwhenlocked="1">
+   <BOUNDS type="Box" left="1350" top="3585" width="1860" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1350" top="3585" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\media\02_PedagogicalSketchbook">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="file.txt">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Text Formats (*.csv, *.dtd, *.html, *.txt, *.xml)||*.csv;*.dtd;*.html;*.htm;*.txt;*.xml||Text (*.txt)||*.txt||XML (*.xml)||*.xml||CSV (*.csv)||*.csv||DTD (*.dtd)||*.dtd||HTML (*.html, *.htm)||*.html;*.htm|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="Y Output Value" dstnodeid="65" dstpinname="Write" hiddenwhenlocked="1">
+   </LINK>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="68" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="1410" top="4440" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values=".txt">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="67" srcpinname="Output String" dstnodeid="68" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="Output" dstnodeid="65" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="68" srcpinname="Output" dstnodeid="56" dstpinname="Filename">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="69" hiddenwhenlocked="1">
+   <BOUNDS type="Box" left="2025" top="5370" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2025" top="5370" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="69" srcpinname="Y Output Value" dstnodeid="56" dstpinname="Read">
+   </LINK>
+   <NODE systemname="Text (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\text\VVVV.DX11.Nodes.Text.dll" nodename="Text (DX11.Layer)" componentmode="Hidden" id="71">
+   <BOUNDS type="Node" left="7500" top="13890" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7500" top="13890" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="String" visible="1" slicecount="1" values="|I. ® &lf;Produktiv Rezeptiv &lf;Mitfh&gt;^ ) •as Werk &lf;π ω Γ j j &lf; W rC&lf;Í ..Stein auf &lf;Stein&quot; &lf;((Addition &lf;oder &lf;vom Block: &lf;Stück von &lf;Stück&quot; &lf;(Subtraktion) &lf;Die beiden &lf;Vorgänge, das &lf;Baue n und &lf;jfeîd &lf;das Behauen, &lf;ftol &lf;spielen sich in &lf;Fig. 29 &lf;der Zeit ab. &lf;Schon im Anfang der produktiven Handlung, kurz nach der initialen Pro-&lf;duktivbewegung, setzt schon die erste Gegenbewegung ein, die initiale &lf;Rezeptivbewegung. Das heiftt: der &lf;Schaffende kontrolliert, was er bis &lf;dahin schuf, ob es gut so war. &lf;Das Werk als menschliche Handlung (Genesis) ist, sowohl produktiv &lf;als rezeptiv: Bewegung. Rezeptiv liegt es a n der Begren-&lf;Produktiv liegt es an der manu- zung des aufnehmenden Auges, &lf;eilen Begrenzung des Schaffen- Die Begrenzung des Auges ist die &lf;den (er hat nur zwei Hände). Unmöglichkeit, eine auch ganz &lf;klein gemessene Fläche zu glei-&lf;eher Zeit scharf zu sehen. Da s &lf;Aug e muf3 die Fläche abgrasen, &lf;eine Partie nach der anderen ab-&lf;grasend schärfen, eine nach der &lf;anderen dem Gehirn In Erinnerung &lf;geben, welches die Eindrücke &lf;sammelt und aufspeichert. &lf;Das Auge begeht die ihm im Werk eingerichteten Wege.|">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   <PIN pinname="Horizontal Align" slicecount="1" visible="1" values="Center">
+   </PIN>
+   <PIN pinname="Font" visible="1">
+   </PIN>
+   <PIN pinname="Vertical Align" slicecount="1" values="Center">
+   </PIN>
+   </NODE>
+   <NODE systemname="Clean (String)" nodename="Clean (String)" componentmode="Hidden" id="73">
+   <BOUNDS type="Node" left="4245" top="11070" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="62" values=",,|CL &lf;Uf |,|DAUHAUS Β CHER &lf;SCHRIFTLEITUNG: &lf;W. GROPIUS &lf;L. M OH OLY-INI A G V &lf;2 &lf;RAUL KLEE &lf;PÄDAGOGISCHES SKIZZENBUCH |,|PAUL KLEE &lf;BUCH &lf;ALBERT LANGEN VERLAG MÜNCHEN &lf;Κ&apos;-t&apos; í · &gt;L &lf;7 &lf;1 &lf;11T&gt; &lf;1 |,|OHLENROTH&apos;SCHE &lf;BUCHDRUCKEREI &lf;ERFURT &lf;KLISCHEES &lf;VON LOBBECKE u. Co &lf;ERFURT &lf;UMSCHLAGENTWURF &lf;UND &lf;TYPOGRAPHIE &lf;VON &lf;L. MOHOLY-NAGY &lf;Dieses Buch wurde im &lf;Sommer 1924 zusammen-&lf;gestellt. Technische &lf;Schwierigkeiten verhin-&lf;d e rte η das rechtzeitige &lf;Erscheinen. &lf;Das Personengremium des &lf;bisherigen Staatlichen &lf;Bauhauses hat seine Tä-&lf;tigkeit in Weimar abge-&lf;schlössen und setzt sie &lf;unter dem Namen: &lf;DAS BAUHAUS IN &lf;DESSAU (ANHALT) &lf;fort. &lf;COPYRIGHT 1925 BY ALBERT LANGEN, MÜNCHEN |,|URSPRÜNGLICH E GRUNDLAGE ZU EINEM &lf;TEI L DES TH EORETISC H EN UNTERRICHTES &lf;A M STAATLICHEN BAUHAUS ZU WEIMAR |,|Θ &lf;Eine aktive Linie, die sich frei ergeht, ein Spaziergang um seiner selbst &lf;willen, ohne Ziel. Das agens ist ein Punkt, der sich verschiebt (Fig. 1): &lf;Fig. 1 &lf;Dieselbe Linie mit Begleitungsformen (Fig. 2 und 3): &lf;r |,|L o &lf;Dieselbe Linie, sich umschreibend (Fig. •4): &lf;Fig. 4 &lf;Zwei Nebenlinien, die Hauptlinie imaginär (Fig. 5) |,|Ι.ΘΘ &lf;Θ &lf;Eine aktive Linie, die, befristet, sich zwischen bestimmten Punkten &lf;bewegt (Fig. 6): &lf;Fig. 6 &lf;Θ &lf;Eine mediale Linie, welche zwischen Punktbewegung und Flächen-&lf;Wirkung steht (Fig. 7): &lf;Im Werden haben diese Figuren linearen &lf;Charakter: zu Ende geformt aber wird diese &lf;lineare Eigenschaft von der Flächenvor-&lf;Fig. Stellung unverzüglich abgelöst. |,|Passive Linien, die aus einem Flächenactivum (fortschreitende &lf;Linie) resultieren (Fig. 8): &lf;Fig. θ &lf;Passive Viereckslinien und passive Kreislinie, zugleich aktive Flächen-&lf;bildung. |,|Zusammengefaßt (Fig. 9—12): &lf;Θ &lf;ERSTE R FALL: &lf;Aktive Linien, passive Flächen; lineare Energie (Ursache), linearer &lf;Effekt (Wirkung), Flächen-Nebenwirkung. &lf;ZWEITE R FALL: &lf;χι α Ο &lf;Fig. ΙΟ &lf;Mediale Linien; lineare Energie (Ursache), Flächeneffekt (Wirkung). &lf;DRITTE R FALL: &lf;. a m &lf;Fig. 11 &lf;Aktive Fläche, passive Linie; Flächenenergie (Ursache), Fiächenwirkung &lf;und lineare Nebenwirkung. |,|DI E DREI FÄLLE: &lf;Fig. 12 &lf;Sprachliche Erläuterung &lf;zu den Begriffen aktiv, medial und passiv: &lf;aktiv: ich fälle (der Mann fällte mit der &lf;Axt den Baum), &lf;medial: ich falle (der Baum fiel unter dem &lf;Hieb des Mannes), &lf;passiv: ich werde gefällt (der Baum liegt &lf;gefällt). |,|Struktur. &lf;(Dividuelle Gliederung.) &lf;1 &lf;+ &lf;:1+1+1+1+ 1 &lf;von &lf;von links nach rechts. &lf;+ oben &lf;1 &lf;nach &lf;+ &lf;unten. &lf;1 &lf;+ &lf;1 &lf;Flg. 13 &lf;Fig. 13: Primitivste Strukturale Rhythmen, welche auf der Wiederholung &lf;derselben Einheit in der Richtung links —recht s oder oben — unten &lf;beruhen. &lf;Fig. 15: Dieser Rhythmus steht eine &lf;Fig. 14: Sehr primitiver &lf;Stufe höher. Seine Einheit heilet eins &lf;strukturaler Rhythmus in &lf;plus zwei (1 + 2). &lf;der doppelten Richtung &lf;links —rechts und oben — &lf;unten. &lf;-U-i -&lf;Ι Ί * ί11 Ł μ &lf;1+ 2 + 1 + 2 in M a !^-Darstellung &lf;1 &lf;1 &lf;1 &lf;1+ 2 + 1 + 2 in Gewichts-Darstellung &lf;1 &lf;Fig. 15 &lf;1 &lf;1 1 1 1 &lf;Schreibe ich an Stelle von 1 + 2 + 1 + 2: &lf;Fig. 14 &lf;(1+2)+(1 + 2), so ist das gleic h = 3+3+3+3 . &lf;also wieder die Repetition einer Einheit. |,|L® &lf;G EW ICHTS STR U KT U R nach zwei Dimensionen. &lf;(Das Schachbrett.) &lf;* » - * &lf;V. &lf;l &lf;1 &lf;«- &gt;— -» &lf;,* &lf;1 1 &lf;l &lf;1 &lf;l *.?.u . &lf;1 &lf;\ 1 &lf;1 &lf;1 &lf;l &lf;/ &lf;11* m &lf;10+ &lf;1h Ρ &lf;il· &lf;/(Φ bimenl1&apos;1n\ &lf;S-uv^c^-^cwictrtr &lf;Horizontale und vertikale Summen (Fig. 16): &lf; + 11 + 10 + 11 + 10 = (11 + 10) + (11 + 10) + (11 + 1c» = 21 + 21 + 2 1 = 1 + 1 + 1. &lf;1 1 + 1 0&lf;Fig. 17: Beide &lf;Dimensionen &lf;zusammen. &lf;Fig. 17 a &lf;Fig.17: Wenn man das Teilstück 17a als sechswertige Einheit auffaßt, &lf;so kommt man zu folgender Zahlendarstellung von Fig. 17: &lf;6+6+6+ 6 =111 1 &lf;+ + + + &lf;rein wiederholend, &lf;6+6+6+ 6 =111 1 &lf;+ + + + &lf;also struktural. &lf;6+6+6+ 6 =111 1 &lf;+ + + + &lf;6+6+6+ 6 =111 1 |,|Fig. 18: Beide Dimensionen zusammen, diagonal gesehen. &lf;Fig. 19 &lf;R^I allen diesen Zahlenreihen kann ma n Teil e wegnehmen oder hinzu-&lf;füge n .ohne Rhythmische n Charakter, der auf der Repet.t.on beruh, &lf;zu verändern. &lf;Der strukturale &lf;,.Ε &lf;I ł Γ* t * Σ r i • &lf;I J . M . &lf;I f M r Charakter ist &lf;fi j« /4 &lf;!.. JiWłJntnłi&apos; &lf;somit dlviduel. &lf;* îïr oltjjtiímf toLWřr « Λ * &lf;Ar - : : ·**(**-* « &lf;• fhoœxJcr· &lf;Fig. 20 |,|Individuelle Gliederun! &lf;Individuelle Gliederungen werden im Gegensatz zu den Strukturen nie &lf;bis auf I reduziert werden können, sondern bei Proportionen &lf;wie 2:3:5, &lf;oder 7:11 :13:17, &lf;oder a : b = b :( á + b) (goldener Schnitt), &lf;Halt machen müssen. |,|í &lf;Materielle Strukturen &lf;O) &lf;in der Natur. &lf;Strukturalbegriff in der Natur: Die Gruppierung der erkennbar kleinsten &lf;Körperchen der Materie: &lf;Knochenkörperchen sind zellenartig &lf;oder röhrchenartig. &lf;Bänderstruktur ist sehnig-faseriges &lf;Gewebe. &lf;Bei den Muskeln gehen die Sehnen-&lf;fasern über in Muskelfasern, wobei noch &lf;eine Querstreifung hinzutritt. |,|« &lf;Der natürliche Bewegungsorganismus &lf;als Bewegungswille und Bewegungsvollzug• &lf;(abermateriell•) &lf;Knochen wirken untereinander zum Skelett zusammen. &lf;A &lf;Sie bedürfen, selbst in der Ruhelage, eines gegenseitigen Haltes. &lf;Das besorgen die Bänder. &lf;Diese Funktion ist untergeordnet; man kann von einem Struktural &lf;der Funktion sprechen. &lf;Der nächste bewegungsorganisatorische Schritt führt vom &lf;Knochen zum Muskel. &lf;Zwischen diesen beiden vermittelt die Sehne. &lf;Fig. 22 &lf;1 7 |,|Fig. 23 &lf;Und wie verhält sich der Muskel zum Knochen? &lf;Der Muskel bringt durch seine Kontraktions- oder Verkürzungs-&lf;fähigkeit zwei Knochen in ein neues Winkelverhältnis. &lf;Bedenkt man weiter, im Bereich des Bewegungsorganismus, das &lf;Verhältnis von Knochen zu Muskel, so erkennt man die zwischen &lf;Knochen und Muskel vermittelnde Tätigkeit der Sehne. &lf;Die Winkellage zweier Knochen mu ß sich verändern, wenn der &lf;Muskel es will. &lf;Der Muskel funktioniert höher als der Knochen; die Knochen-&lf;funktion ist im Verhältnis zur Muskelfunktion passiv. &lf;Die Knochen stützen das Ganze, auch in der Bewegung. &lf;Muskeln funktionieren höher.auch insofern.als sie nebeneinander &lf;selbständig arbeiten. Einer beugt, der andere streckt. &lf;Ein Knochen allein richtet nichts aus. |,|^ ^ Die selbständige Muskelfunktion ist relativ, im Verhältnis zur &lf;Knochenfunktio n gedacht. An sic h ist auc h der Muske l nicht selb-&lf;stân d ig. sonder n er gehorch t eine m Befehl,der vo m Gehirn ausgeht. &lf;Er will nicht handeln, sondern muf5 handeln, er will höchstens &lf;gehorchen. &lf;Die Befehlsübermittlung des Gehirn s läftt sich mit einem &lf;Telegram m vergleichen: die Nerve n vermitteln drahtartig. &lf;U m nun die Relativitä t von Dienen zu Herrschen , von Strukturalem &lf;zu individuellem Funktionieren zu kennzeichnen , ist in Fig. 2 4 ei n &lf;Schem a von der Art der Schachte l in Schachtelspielzeug e angelegt. &lf;Fig. &lf;* Dabei ist die Gewichtsanordnung beobachtet, mit einer Wertsteigerung nach dem &lf;Zentrum hin ; die Maljanordnung würde umgekehrt dem Gehirn den Raum der haupt-&lf;sächlichen Ausdehnung anweisen und die Kräfte umgekehrt anordnen. |,|121 Übungsaufgaben &lf;(auf Grund der Dreigliederung): Erstes Organ aktiv (Hirn). &lf;Zweites Organ medial (Muskel), &lf;Drittes Organ passiv (Knochen). &lf;I Das Wassergefäll (aktiv). II Das Räderwerk (medial). III Der Hamme r (passiv). &lf;I ! I I &lf;Wasserkästen des grofjen Rades. Speichen des kleinen Rades. &lf;! I &lf;Treibriemen. |,|1 2 &lf;I . &lf;b) Die Wassermühle (Fig. 26): &lf;Fig. 26 &lf;I Die beiden Kräfte: a) Schwerkraft, b) der hindernde Berg (aktiv). &lf;II Die Diagonale zu den Kräften Ia und Ib: Das Wassergefälle (medial). &lf;III Das gedrehte Rad (passiv). |,|u© &lf;c) Die Pflanze (Fig. 27): &lf;/ &lf;Fig. 27 &lf;d) (ohne Figur) Die Fortpflanzung: &lf;I Männliche Organe (Staubgefäße), aktiv. &lf;II Vermittelnde Insekten, medial. &lf;III Die weiblichen Organe (Frucht), passiv. &lf;e) Der Kreislauf (Fig. 28): &lf;I Das Herz pumpt(aktiv). &lf;III Das Blut wird bewegt &lf;(passiv). &lf;II Die Lunge empfängt &lf;und gibt verändert &lf;weiter, beteiligt sich &lf;(medial). &lf;I Das Herz pumpt. &lf;III Das Blut wird vo n &lf;neuem in Bewegung &lf;gesetzt und kehrt zum &lf;Herzen, seinem Aus-&lf;gangspunkt, zurück. Fig. 28 |,|I. ® &lf;Produktiv Rezeptiv &lf;Mitfh&gt;^ ) •as Werk &lf;π ω Γ j j &lf; W rC&lf;Í ..Stein auf &lf;Stein&quot; &lf;((Addition &lf;oder &lf;vom Block: &lf;Stück von &lf;Stück&quot; &lf;(Subtraktion) &lf;Die beiden &lf;Vorgänge, das &lf;Baue n und &lf;jfeîd &lf;das Behauen, &lf;ftol &lf;spielen sich in &lf;Fig. 29 &lf;der Zeit ab. &lf;Schon im Anfang der produktiven Handlung, kurz nach der initialen Pro-&lf;duktivbewegung, setzt schon die erste Gegenbewegung ein, die initiale &lf;Rezeptivbewegung. Das heiftt: der &lf;Schaffende kontrolliert, was er bis &lf;dahin schuf, ob es gut so war. &lf;Das Werk als menschliche Handlung (Genesis) ist, sowohl produktiv &lf;als rezeptiv: Bewegung. Rezeptiv liegt es a n der Begren-&lf;Produktiv liegt es an der manu- zung des aufnehmenden Auges, &lf;eilen Begrenzung des Schaffen- Die Begrenzung des Auges ist die &lf;den (er hat nur zwei Hände). Unmöglichkeit, eine auch ganz &lf;klein gemessene Fläche zu glei-&lf;eher Zeit scharf zu sehen. Da s &lf;Aug e muf3 die Fläche abgrasen, &lf;eine Partie nach der anderen ab-&lf;grasend schärfen, eine nach der &lf;anderen dem Gehirn In Erinnerung &lf;geben, welches die Eindrücke &lf;sammelt und aufspeichert. &lf;Das Auge begeht die ihm im Werk eingerichteten Wege. |,,|Dimensionen &lf;Fig. 30 Dimension: Links (rechts) &lf;2. Dimension: Oben (unten) &lf;3. Dimension: Vorn (hinten) |,|Zweidimensional : &lf;a) Zwei parallele Linien, wen n das Auge sie recht-&lf;winklig trifft: &lf;b) Eisenbahnschienen, wenn das Auge sie recht-&lf;winklig trifft: &lf;, &lf;c) Zwei parallele Linien bei abweichendem &lf;Gesichtswinkel: &lf;Fig. 31 &lf;Die dritte d) Fig.32: Eisenbahnschienen, seitwärts gesehen, &lf;Dimension &lf;mit Schwellen als Maßsta b für di e perspek-&lf;dem Schein &lf;tivische Progression von hinten nach vorn: &lf;nach hinzu-&lf;gezogen. &lf;Fig. 33 |,|ΙΙ.ΘΘ &lf;Operation in drei Dimensionen (Fig. 34): &lf;Θ &lf;Fig. 34 &lf;Die Senkrechte. &lf;Θ &lf;Fig. 35 : Eisenbahnschienen frontal gesehen, eine &lf;ferne und eine nahe Schwelle gleichartig &lf;geteilt. &lf;Fig. 36 : Die perspektivische Progression durchLinien &lf;in der Richtung der Schienen veran-&lf;schaulicht, mit Betonung des frontalen Lotes &lf;(Senkrechte zu den Schwellen). &lf;Fig. 35 Fig. 36 |,|II.® &lf;Die Senkrechte (Fortsetzung). &lf;Wandernde Senkrechte bei iinks-rechtsbewegiichem Subjekt. &lf;Fig. 37 : Nach links verschobener Standpunkt des Subjekts. &lf;Fig. 38 : Nach rechts verschobener Standpunkt. &lf;Fig. 37 Fig. 38 &lf;Die Senkrechte bedeutet den rechten Weg auf der Fläche. |,|Die Wagrechte bedeutet das Höhenmai3 des Subjekts. &lf;Diese Verbindung aller auf Augenhöhe liegender Punkte des Raumes &lf;heilet Augenlinie. |,|Beweis der Aussage über die Wagrechte. &lf;Fig. 41 &lf;Fig. 41: Der eingebaute Raum ge-&lf;Fig. 42 : Diese r eingebaut e Rau m ge-&lf;währt dem Subjekt einen Aufblick &lf;währ t dem Subjekt eine Untersicht &lf;auf seine obere Fläche, also liegt &lf;unter seine obere Fläche, also liegt &lf;dies e Fläch e unter seine m Augen-&lf;hier diese Fläche über seinem &lf;punkt. In der Tat befindet sich die &lf;Augenpunkt . In der Tat befindet &lf;Horizontale oberhalb. &lf;sich die Horizontale unterhalb. &lf;Fig. 43 &lf;Fig. 43 : In diese m Falle aber erkennt das Auge die obere Fläche weder &lf;von oben, noch vo n unten als solche.sonder n sieerscheintals wagrechte &lf;Linie. Also liegt sie genau in Augenhöhe. In der Tat fällt diese Linie &lf;der oberen Fläche mit der Horizontalen zusammen. |,|[20] Nochmals die Senkrechte. &lf;Warum ist Fig. 4 4 als Bild einer &lf;senkrechten Hauswan d falsch? &lf;Es ist nicht logisch falsch; &lf;denn die unteren Fensterbreiten &lf;sind dem Auge näher als die &lf;oberen Fensterbreiten, wa s per-&lf;spektivisch größer&quot; bedeutet. &lf;Als Darstellung eines Bodens &lf;würde diese Perspektive glatt &lf;akzeptiert. &lf;Dieses Bild ist also nicht &lf;logisch falsch, sondern &lf;psychologisch falsch ! Fig. 44 &lf;Weil das Animal im Interess e &lf;seines Gleichgewichtes sämtliche Senkrechten der Wirklichkeit auch &lf;projiziert als Senkrechte sehen will. &lf;Fig. 45 Fig. 46 &lf;Der Seiltänzer mit seiner Balan- Wagrecht: Der Horizont &lf;cierstange. Wagrecht: Der Hori- als Vorstellung, &lf;zont als Erscheinung. &lf;Die Senkrechte bedeutet den geraden Weg und die auf-&lf;rechte Haltung oder den Stand des Animals, die Wagrechte &lf;bedeutet seine Höhe, seinen Horizont. Beide sind ganz dies-&lf;seitige, statische Angelegenheit. |,|Der Seiltänzer kümmert sich gesteigert um sein &lf;Gleichgewicht. Er wägt die Schwerkraft hüben &lf;und drüben. Er ist Wage. &lf;Der Geist der Wage ist Kreuzung von lotrecht und &lf;wagrecht. &lf;Störun g des Gleichgewichtes und ihr Effekt. &lf;Korrektur durch Gegenbelastung und ihr Gegen-&lf;effekt. &lf;Kombinatio n beider Effekte oder Diagonalkreuz &lf;(symmetrisches Gleichgewicht als Wiederher &lf;Stellung). |,|[231 Nicht symmetrisches Gleichgewicht &lf;(Symbol:) &lf;1•* + &lf;Í/ÍU İ ,Ah &lf;1*t &lf;Fig. 4-8 &lf;Wiederhergestelltes &lf;Gestörtes &lf;Gleichgewicht. &lf;Gleichgewicht. &lf;a) Maß: &lf;sr^y &lf;J«*»?!? cUnxit &lf;Attt &lf;b) Gewicht: &lf;not U &lf;not &lf;Y / &lf;c) Charakter: &lf;/ i » &lf;f * |,|ΙΙ.θ &lf;Gestaltungs-Schemata zu 23• &lf;θ &lf;Fig. 50a : Die durch das schwerere Dunkel überlastete Achse &lf;Α Β hat sich von a nach A gesenkt und von b nach Β &lf;gehoben. Ursprünglich lag sie auf der Horizontalen ab. Den &lf;beiden Achsen a b und A B ist der Punkt c gemeinsam: als &lf;Drehpunkt. Infolge der Drehung steht links dunkel tiefer als &lf;rechts hell. Nun tritt rechts zum Ausgleich schwarz hinzu. &lf;Oder: Ich bin nach links ins Schwanken geraten, habe rechts &lf;mit der Hand ausgegriffen, um nicht zu fallen. &lf;Fig. 50b : Mein Oberkörper ist z u schwer , die Vertikale legt &lf;sich nach links und ich falle, wenn links unten nicht recht-&lf;zeitig die Korrektur eintritt und die Basis gebreitet wird durch &lf;das Ausgreifen mit dem linken Bein. |,|5] Turmbau. &lf;Fig. 51: Auf dem Grundstein steht &lf;der Stein I. Dieser stört das Gleich-&lf;gewicht nach links. Zu m Ausgleich &lf;und zu neuer Störung nach rechts &lf;tritt der Stein II hinzu. In diesem &lf;Sinne folgt der Stein III. nach links &lf;ziehend, der Stein IV, wieder aus-&lf;gleichend und nach rechts störend, &lf;usw., bis endlich der Schlußstein &lf;die Gleichgewichts-Verhältnisse &lf;definitiv in Ordnung bringt. &lf;Fig. 51 &lf;Fig. 52: C!, C , C usw. sind die &lf;2 3&lf;Drehpunkte der kippenden Steine, &lf;welche linear verbunde n eine Zick-&lf;zackform ergeben, welche die &lf;Vertikalachse umspielt. |,,|Symbole des statischen Gebietes sind Lot (Stand) und Wage. Das &lf;Lot richtet sich nach dem Erdmittelpunkt, wo das irdisch-gebundene &lf;Schicksal verknüpft ist. &lf;Es gibt aber Regionen mit anderen Gesetzen und neuen Symbolen, &lf;gelösterer Bewegung und beweglicherer Ortlichkeit entsprechend. &lf;Als Zwischenreich mögen Wasser und Atmosphäre gelten. |,|2 7 28 29 &lf;28) ERDE (Berg). &lf;27 1 LUFT. &lf;Fig. 54 : Ein steil ab-&lf;Fig. 55 &lf;gefeuertes Geschoß &lf;steigt mit abnehmen-&lf;derEnergie in dieLuft, &lf;wendet, undfälltmit &lf;zunehmende r Ener-&lf;gie zur Erde zurück. &lf;(Lose Gliederung.) &lf;Fig. 54 &lf;Fig. 55 : Ein Treppen-&lf;Steiger, mit stufen-&lf;weise gesteigerter &lf;Anstrengung empor-&lf;steigend. &lf;(Feste Gliederung.) &lf;(29 ) WASSER . &lf;Fig. 53 &lf;Die Beinstöße eines Schwimmers, ein Rhythmus mit loser Gliederung. |,|3 0 (31 )(32 ) &lf;[30 ) ERDE (Berg) und &lf;W LUFT kombiniert. &lf;-Wr » &lf;&apos; :* ^βα&amp;τΤΟΜ &lf;Ein Freiballon tritt steigend von einer &lf;&amp; V ý!íl-^·uicrTCiwj) &lf;warme n in eine kühle Luftschicht, &lf;dan n wieder in eine wärmere un d &lf;endlich in eine ganz warme. &lf;(Lose Gliederung). &lf;Fig. 57 &lf;Kosmisch und atmo-&lf;sphärisch kombiniert. &lf;Ein Stein fällt, sprungweise ge-&lf;steigert, einen steilen Hang &lf;hinunter. &lf;(Gliederung teils fest,teils lose.) &lf;Fig. 59 : Ein Meteor beschreibt &lf;seine Bahn, wird In Erdnähe &lf;geführt, aus seiner Bahn ab -&lf;gelenkt, zum Schneiden der &lf;!Erdatmosphäre veranlaßt; ent-&lf;Fig. 59 &lf;geht als erglühende Stern-&lf;schnuppe gerade noch der Ge-&lf;fahr, an der Erde für immer haften zu müssen, und zieht, im luftleeren &lf;Raum erkaltend und erlöschend, weiter dahin. &lf;(Lose Gliederung). &lf;39 &lf;İ — |,,|Symbole der Bewegungsformung. &lf;{33} Der Kreisel. &lf;Nimmt man von der stehenden Wage aie irdische Stütze bis auf einen &lf;Punkt weg, so wird sie, auch bei der feinsten Verteilung der Gewichte &lf;schwanken und fallen (Fig. 60): &lf;In horizontal &lf;dreh en d e Schwing-&lf;bewegung ge-&lf;bracht, wird dieses &lf;Spielzeug vor dem &lf;Fallen bewahrt. &lf;Und wir haben den &lf;Kreisel vor uns. &lf;(Fig. 61). &lf;Fig. 60 &lf;Der Doppel - Kreisel tanzt sogar &lf;auf der gespannten Schnur ohne &lf;zu fallen (Fig. 62). |,|34 &lf;341 Das Pendel. &lf;wird durch Hin- und &lf;Aus dem Lot: &lf;Herschwingen das &lf;Pendel, &lf;Fig. 63 &lf;Fig. 63 a &lf;au s Bewegung und Gegenbewegung des Pendels &lf;entsteht der Bewegungsausgleich (Fig. 64), &lf;bei festem &lf;oder die Pendelbewegungsform &lf;Führungspunkt (Fig. 65). &lf;Fig• 64 Fig. 63 |,|3S ) (36) &lf;35 || Der Kreis. &lf;Die letztere Bewegungsform kann erweitert werden durch eine bewegte &lf;Führung des Pendels.Der zu beobachtendeSinn solcherWanderform des &lf;Führungspunktes überträgt sich auch auf die erweiterten Bewegungs-&lf;formen. &lf;Die reinste Bewegungsform, die kosmische, entsteht ab r erst durch die &lf;Aufhebung der Schwerkraft. (Durch den Wegfall irdischerGebundenheit.) &lf;Mitten in einem Pendelschwunge &lf;(Fig.66) sei dies Ereignis gedacht. &lf;Und das Pendel wird im Kreis &lf;herumschwingen, welcher die &lf;reinste der bewegten Formen ist. &lf;Es fällt die Notwendigkeit einer &lf;Hin- und Herbewegung weg: die &lf;neue Form (Fig. 66a ) bleibt die-&lf;selbe, ob rechts-oder linksherum &lf;geschlagen. &lf;Fig. 66 a &lf;Fig. 66 &lf;[36) Die Spirale. &lf;Beweglichkeit der Radiuslänge mit der peripheralen Bewegung kom-&lf;biniert, bildet den Kreis in die Spirale um. Aus der Radiusverlängerung &lf;erfolgt die lebendig e Spirale. Die Radiusverkürzun g verengt de n &lf;Umschwung mehr und mehr, bis das schöne Schauspiel im Punkte &lf;ruckartig stirbt; die Bewegung ist hier nicht mehr unendlich, so daß die &lf;Frage nach der Richtung an &lf;Bedeutung wieder gewinnt. Si e &lf;gibt den Ausschla g entweder über er&amp;eér , oér &lf;ein Sichloslösen vom Zentrum in &lf;immer freiere Bewegung oder &lf;über ein sich steigerndes Ge-&lf;bundensein an ein schließlich &lf;vernichtendes Zentrum. &lf;Diese Frage heißt Leben oderTod. &lf;und die Entscheidun g hierüber &lf;liegt an dem kleinen Pfeil (Fig.67). Fig. 67 |,|3 7 38 &lf;371 Der Pfeil. &lf;Der Vater des Pfeils ist der Gedanke: wie erweitere ich meine Reich-&lf;weite dorthin? über diesen Fluß, diesen See, jenen Berg! &lf;Die ideelle Fähigkeit des Menschen , Irdisches und überirdisches beliebig &lf;zu durchmessen, ist im Gegensatz zu seiner physischen Ohnmacht &lf;der Ursprung der menschlichen Tragik. Dieser Widerstreit von Macht &lf;und Ohnmacht ist Zwiespältigkeit &lf;menschlichen Seins. Halb Beflügel-&lf;ter, halb Gefangener ist cer Mensch. &lf;Fig. 68 &lf;Der Gedanke als Medium zwischen &lf;Erde und Welt. Je weiter die Reise, &lf;desto empfindlicher die Tragik. &lf;Bewegung werden zu müssen und &lf;nicht schon zu sein! &lf;Fig. 69 &lf;Der Verlau f entspricht. Wie überwin-&lf;detderPfeil die reibendeHemmung? &lf;Nie ganz dorthin zu gelangen, wo Bewegung ohne Ende! &lf;Die Erkenntnis, daß da. wo ein Anfang, nie eine Unendlichkeit. &lf;Trost: Ein wenig weiter als üblich! als möglich? &lf;Laßt euch beflügeln, ihr Pfeile, damit ihr trefft und mündet, wenn ihr &lf;auc h ermüden und nicht münden werdet. &lf;[38) Der wirkliche Pfeil besteht aus Schaft &lf;Spitze &lf;und Steuer &lf;Der symbolische Pfeil ist Bahn &lf;und Spitze &lf;und Steuer &lf;Fig.70 &lf;vereint &lf;als Spitzensteuer. &lf;Gleiche Längen der Spitzensteuer &lf;und gleiche Winkelabstände von der &lf;Bah n ergeben eine gerade Bahn. &lf;(Fig. 71 a = b; a = ß.) &lf;Fig. 71 |,|(DER PFEIL.) &lf;Ungleiche Längen und ungleiche Winkelabstände der Spitzensteuer &lf;ergeben eine nach oben oder nach unten abgebogene Bahn (Fig. 72). &lf;Je kräftiger das Steigesteuer, &lf;desto höher der Anstieg. &lf;Je kräftiger das Fallsteuer, &lf;desto tiefer der Fall. |,|Fig.74: 1 der irdischen Wirk-&lf;lichkeit folgt auf den Anstieg &lf;immer der Abfall, wenn die &lf;Anziehungskraft der Erde &lf;bei langsamerer Bahn das &lf;Steigesteuer mehr und mehr &lf;überholt. So endet die irdi-&lf;sehe Kurve als Gerade (theo-&lf;retisch im Erdmittelpunkt). &lf;Im Gegensatz zu Fig. 74 &lf;würde sich die kosmische &lf;Kurve als schließlich un-&lf;endliche Bewegung von der &lf;Erde mehr und mehr ent-&lf;fernen und dann in de n Kreis &lf;oder zum mindesten in die &lf;Ellipse übergehen. |,|m &lf;[40] Gestaltung &lf;Pfeils (F &lf;Fig. 76 &lf;néiss &lf;Sie besteht in de r gesteigerten Energieentwicklung aus gegebenem &lf;oder zuständlichem oder gegenwärtigem Weiß nach eintretend handeln-&lf;dem oder zukünftigem Schwarz hin. Warum nicht umgekehrt? Antwort: &lf;es liegt der Akzent auf der minoren Besonderheit gegenüber der &lf;majoren Allgemeinheit. Letztere wirkt zuständlich, gewohnt, erstere un-&lf;gewohnt, handelnd. Und der Pfeil fliegt in der Richtung der Handlung. &lf;Bei wohlgeordneter Gliederung in beid e Charaktere manifestiert sich &lf;die Bewegungsrichtung so zwingend , daß das verfängliche Symbol &lf;wegfallen darf. &lf;Das Weißgegebene, das viel- und sattgesehene Weiß, wird als ein Ge-&lf;wohntes vom Auge mit wenig Akklamation aufgenommen: auf das &lf;gegensätzlich Besondere der eintretenden Handlung hin aber steigert &lf;sich die Lebendigkeit des Blickes bis zum Gipfel oder zum Ende &lf;dieser Handlung. &lf;Dieses außerordentliche Anwachsen von Energie (Im produktiven &lf;Sinne) oder von Energiekost (im rezeptiven Sinne) ist zwingen d in &lf;bezug auf die Bewegungsrichtung. |,|40 &lf;,t :má &lf;Der schwarze Rfeil. Fig. 77 a &lf;(Gestaltungs-&lf;schemata). &lf;qeqeéAi&amp;ČBotjté Fig. 77 b &lf;Der rote Pfeil. &lf;Fig. 77 c &lf;Der heige Pfeil. &lf;Erhitzungspfeil &lf;von Heizung &lf;zu Entflammung. &lf;Fig. 77 d &lf;Der kalte Pfeil. CjtygutOwuŁ &lf;V&quot; I( ÍÍÍ91 &lf;Löschung &lf;eines Brandes. &lf;Fig. 78 &lf;Der grün-rote Pfeil &lf;farbig. &lf;Fig. 79 &lf;Der rot-grüne Pfeil &lf;farbig. |,|41 ) 42 &lf;-í.J\nt. ^&quot;&quot; &lf;- Hiau. lut &lf;Θ &lf;vm, w &lf;ν**. Οία nuc &lf;Flg Flg Flg Flg.... 8 8 8 8 0 0 0 0 &lf;Tabelle der &lf;vn. Vulttt &lf;y. αΜ &lf;farbigen Heizung &lf;ť V &lf;0&gt;\ &lf;(hauptsächlich blau-orange). &lf;ju •(tla-u. &lf;Flg. 81 &lf;Tabelle der &lf;farbigen Kühlung &lf;y. in oSttb. &lf;(hauptsächlich orange-blau). &lf;Der Bewegungs-Organismus• &lf;Θ &lf;Die vorangehenden Schemata (Fig. 76—81) sind Vorschläge für die &lf;Gestaltung der Bewegungsorgane der Komposition. Die Komposition &lf;selber: der Bewegungs-Organismu s ist ei n höhere r Begriff und erfordert &lf;eine Anlage von höhere r Entwicklung. Als Norm für dies e Komposition &lf;möge gelten: ein Zusammenwirke n der Organ e zu einem in sich selb-&lf;ständigen, ruhigbewegten oder bewegtruhigen Ganzen. Diese Kom-&lf;position kann sich erst dann vollenden, wenn zu de n Bewegungen &lf;Gegenbewegungen kommen, oder wenn eine bewegungsunendliche &lf;Lösung sich findet. (Zum ersten Falle Fig. 82.0Sieh e auch Fig. 65. ) |,|Zur unendlichen Bewegung übergehend, wo die Bewegungsrichtung &lf;belanglos wird, lasse ich also zunächst den Pfeil weg. Dadurch ver-&lf;einigen sich z.B. die Fälle Erhitzung und Abkühlung. Das Pathos (die &lf;Tragik) verwandelt sich in ein Ethos, welches Kraft und Gegenkraft &lf;geeinigt in sich begreift. &lf;Zunächs t Bewegung und Gegenbewegung, so —» oder so. &lf;Dabei bereitet sich ein Zentrum, das zentrale Grau (Fig. 83). &lf;Je reiner die Darstellung des Grau, desto enger sein Bereich, theo-&lf;retisch bis zum Punkte eng. &lf;Links vom Graupunkt überwiegt schon grün, rechts, dicht beim Punkte, &lf;schon rot. Infolgedessen könnte man sich zu folgender Darstellung &lf;(Fig. 85 ) versucht fühlen. &lf;S O &lf;m |,|ι &lf;Flg. 85 F&quot;9- Θ6 &lf;Es ist indessen nicht logisch, die Schritte grünrot und violettgelb zum &lf;blauorange Schritt in einen Gegensatz zu bringen (Fig. 85). also ist die &lf;diagonale Darstellung der äußeren Skalen geboten (Fig. 86). |,|» &lf;•: ••}••• • eeram &lf;— |,|IM ALBER T LANGEN VERLAG MÜNCHEN &lf;ERSCHEINE N SERIENWEISE DIE &lf;BAUHAUSBÜCHE R &lf;Schriftleitung: GROPIUS und MOHOLY-NAGY &lf;DIE ERSTE SERIE BESTEHT AUS 8 BÄNDEN &lf;1 INTERNATIONALE ARCHITEKTUR von WALTER GROPIUS &lf;1&lf;2 PÄDAGOGISCHES SKIZZENBUCH von PAUL KLEE &lf;3 EIN VERSUCHSHAUS DES BAUHAUSES &lf;4 DIE BÜHNE IM BAUHAUS &lf;5 NEUE GESTALTUNG von PIET MONDRIAN (Holland) &lf;6 GRUNDBEGRIFFE DER NEUEN KUNST von THEO VAN DOESBURG (Holland) &lf;7 NEUE ARBEITEN DER BAUHAUSWERKSTÄTTEN &lf;8 MALEREI, PHOTOGRAPHIE, FILM von L. MOHOLY-NAGY &lf;IN VORBEREITUNG: &lf;KLEINWOHNUNGEN von DER ARCHITEKTURABTEILUNG DES BAUHAUSES &lf;MERZ-BUCH von KURT SCHWITTERS &lf;BILDERMAGAZIN DER ZEIT von OSKAR SCHLEMMER &lf;SCHÖPFERISCHE MUSIKERZIEHUNG von HEINRICH JACOBY &lf;AMERIKA? —EUROPA? von GEORG MUCHE &lf;DIE ARBEIT DER STIJL-GRUPPE von THEO VAN DOESBURG &lf;KONSTRUKTIVE BIOLOGIE von MARTIN SCHÄFER &lf;DIE HOLLÄNDISCHE ARCHITEKTUR von J. J. P. OUD (Holland) &lf;FUTURISMUS von F.T. MARINETTI und E. PRAMPOLINI ^Italien) &lf;DIE ARBEIT DER ΜΑ-GRUPPE von L. KASSÁK und E. KALLAI (Ungarn) &lf;PLASTIK DER GESTALTUNGEN von M. BURCHARTZ &lf;PUNKT, LINIE, FLÄCHE von WASSILY KANDINSKY &lf;RUSSLAND von ADOLF BEHNE &lf;REKLAME UND TYPOGRAPHIE &lf;NEUE ARCHITEKTURDARSTELLUNG von WALTER GROPIUS &lf;BILDNERISCHE MECHANIK von PAUL KLEE &lf;WERKARBEIT DER GESTALTUNGEN von L. MOHOLY-NAGY &lf;ARCHITEKTUR, MALEREI, PLASTIK aus den WERKSTATTEN DES BAUHAUSES &lf;DIE NEUEN MATERIALIEN von ADOLF MEYER &lf;ARCHITEKTUR von LE CORBUSIER-SAUGNIER (Frankreich) &lf;BILDERMAGAZIN DER ZEIT II von JOOST SCHMIDT &lf;VIOLETT (BÜHNENSTÜCK MIT EINLEITUNG UND SZENERIE) von KANDINSKY &lf;Jeder Band enthält zirka 16 bis 32 Seiten Text und 32 bis 96 ganzseitige &lf;Abbildungen oder 48 bis 60 Seiten Text · Format 18x23 cm · |,,,,,,@,">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="73" srcpinname="Output" dstnodeid="52" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="Strip (String EmptySlices)" filename="%VVVV%\lib\nodes\modules\String\Strip (String EmptySlices).v4p" nodename="Strip (String EmptySlices)" componentmode="Hidden" id="75">
+   <BOUNDS type="Node" left="4650" top="10665" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="35" srcpinname="Output" dstnodeid="75" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="77">
+   <BOUNDS type="Box" left="7695" top="4545" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7695" top="4545" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="PageNumber">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="26" srcpinname="PageNumber" dstnodeid="77" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="35" srcpinname="Output" dstnodeid="73" dstpinname="Input">
+   </LINK>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="78">
+   <BOUNDS type="Node" left="6915" top="12510" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Index" slicecount="1" visible="1" values="21">
+   </PIN>
+   </NODE>
+   <NODE systemname="SplitAt (String)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="SplitAt (String)" componentmode="Hidden" id="80">
+   <BOUNDS type="Node" left="6990" top="10245" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6990" top="10245" width="3000" height="3000">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="82" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6525" top="9675" width="435" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6525" top="9675" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="-1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="82" srcpinname="Y Output Value" dstnodeid="40" dstpinname="Index">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="83">
+   <BOUNDS type="Node" left="1905" top="11550" width="2160" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1905" top="11550" width="2160" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|60 pages, why returning 61?|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="WordWrap (String)" nodename="WordWrap (String)" componentmode="Hidden" id="85">
+   <BOUNDS type="Node" left="7410" top="13005" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="78" srcpinname="Output" dstnodeid="85" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="86">
+   <BOUNDS type="Box" left="8490" top="13275" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8490" top="13275" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Bahnschrift">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|Adobe Arabic|">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Font">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="86" srcpinname="Output Enum" dstnodeid="71" dstpinname="Font">
+   </LINK>
+   <LINK srcnodeid="78" srcpinname="Output" dstnodeid="71" dstpinname="String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="89">
+   <BOUNDS type="Box" left="6480" top="15720" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6480" top="15720" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="78" srcpinname="Output" dstnodeid="89" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="78" srcpinname="Output" dstnodeid="57" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="90">
+   <BOUNDS type="Box" left="5085" top="15795" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5085" top="15795" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="StringCount">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="57" srcpinname="Count" dstnodeid="90" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Caps (String)" nodename="Caps (String)" componentmode="Hidden" id="91">
+   <BOUNDS type="Node" left="5475" top="5565" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="|@@CL &lf;Uf @DAUHAUS Β CHER &lf;SCHRIFTLEITUNG: &lf;W. GROPIUS &lf;L. M OH OLY-INI A G V &lf;2 &lf;RAUL KLEE &lf;PÄDAGOGISCHES SKIZZENBUCH @PAUL KLEE &lf;BUCH &lf;ALBERT LANGEN VERLAG MÜNCHEN &lf;Κ&apos;-t&apos; í · &gt;L &lf;7 &lf;1 &lf;11T&gt; &lf;1 @OHLENROTH&apos;SCHE &lf;BUCHDRUCKEREI &lf;ERFURT &lf;KLISCHEES &lf;VON LOBBECKE u. Co &lf;ERFURT &lf;UMSCHLAGENTWURF &lf;UND &lf;TYPOGRAPHIE &lf;VON &lf;L. MOHOLY-NAGY &lf;Dieses Buch wurde im &lf;Sommer 1924 zusammen-&lf;gestellt. Technische &lf;Schwierigkeiten verhin-&lf;d e rte η das rechtzeitige &lf;Erscheinen. &lf;Das Personengremium des &lf;bisherigen Staatlichen &lf;Bauhauses hat seine Tä-&lf;tigkeit in Weimar abge-&lf;schlössen und setzt sie &lf;unter dem Namen: &lf;DAS BAUHAUS IN &lf;DESSAU (ANHALT) &lf;fort. &lf;COPYRIGHT 1925 BY ALBERT LANGEN, MÜNCHEN @URSPRÜNGLICH E GRUNDLAGE ZU EINEM &lf;TEI L DES TH EORETISC H EN UNTERRICHTES &lf;A M STAATLICHEN BAUHAUS ZU WEIMAR @Θ &lf;Eine aktive Linie, die sich frei ergeht, ein Spaziergang um seiner selbst &lf;willen, ohne Ziel. Das agens ist ein Punkt, der sich verschiebt (Fig. 1): &lf;Fig. 1 &lf;Dieselbe Linie mit Begleitungsformen (Fig. 2 und 3): &lf;r @L o &lf;Dieselbe Linie, sich umschreibend (Fig. •4): &lf;Fig. 4 &lf;Zwei Nebenlinien, die Hauptlinie imaginär (Fig. 5) @Ι.ΘΘ &lf;Θ &lf;Eine aktive Linie, die, befristet, sich zwischen bestimmten Punkten &lf;bewegt (Fig. 6): &lf;Fig. 6 &lf;Θ &lf;Eine mediale Linie, welche zwischen Punktbewegung und Flächen-&lf;Wirkung steht (Fig. 7): &lf;Im Werden haben diese Figuren linearen &lf;Charakter: zu Ende geformt aber wird diese &lf;lineare Eigenschaft von der Flächenvor-&lf;Fig. Stellung unverzüglich abgelöst. @Passive Linien, die aus einem Flächenactivum (fortschreitende &lf;Linie) resultieren (Fig. 8): &lf;Fig. θ &lf;Passive Viereckslinien und passive Kreislinie, zugleich aktive Flächen-&lf;bildung. @Zusammengefaßt (Fig. 9—12): &lf;Θ &lf;ERSTE R FALL: &lf;Aktive Linien, passive Flächen; lineare Energie (Ursache), linearer &lf;Effekt (Wirkung), Flächen-Nebenwirkung. &lf;ZWEITE R FALL: &lf;χι α Ο &lf;Fig. ΙΟ &lf;Mediale Linien; lineare Energie (Ursache), Flächeneffekt (Wirkung). &lf;DRITTE R FALL: &lf;. a m &lf;Fig. 11 &lf;Aktive Fläche, passive Linie; Flächenenergie (Ursache), Fiächenwirkung &lf;und lineare Nebenwirkung. @DI E DREI FÄLLE: &lf;Fig. 12 &lf;Sprachliche Erläuterung &lf;zu den Begriffen aktiv, medial und passiv: &lf;aktiv: ich fälle (der Mann fällte mit der &lf;Axt den Baum), &lf;medial: ich falle (der Baum fiel unter dem &lf;Hieb des Mannes), &lf;passiv: ich werde gefällt (der Baum liegt &lf;gefällt). @Struktur. &lf;(Dividuelle Gliederung.) &lf;1 &lf;+ &lf;:1+1+1+1+ 1 &lf;von &lf;von links nach rechts. &lf;+ oben &lf;1 &lf;nach &lf;+ &lf;unten. &lf;1 &lf;+ &lf;1 &lf;Flg. 13 &lf;Fig. 13: Primitivste Strukturale Rhythmen, welche auf der Wiederholung &lf;derselben Einheit in der Richtung links —recht s oder oben — unten &lf;beruhen. &lf;Fig. 15: Dieser Rhythmus steht eine &lf;Fig. 14: Sehr primitiver &lf;Stufe höher. Seine Einheit heilet eins &lf;strukturaler Rhythmus in &lf;plus zwei (1 + 2). &lf;der doppelten Richtung &lf;links —rechts und oben — &lf;unten. &lf;-U-i -&lf;Ι Ί * ί11 Ł μ &lf;1+ 2 + 1 + 2 in M a !^-Darstellung &lf;1 &lf;1 &lf;1 &lf;1+ 2 + 1 + 2 in Gewichts-Darstellung &lf;1 &lf;Fig. 15 &lf;1 &lf;1 1 1 1 &lf;Schreibe ich an Stelle von 1 + 2 + 1 + 2: &lf;Fig. 14 &lf;(1+2)+(1 + 2), so ist das gleic h = 3+3+3+3 . &lf;also wieder die Repetition einer Einheit. @L® &lf;G EW ICHTS STR U KT U R nach zwei Dimensionen. &lf;(Das Schachbrett.) &lf;* » - * &lf;V. &lf;l &lf;1 &lf;«- &gt;— -» &lf;,* &lf;1 1 &lf;l &lf;1 &lf;l *.?.u . &lf;1 &lf;\ 1 &lf;1 &lf;1 &lf;l &lf;/ &lf;11* m &lf;10+ &lf;1h Ρ &lf;il· &lf;/(Φ bimenl1&apos;1n\ &lf;S-uv^c^-^cwictrtr &lf;Horizontale und vertikale Summen (Fig. 16): &lf; + 11 + 10 + 11 + 10 = (11 + 10) + (11 + 10) + (11 + 1c» = 21 + 21 + 2 1 = 1 + 1 + 1. &lf;1 1 + 1 0&lf;Fig. 17: Beide &lf;Dimensionen &lf;zusammen. &lf;Fig. 17 a &lf;Fig.17: Wenn man das Teilstück 17a als sechswertige Einheit auffaßt, &lf;so kommt man zu folgender Zahlendarstellung von Fig. 17: &lf;6+6+6+ 6 =111 1 &lf;+ + + + &lf;rein wiederholend, &lf;6+6+6+ 6 =111 1 &lf;+ + + + &lf;also struktural. &lf;6+6+6+ 6 =111 1 &lf;+ + + + &lf;6+6+6+ 6 =111 1 @Fig. 18: Beide Dimensionen zusammen, diagonal gesehen. &lf;Fig. 19 &lf;R^I allen diesen Zahlenreihen kann ma n Teil e wegnehmen oder hinzu-&lf;füge n .ohne Rhythmische n Charakter, der auf der Repet.t.on beruh, &lf;zu verändern. &lf;Der strukturale &lf;,.Ε &lf;I ł Γ* t * Σ r i • &lf;I J . M . &lf;I f M r Charakter ist &lf;fi j« /4 &lf;!.. JiWłJntnłi&apos; &lf;somit dlviduel. &lf;* îïr oltjjtiímf toLWřr « Λ * &lf;Ar - : : ·**(**-* « &lf;• fhoœxJcr· &lf;Fig. 20 @Individuelle Gliederun! &lf;Individuelle Gliederungen werden im Gegensatz zu den Strukturen nie &lf;bis auf I reduziert werden können, sondern bei Proportionen &lf;wie 2:3:5, &lf;oder 7:11 :13:17, &lf;oder a : b = b :( á + b) (goldener Schnitt), &lf;Halt machen müssen. @í &lf;Materielle Strukturen &lf;O) &lf;in der Natur. &lf;Strukturalbegriff in der Natur: Die Gruppierung der erkennbar kleinsten &lf;Körperchen der Materie: &lf;Knochenkörperchen sind zellenartig &lf;oder röhrchenartig. &lf;Bänderstruktur ist sehnig-faseriges &lf;Gewebe. &lf;Bei den Muskeln gehen die Sehnen-&lf;fasern über in Muskelfasern, wobei noch &lf;eine Querstreifung hinzutritt. @« &lf;Der natürliche Bewegungsorganismus &lf;als Bewegungswille und Bewegungsvollzug• &lf;(abermateriell•) &lf;Knochen wirken untereinander zum Skelett zusammen. &lf;A &lf;Sie bedürfen, selbst in der Ruhelage, eines gegenseitigen Haltes. &lf;Das besorgen die Bänder. &lf;Diese Funktion ist untergeordnet; man kann von einem Struktural &lf;der Funktion sprechen. &lf;Der nächste bewegungsorganisatorische Schritt führt vom &lf;Knochen zum Muskel. &lf;Zwischen diesen beiden vermittelt die Sehne. &lf;Fig. 22 &lf;1 7 @Fig. 23 &lf;Und wie verhält sich der Muskel zum Knochen? &lf;Der Muskel bringt durch seine Kontraktions- oder Verkürzungs-&lf;fähigkeit zwei Knochen in ein neues Winkelverhältnis. &lf;Bedenkt man weiter, im Bereich des Bewegungsorganismus, das &lf;Verhältnis von Knochen zu Muskel, so erkennt man die zwischen &lf;Knochen und Muskel vermittelnde Tätigkeit der Sehne. &lf;Die Winkellage zweier Knochen mu ß sich verändern, wenn der &lf;Muskel es will. &lf;Der Muskel funktioniert höher als der Knochen; die Knochen-&lf;funktion ist im Verhältnis zur Muskelfunktion passiv. &lf;Die Knochen stützen das Ganze, auch in der Bewegung. &lf;Muskeln funktionieren höher.auch insofern.als sie nebeneinander &lf;selbständig arbeiten. Einer beugt, der andere streckt. &lf;Ein Knochen allein richtet nichts aus. @^ ^ Die selbständige Muskelfunktion ist relativ, im Verhältnis zur &lf;Knochenfunktio n gedacht. An sic h ist auc h der Muske l nicht selb-&lf;stân d ig. sonder n er gehorch t eine m Befehl,der vo m Gehirn ausgeht. &lf;Er will nicht handeln, sondern muf5 handeln, er will höchstens &lf;gehorchen. &lf;Die Befehlsübermittlung des Gehirn s läftt sich mit einem &lf;Telegram m vergleichen: die Nerve n vermitteln drahtartig. &lf;U m nun die Relativitä t von Dienen zu Herrschen , von Strukturalem &lf;zu individuellem Funktionieren zu kennzeichnen , ist in Fig. 2 4 ei n &lf;Schem a von der Art der Schachte l in Schachtelspielzeug e angelegt. &lf;Fig. &lf;* Dabei ist die Gewichtsanordnung beobachtet, mit einer Wertsteigerung nach dem &lf;Zentrum hin ; die Maljanordnung würde umgekehrt dem Gehirn den Raum der haupt-&lf;sächlichen Ausdehnung anweisen und die Kräfte umgekehrt anordnen. @121 Übungsaufgaben &lf;(auf Grund der Dreigliederung): Erstes Organ aktiv (Hirn). &lf;Zweites Organ medial (Muskel), &lf;Drittes Organ passiv (Knochen). &lf;I Das Wassergefäll (aktiv). II Das Räderwerk (medial). III Der Hamme r (passiv). &lf;I ! I I &lf;Wasserkästen des grofjen Rades. Speichen des kleinen Rades. &lf;! I &lf;Treibriemen. @1 2 &lf;I . &lf;b) Die Wassermühle (Fig. 26): &lf;Fig. 26 &lf;I Die beiden Kräfte: a) Schwerkraft, b) der hindernde Berg (aktiv). &lf;II Die Diagonale zu den Kräften Ia und Ib: Das Wassergefälle (medial). &lf;III Das gedrehte Rad (passiv). @u© &lf;c) Die Pflanze (Fig. 27): &lf;/ &lf;Fig. 27 &lf;d) (ohne Figur) Die Fortpflanzung: &lf;I Männliche Organe (Staubgefäße), aktiv. &lf;II Vermittelnde Insekten, medial. &lf;III Die weiblichen Organe (Frucht), passiv. &lf;e) Der Kreislauf (Fig. 28): &lf;I Das Herz pumpt(aktiv). &lf;III Das Blut wird bewegt &lf;(passiv). &lf;II Die Lunge empfängt &lf;und gibt verändert &lf;weiter, beteiligt sich &lf;(medial). &lf;I Das Herz pumpt. &lf;III Das Blut wird vo n &lf;neuem in Bewegung &lf;gesetzt und kehrt zum &lf;Herzen, seinem Aus-&lf;gangspunkt, zurück. Fig. 28 @I. ® &lf;Produktiv Rezeptiv &lf;Mitfh&gt;^ ) •as Werk &lf;π ω Γ j j &lf; W rC&lf;Í ..Stein auf &lf;Stein&quot; &lf;((Addition &lf;oder &lf;vom Block: &lf;Stück von &lf;Stück&quot; &lf;(Subtraktion) &lf;Die beiden &lf;Vorgänge, das &lf;Baue n und &lf;jfeîd &lf;das Behauen, &lf;ftol &lf;spielen sich in &lf;Fig. 29 &lf;der Zeit ab. &lf;Schon im Anfang der produktiven Handlung, kurz nach der initialen Pro-&lf;duktivbewegung, setzt schon die erste Gegenbewegung ein, die initiale &lf;Rezeptivbewegung. Das heiftt: der &lf;Schaffende kontrolliert, was er bis &lf;dahin schuf, ob es gut so war. &lf;Das Werk als menschliche Handlung (Genesis) ist, sowohl produktiv &lf;als rezeptiv: Bewegung. Rezeptiv liegt es a n der Begren-&lf;Produktiv liegt es an der manu- zung des aufnehmenden Auges, &lf;eilen Begrenzung des Schaffen- Die Begrenzung des Auges ist die &lf;den (er hat nur zwei Hände). Unmöglichkeit, eine auch ganz &lf;klein gemessene Fläche zu glei-&lf;eher Zeit scharf zu sehen. Da s &lf;Aug e muf3 die Fläche abgrasen, &lf;eine Partie nach der anderen ab-&lf;grasend schärfen, eine nach der &lf;anderen dem Gehirn In Erinnerung &lf;geben, welches die Eindrücke &lf;sammelt und aufspeichert. &lf;Das Auge begeht die ihm im Werk eingerichteten Wege. @@Dimensionen &lf;Fig. 30 Dimension: Links (rechts) &lf;2. Dimension: Oben (unten) &lf;3. Dimension: Vorn (hinten) @Zweidimensional : &lf;a) Zwei parallele Linien, wen n das Auge sie recht-&lf;winklig trifft: &lf;b) Eisenbahnschienen, wenn das Auge sie recht-&lf;winklig trifft: &lf;, &lf;c) Zwei parallele Linien bei abweichendem &lf;Gesichtswinkel: &lf;Fig. 31 &lf;Die dritte d) Fig.32: Eisenbahnschienen, seitwärts gesehen, &lf;Dimension &lf;mit Schwellen als Maßsta b für di e perspek-&lf;dem Schein &lf;tivische Progression von hinten nach vorn: &lf;nach hinzu-&lf;gezogen. &lf;Fig. 33 @ΙΙ.ΘΘ &lf;Operation in drei Dimensionen (Fig. 34): &lf;Θ &lf;Fig. 34 &lf;Die Senkrechte. &lf;Θ &lf;Fig. 35 : Eisenbahnschienen frontal gesehen, eine &lf;ferne und eine nahe Schwelle gleichartig &lf;geteilt. &lf;Fig. 36 : Die perspektivische Progression durchLinien &lf;in der Richtung der Schienen veran-&lf;schaulicht, mit Betonung des frontalen Lotes &lf;(Senkrechte zu den Schwellen). &lf;Fig. 35 Fig. 36 @II.® &lf;Die Senkrechte (Fortsetzung). &lf;Wandernde Senkrechte bei iinks-rechtsbewegiichem Subjekt. &lf;Fig. 37 : Nach links verschobener Standpunkt des Subjekts. &lf;Fig. 38 : Nach rechts verschobener Standpunkt. &lf;Fig. 37 Fig. 38 &lf;Die Senkrechte bedeutet den rechten Weg auf der Fläche. @Die Wagrechte bedeutet das Höhenmai3 des Subjekts. &lf;Diese Verbindung aller auf Augenhöhe liegender Punkte des Raumes &lf;heilet Augenlinie. @Beweis der Aussage über die Wagrechte. &lf;Fig. 41 &lf;Fig. 41: Der eingebaute Raum ge-&lf;Fig. 42 : Diese r eingebaut e Rau m ge-&lf;währt dem Subjekt einen Aufblick &lf;währ t dem Subjekt eine Untersicht &lf;auf seine obere Fläche, also liegt &lf;unter seine obere Fläche, also liegt &lf;dies e Fläch e unter seine m Augen-&lf;hier diese Fläche über seinem &lf;punkt. In der Tat befindet sich die &lf;Augenpunkt . In der Tat befindet &lf;Horizontale oberhalb. &lf;sich die Horizontale unterhalb. &lf;Fig. 43 &lf;Fig. 43 : In diese m Falle aber erkennt das Auge die obere Fläche weder &lf;von oben, noch vo n unten als solche.sonder n sieerscheintals wagrechte &lf;Linie. Also liegt sie genau in Augenhöhe. In der Tat fällt diese Linie &lf;der oberen Fläche mit der Horizontalen zusammen. @[20] Nochmals die Senkrechte. &lf;Warum ist Fig. 4 4 als Bild einer &lf;senkrechten Hauswan d falsch? &lf;Es ist nicht logisch falsch; &lf;denn die unteren Fensterbreiten &lf;sind dem Auge näher als die &lf;oberen Fensterbreiten, wa s per-&lf;spektivisch größer&quot; bedeutet. &lf;Als Darstellung eines Bodens &lf;würde diese Perspektive glatt &lf;akzeptiert. &lf;Dieses Bild ist also nicht &lf;logisch falsch, sondern &lf;psychologisch falsch ! Fig. 44 &lf;Weil das Animal im Interess e &lf;seines Gleichgewichtes sämtliche Senkrechten der Wirklichkeit auch &lf;projiziert als Senkrechte sehen will. &lf;Fig. 45 Fig. 46 &lf;Der Seiltänzer mit seiner Balan- Wagrecht: Der Horizont &lf;cierstange. Wagrecht: Der Hori- als Vorstellung, &lf;zont als Erscheinung. &lf;Die Senkrechte bedeutet den geraden Weg und die auf-&lf;rechte Haltung oder den Stand des Animals, die Wagrechte &lf;bedeutet seine Höhe, seinen Horizont. Beide sind ganz dies-&lf;seitige, statische Angelegenheit. @Der Seiltänzer kümmert sich gesteigert um sein &lf;Gleichgewicht. Er wägt die Schwerkraft hüben &lf;und drüben. Er ist Wage. &lf;Der Geist der Wage ist Kreuzung von lotrecht und &lf;wagrecht. &lf;Störun g des Gleichgewichtes und ihr Effekt. &lf;Korrektur durch Gegenbelastung und ihr Gegen-&lf;effekt. &lf;Kombinatio n beider Effekte oder Diagonalkreuz &lf;(symmetrisches Gleichgewicht als Wiederher &lf;Stellung). @[231 Nicht symmetrisches Gleichgewicht &lf;(Symbol:) &lf;1•* + &lf;Í/ÍU İ ,Ah &lf;1*t &lf;Fig. 4-8 &lf;Wiederhergestelltes &lf;Gestörtes &lf;Gleichgewicht. &lf;Gleichgewicht. &lf;a) Maß: &lf;sr^y &lf;J«*»?!? cUnxit &lf;Attt &lf;b) Gewicht: &lf;not U &lf;not &lf;Y / &lf;c) Charakter: &lf;/ i » &lf;f * @ΙΙ.θ &lf;Gestaltungs-Schemata zu 23• &lf;θ &lf;Fig. 50a : Die durch das schwerere Dunkel überlastete Achse &lf;Α Β hat sich von a nach A gesenkt und von b nach Β &lf;gehoben. Ursprünglich lag sie auf der Horizontalen ab. Den &lf;beiden Achsen a b und A B ist der Punkt c gemeinsam: als &lf;Drehpunkt. Infolge der Drehung steht links dunkel tiefer als &lf;rechts hell. Nun tritt rechts zum Ausgleich schwarz hinzu. &lf;Oder: Ich bin nach links ins Schwanken geraten, habe rechts &lf;mit der Hand ausgegriffen, um nicht zu fallen. &lf;Fig. 50b : Mein Oberkörper ist z u schwer , die Vertikale legt &lf;sich nach links und ich falle, wenn links unten nicht recht-&lf;zeitig die Korrektur eintritt und die Basis gebreitet wird durch &lf;das Ausgreifen mit dem linken Bein. @5] Turmbau. &lf;Fig. 51: Auf dem Grundstein steht &lf;der Stein I. Dieser stört das Gleich-&lf;gewicht nach links. Zu m Ausgleich &lf;und zu neuer Störung nach rechts &lf;tritt der Stein II hinzu. In diesem &lf;Sinne folgt der Stein III. nach links &lf;ziehend, der Stein IV, wieder aus-&lf;gleichend und nach rechts störend, &lf;usw., bis endlich der Schlußstein &lf;die Gleichgewichts-Verhältnisse &lf;definitiv in Ordnung bringt. &lf;Fig. 51 &lf;Fig. 52: C!, C , C usw. sind die &lf;2 3&lf;Drehpunkte der kippenden Steine, &lf;welche linear verbunde n eine Zick-&lf;zackform ergeben, welche die &lf;Vertikalachse umspielt. @@Symbole des statischen Gebietes sind Lot (Stand) und Wage. Das &lf;Lot richtet sich nach dem Erdmittelpunkt, wo das irdisch-gebundene &lf;Schicksal verknüpft ist. &lf;Es gibt aber Regionen mit anderen Gesetzen und neuen Symbolen, &lf;gelösterer Bewegung und beweglicherer Ortlichkeit entsprechend. &lf;Als Zwischenreich mögen Wasser und Atmosphäre gelten. @2 7 28 29 &lf;28) ERDE (Berg). &lf;27 1 LUFT. &lf;Fig. 54 : Ein steil ab-&lf;Fig. 55 &lf;gefeuertes Geschoß &lf;steigt mit abnehmen-&lf;derEnergie in dieLuft, &lf;wendet, undfälltmit &lf;zunehmende r Ener-&lf;gie zur Erde zurück. &lf;(Lose Gliederung.) &lf;Fig. 54 &lf;Fig. 55 : Ein Treppen-&lf;Steiger, mit stufen-&lf;weise gesteigerter &lf;Anstrengung empor-&lf;steigend. &lf;(Feste Gliederung.) &lf;(29 ) WASSER . &lf;Fig. 53 &lf;Die Beinstöße eines Schwimmers, ein Rhythmus mit loser Gliederung. @3 0 (31 )(32 ) &lf;[30 ) ERDE (Berg) und &lf;W LUFT kombiniert. &lf;-Wr » &lf;&apos; :* ^βα&amp;τΤΟΜ &lf;Ein Freiballon tritt steigend von einer &lf;&amp; V ý!íl-^·uicrTCiwj) &lf;warme n in eine kühle Luftschicht, &lf;dan n wieder in eine wärmere un d &lf;endlich in eine ganz warme. &lf;(Lose Gliederung). &lf;Fig. 57 &lf;Kosmisch und atmo-&lf;sphärisch kombiniert. &lf;Ein Stein fällt, sprungweise ge-&lf;steigert, einen steilen Hang &lf;hinunter. &lf;(Gliederung teils fest,teils lose.) &lf;Fig. 59 : Ein Meteor beschreibt &lf;seine Bahn, wird In Erdnähe &lf;geführt, aus seiner Bahn ab -&lf;gelenkt, zum Schneiden der &lf;!Erdatmosphäre veranlaßt; ent-&lf;Fig. 59 &lf;geht als erglühende Stern-&lf;schnuppe gerade noch der Ge-&lf;fahr, an der Erde für immer haften zu müssen, und zieht, im luftleeren &lf;Raum erkaltend und erlöschend, weiter dahin. &lf;(Lose Gliederung). &lf;39 &lf;İ — @@Symbole der Bewegungsformung. &lf;{33} Der Kreisel. &lf;Nimmt man von der stehenden Wage aie irdische Stütze bis auf einen &lf;Punkt weg, so wird sie, auch bei der feinsten Verteilung der Gewichte &lf;schwanken und fallen (Fig. 60): &lf;In horizontal &lf;dreh en d e Schwing-&lf;bewegung ge-&lf;bracht, wird dieses &lf;Spielzeug vor dem &lf;Fallen bewahrt. &lf;Und wir haben den &lf;Kreisel vor uns. &lf;(Fig. 61). &lf;Fig. 60 &lf;Der Doppel - Kreisel tanzt sogar &lf;auf der gespannten Schnur ohne &lf;zu fallen (Fig. 62). @34 &lf;341 Das Pendel. &lf;wird durch Hin- und &lf;Aus dem Lot: &lf;Herschwingen das &lf;Pendel, &lf;Fig. 63 &lf;Fig. 63 a &lf;au s Bewegung und Gegenbewegung des Pendels &lf;entsteht der Bewegungsausgleich (Fig. 64), &lf;bei festem &lf;oder die Pendelbewegungsform &lf;Führungspunkt (Fig. 65). &lf;Fig• 64 Fig. 63 @3S ) (36) &lf;35 || Der Kreis. &lf;Die letztere Bewegungsform kann erweitert werden durch eine bewegte &lf;Führung des Pendels.Der zu beobachtendeSinn solcherWanderform des &lf;Führungspunktes überträgt sich auch auf die erweiterten Bewegungs-&lf;formen. &lf;Die reinste Bewegungsform, die kosmische, entsteht ab r erst durch die &lf;Aufhebung der Schwerkraft. (Durch den Wegfall irdischerGebundenheit.) &lf;Mitten in einem Pendelschwunge &lf;(Fig.66) sei dies Ereignis gedacht. &lf;Und das Pendel wird im Kreis &lf;herumschwingen, welcher die &lf;reinste der bewegten Formen ist. &lf;Es fällt die Notwendigkeit einer &lf;Hin- und Herbewegung weg: die &lf;neue Form (Fig. 66a ) bleibt die-&lf;selbe, ob rechts-oder linksherum &lf;geschlagen. &lf;Fig. 66 a &lf;Fig. 66 &lf;[36) Die Spirale. &lf;Beweglichkeit der Radiuslänge mit der peripheralen Bewegung kom-&lf;biniert, bildet den Kreis in die Spirale um. Aus der Radiusverlängerung &lf;erfolgt die lebendig e Spirale. Die Radiusverkürzun g verengt de n &lf;Umschwung mehr und mehr, bis das schöne Schauspiel im Punkte &lf;ruckartig stirbt; die Bewegung ist hier nicht mehr unendlich, so daß die &lf;Frage nach der Richtung an &lf;Bedeutung wieder gewinnt. Si e &lf;gibt den Ausschla g entweder über er&amp;eér , oér &lf;ein Sichloslösen vom Zentrum in &lf;immer freiere Bewegung oder &lf;über ein sich steigerndes Ge-&lf;bundensein an ein schließlich &lf;vernichtendes Zentrum. &lf;Diese Frage heißt Leben oderTod. &lf;und die Entscheidun g hierüber &lf;liegt an dem kleinen Pfeil (Fig.67). Fig. 67 @3 7 38 &lf;371 Der Pfeil. &lf;Der Vater des Pfeils ist der Gedanke: wie erweitere ich meine Reich-&lf;weite dorthin? über diesen Fluß, diesen See, jenen Berg! &lf;Die ideelle Fähigkeit des Menschen , Irdisches und überirdisches beliebig &lf;zu durchmessen, ist im Gegensatz zu seiner physischen Ohnmacht &lf;der Ursprung der menschlichen Tragik. Dieser Widerstreit von Macht &lf;und Ohnmacht ist Zwiespältigkeit &lf;menschlichen Seins. Halb Beflügel-&lf;ter, halb Gefangener ist cer Mensch. &lf;Fig. 68 &lf;Der Gedanke als Medium zwischen &lf;Erde und Welt. Je weiter die Reise, &lf;desto empfindlicher die Tragik. &lf;Bewegung werden zu müssen und &lf;nicht schon zu sein! &lf;Fig. 69 &lf;Der Verlau f entspricht. Wie überwin-&lf;detderPfeil die reibendeHemmung? &lf;Nie ganz dorthin zu gelangen, wo Bewegung ohne Ende! &lf;Die Erkenntnis, daß da. wo ein Anfang, nie eine Unendlichkeit. &lf;Trost: Ein wenig weiter als üblich! als möglich? &lf;Laßt euch beflügeln, ihr Pfeile, damit ihr trefft und mündet, wenn ihr &lf;auc h ermüden und nicht münden werdet. &lf;[38) Der wirkliche Pfeil besteht aus Schaft &lf;Spitze &lf;und Steuer &lf;Der symbolische Pfeil ist Bahn &lf;und Spitze &lf;und Steuer &lf;Fig.70 &lf;vereint &lf;als Spitzensteuer. &lf;Gleiche Längen der Spitzensteuer &lf;und gleiche Winkelabstände von der &lf;Bah n ergeben eine gerade Bahn. &lf;(Fig. 71 a = b; a = ß.) &lf;Fig. 71 @(DER PFEIL.) &lf;Ungleiche Längen und ungleiche Winkelabstände der Spitzensteuer &lf;ergeben eine nach oben oder nach unten abgebogene Bahn (Fig. 72). &lf;Je kräftiger das Steigesteuer, &lf;desto höher der Anstieg. &lf;Je kräftiger das Fallsteuer, &lf;desto tiefer der Fall. @Fig.74: 1 der irdischen Wirk-&lf;lichkeit folgt auf den Anstieg &lf;immer der Abfall, wenn die &lf;Anziehungskraft der Erde &lf;bei langsamerer Bahn das &lf;Steigesteuer mehr und mehr &lf;überholt. So endet die irdi-&lf;sehe Kurve als Gerade (theo-&lf;retisch im Erdmittelpunkt). &lf;Im Gegensatz zu Fig. 74 &lf;würde sich die kosmische &lf;Kurve als schließlich un-&lf;endliche Bewegung von der &lf;Erde mehr und mehr ent-&lf;fernen und dann in de n Kreis &lf;oder zum mindesten in die &lf;Ellipse übergehen. @m &lf;[40] Gestaltung &lf;Pfeils (F &lf;Fig. 76 &lf;néiss &lf;Sie besteht in de r gesteigerten Energieentwicklung aus gegebenem &lf;oder zuständlichem oder gegenwärtigem Weiß nach eintretend handeln-&lf;dem oder zukünftigem Schwarz hin. Warum nicht umgekehrt? Antwort: &lf;es liegt der Akzent auf der minoren Besonderheit gegenüber der &lf;majoren Allgemeinheit. Letztere wirkt zuständlich, gewohnt, erstere un-&lf;gewohnt, handelnd. Und der Pfeil fliegt in der Richtung der Handlung. &lf;Bei wohlgeordneter Gliederung in beid e Charaktere manifestiert sich &lf;die Bewegungsrichtung so zwingend , daß das verfängliche Symbol &lf;wegfallen darf. &lf;Das Weißgegebene, das viel- und sattgesehene Weiß, wird als ein Ge-&lf;wohntes vom Auge mit wenig Akklamation aufgenommen: auf das &lf;gegensätzlich Besondere der eintretenden Handlung hin aber steigert &lf;sich die Lebendigkeit des Blickes bis zum Gipfel oder zum Ende &lf;dieser Handlung. &lf;Dieses außerordentliche Anwachsen von Energie (Im produktiven &lf;Sinne) oder von Energiekost (im rezeptiven Sinne) ist zwingen d in &lf;bezug auf die Bewegungsrichtung. @40 &lf;,t :má &lf;Der schwarze Rfeil. Fig. 77 a &lf;(Gestaltungs-&lf;schemata). &lf;qeqeéAi&amp;ČBotjté Fig. 77 b &lf;Der rote Pfeil. &lf;Fig. 77 c &lf;Der heige Pfeil. &lf;Erhitzungspfeil &lf;von Heizung &lf;zu Entflammung. &lf;Fig. 77 d &lf;Der kalte Pfeil. CjtygutOwuŁ &lf;V&quot; I( ÍÍÍ91 &lf;Löschung &lf;eines Brandes. &lf;Fig. 78 &lf;Der grün-rote Pfeil &lf;farbig. &lf;Fig. 79 &lf;Der rot-grüne Pfeil &lf;farbig. @41 ) 42 &lf;-í.J\nt. ^&quot;&quot; &lf;- Hiau. lut &lf;Θ &lf;vm, w &lf;ν**. Οία nuc &lf;Flg Flg Flg Flg.... 8 8 8 8 0 0 0 0 &lf;Tabelle der &lf;vn. Vulttt &lf;y. αΜ &lf;farbigen Heizung &lf;ť V &lf;0&gt;\ &lf;(hauptsächlich blau-orange). &lf;ju •(tla-u. &lf;Flg. 81 &lf;Tabelle der &lf;farbigen Kühlung &lf;y. in oSttb. &lf;(hauptsächlich orange-blau). &lf;Der Bewegungs-Organismus• &lf;Θ &lf;Die vorangehenden Schemata (Fig. 76—81) sind Vorschläge für die &lf;Gestaltung der Bewegungsorgane der Komposition. Die Komposition &lf;selber: der Bewegungs-Organismu s ist ei n höhere r Begriff und erfordert &lf;eine Anlage von höhere r Entwicklung. Als Norm für dies e Komposition &lf;möge gelten: ein Zusammenwirke n der Organ e zu einem in sich selb-&lf;ständigen, ruhigbewegten oder bewegtruhigen Ganzen. Diese Kom-&lf;position kann sich erst dann vollenden, wenn zu de n Bewegungen &lf;Gegenbewegungen kommen, oder wenn eine bewegungsunendliche &lf;Lösung sich findet. (Zum ersten Falle Fig. 82.0Sieh e auch Fig. 65. ) @Zur unendlichen Bewegung übergehend, wo die Bewegungsrichtung &lf;belanglos wird, lasse ich also zunächst den Pfeil weg. Dadurch ver-&lf;einigen sich z.B. die Fälle Erhitzung und Abkühlung. Das Pathos (die &lf;Tragik) verwandelt sich in ein Ethos, welches Kraft und Gegenkraft &lf;geeinigt in sich begreift. &lf;Zunächs t Bewegung und Gegenbewegung, so —» oder so. &lf;Dabei bereitet sich ein Zentrum, das zentrale Grau (Fig. 83). &lf;Je reiner die Darstellung des Grau, desto enger sein Bereich, theo-&lf;retisch bis zum Punkte eng. &lf;Links vom Graupunkt überwiegt schon grün, rechts, dicht beim Punkte, &lf;schon rot. Infolgedessen könnte man sich zu folgender Darstellung &lf;(Fig. 85 ) versucht fühlen. &lf;S O &lf;m @ι &lf;Flg. 85 F&quot;9- Θ6 &lf;Es ist indessen nicht logisch, die Schritte grünrot und violettgelb zum &lf;blauorange Schritt in einen Gegensatz zu bringen (Fig. 85). also ist die &lf;diagonale Darstellung der äußeren Skalen geboten (Fig. 86). @» &lf;•: ••}••• • eeram &lf;— @IM ALBER T LANGEN VERLAG MÜNCHEN &lf;ERSCHEINE N SERIENWEISE DIE &lf;BAUHAUSBÜCHE R &lf;Schriftleitung: GROPIUS und MOHOLY-NAGY &lf;DIE ERSTE SERIE BESTEHT AUS 8 BÄNDEN &lf;1 INTERNATIONALE ARCHITEKTUR von WALTER GROPIUS &lf;1&lf;2 PÄDAGOGISCHES SKIZZENBUCH von PAUL KLEE &lf;3 EIN VERSUCHSHAUS DES BAUHAUSES &lf;4 DIE BÜHNE IM BAUHAUS &lf;5 NEUE GESTALTUNG von PIET MONDRIAN (Holland) &lf;6 GRUNDBEGRIFFE DER NEUEN KUNST von THEO VAN DOESBURG (Holland) &lf;7 NEUE ARBEITEN DER BAUHAUSWERKSTÄTTEN &lf;8 MALEREI, PHOTOGRAPHIE, FILM von L. MOHOLY-NAGY &lf;IN VORBEREITUNG: &lf;KLEINWOHNUNGEN von DER ARCHITEKTURABTEILUNG DES BAUHAUSES &lf;MERZ-BUCH von KURT SCHWITTERS &lf;BILDERMAGAZIN DER ZEIT von OSKAR SCHLEMMER &lf;SCHÖPFERISCHE MUSIKERZIEHUNG von HEINRICH JACOBY &lf;AMERIKA? —EUROPA? von GEORG MUCHE &lf;DIE ARBEIT DER STIJL-GRUPPE von THEO VAN DOESBURG &lf;KONSTRUKTIVE BIOLOGIE von MARTIN SCHÄFER &lf;DIE HOLLÄNDISCHE ARCHITEKTUR von J. J. P. OUD (Holland) &lf;FUTURISMUS von F.T. MARINETTI und E. PRAMPOLINI ^Italien) &lf;DIE ARBEIT DER ΜΑ-GRUPPE von L. KASSÁK und E. KALLAI (Ungarn) &lf;PLASTIK DER GESTALTUNGEN von M. BURCHARTZ &lf;PUNKT, LINIE, FLÄCHE von WASSILY KANDINSKY &lf;RUSSLAND von ADOLF BEHNE &lf;REKLAME UND TYPOGRAPHIE &lf;NEUE ARCHITEKTURDARSTELLUNG von WALTER GROPIUS &lf;BILDNERISCHE MECHANIK von PAUL KLEE &lf;WERKARBEIT DER GESTALTUNGEN von L. MOHOLY-NAGY &lf;ARCHITEKTUR, MALEREI, PLASTIK aus den WERKSTATTEN DES BAUHAUSES &lf;DIE NEUEN MATERIALIEN von ADOLF MEYER &lf;ARCHITEKTUR von LE CORBUSIER-SAUGNIER (Frankreich) &lf;BILDERMAGAZIN DER ZEIT II von JOOST SCHMIDT &lf;VIOLETT (BÜHNENSTÜCK MIT EINLEITUNG UND SZENERIE) von KANDINSKY &lf;Jeder Band enthält zirka 16 bis 32 Seiten Text und 32 bis 96 ganzseitige &lf;Abbildungen oder 48 bis 60 Seiten Text · Format 18x23 cm · @@@@@@|">
+   </PIN>
+   <PIN pinname="Caps Mode" slicecount="1" visible="1" values="LowerCase">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="93">
+   <BOUNDS type="Box" left="10320" top="13470" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10320" top="13470" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Left">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Center">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="93" srcpinname="Output Enum" dstnodeid="71" dstpinname="Horizontal Align">
+   </LINK>
+   <NODE nodename="CDR (String)" id="95">
+   <BOUNDS type="Node" left="4275" top="11580" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Remainder" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="73" srcpinname="Output" dstnodeid="95" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="95" srcpinname="Remainder" dstnodeid="78" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="43" srcpinname="Y Output Value" dstnodeid="78" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="27" srcpinname="Output" dstnodeid="91" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="54" srcpinname="Output" dstnodeid="27" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Output" dstnodeid="39" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Output" dstnodeid="40" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Output" dstnodeid="35" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="96">
+   <BOUNDS type="Box" left="9330" top="4620" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="9330" top="4620" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="LowerCase">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Caps Mode|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="96" srcpinname="Output Enum" dstnodeid="91" dstpinname="Caps Mode">
+   <LINKPOINT x="7508" y="5347">
+   </LINKPOINT>
+   </LINK>
+   <NODE systemname="Renderer (DX11)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Renderer (DX11)" componentmode="InABox" id="98">
+   <BOUNDS type="Node" left="7770" top="14550" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7770" top="14550" width="3045" height="2100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="33510" top="4725" width="11070" height="7395">
+   </BOUNDS>
+   <PIN pinname="Layers" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="text">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="71" srcpinname="Layer" dstnodeid="98" dstpinname="Layers">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="99">
+   <BOUNDS type="Node" left="690" top="1440" width="2910" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="690" top="1440" width="2910" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|read a simple pdf file to avoid red node|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   </PATCH>

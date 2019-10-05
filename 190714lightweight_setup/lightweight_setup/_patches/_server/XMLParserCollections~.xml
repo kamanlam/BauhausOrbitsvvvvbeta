@@ -1,0 +1,929 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="C:\Users\kman\Desktop\lightweight_setup\_patches\_server\XMLParserCollections.v4p" systemname="XMLParserCollections" filename="C:\Users\kman\Desktop\lightweight_setup\_patches\_server\XMLParserCollections.v4p" scrollx="1308" scrolly="1920">
+   <BOUNDS type="Window" left="3456" top="3300" width="16248" height="8988">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="dx11.particles" Version="1.0.6">
+   </PACK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <NODE systemname="Reader (String)" filename="%VVVV%\lib\nodes\modules\String\Reader (String).v4p" nodename="Reader (String)" componentmode="Hidden" id="42">
+   <BOUNDS type="Node" left="11856" top="1560" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" slicecount="1" visible="1" values="..\..\server\kmani\kmani\ldaTopics20and2commonsorted.xml">
+   </PIN>
+   <PIN pinname="Read" visible="1">
+   </PIN>
+   <PIN pinname="Content" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="43" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="14772" top="1296" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="14772" top="1296" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="44" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="10908" top="780" width="4140" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10908" top="780" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\server\kmani\allsentences_model.xml">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="file.txt">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Text Formats (*.csv, *.dtd, *.html, *.txt, *.xml)||*.csv;*.dtd;*.html;*.htm;*.txt;*.xml||Text (*.txt)||*.txt||XML (*.xml)||*.xml||CSV (*.csv)||*.csv||DTD (*.dtd)||*.dtd||HTML (*.html, *.htm)||*.html;*.htm|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="44" srcpinname="Output String" dstnodeid="42" dstpinname="Filename">
+   </LINK>
+   <NODE systemname="XPath (XML)" nodename="XPath (XML)" componentmode="Hidden" id="47">
+   <BOUNDS type="Node" left="12684" top="2472" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XPath Query" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Base Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="XML Input" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="49">
+   <BOUNDS type="Node" left="12636" top="1164" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="44" srcpinname="Output String" dstnodeid="49" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="49" srcpinname="OnChange" dstnodeid="42" dstpinname="Read">
+   </LINK>
+   <LINK srcnodeid="42" srcpinname="Content" dstnodeid="47" dstpinname="XML Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="50" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="13068" top="1968" width="2292" height="288">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13068" top="1968" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="//text">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="50" srcpinname="Output String" dstnodeid="47" dstpinname="XPath Query">
+   </LINK>
+   <NODE systemname="Reader (String)" filename="%VVVV%\lib\nodes\modules\String\Reader (String).v4p" nodename="Reader (String)" componentmode="Hidden" id="57">
+   <BOUNDS type="Node" left="2616" top="1584" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" slicecount="1" visible="1" values="..\..\server\kmani\kmani\ldaTopics20and2commonsorted.xml">
+   </PIN>
+   <PIN pinname="Read" visible="1">
+   </PIN>
+   <PIN pinname="Content" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="56" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5532" top="1320" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5532" top="1320" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="55" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1668" top="804" width="4140" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1668" top="804" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\server\kmani\all.xml">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="file.txt">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Text Formats (*.csv, *.dtd, *.html, *.txt, *.xml)||*.csv;*.dtd;*.html;*.htm;*.txt;*.xml||Text (*.txt)||*.txt||XML (*.xml)||*.xml||CSV (*.csv)||*.csv||DTD (*.dtd)||*.dtd||HTML (*.html, *.htm)||*.html;*.htm|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="55" srcpinname="Output String" dstnodeid="57" dstpinname="Filename">
+   </LINK>
+   <NODE systemname="XPath (XML)" nodename="XPath (XML)" componentmode="Hidden" id="54">
+   <BOUNDS type="Node" left="2520" top="2712" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XPath Query" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Base Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="XML Input" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="53">
+   <BOUNDS type="Node" left="3396" top="1188" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="55" srcpinname="Output String" dstnodeid="53" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="53" srcpinname="OnChange" dstnodeid="57" dstpinname="Read">
+   </LINK>
+   <LINK srcnodeid="57" srcpinname="Content" dstnodeid="54" dstpinname="XML Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="52" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2856" top="2268" width="2292" height="288">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2856" top="2268" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="//title">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="52" srcpinname="Output String" dstnodeid="54" dstpinname="XPath Query">
+   </LINK>
+   <NODE systemname="Reader (String)" filename="%VVVV%\lib\nodes\modules\String\Reader (String).v4p" nodename="Reader (String)" componentmode="Hidden" id="63">
+   <BOUNDS type="Node" left="7224" top="1536" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" slicecount="1" visible="1" values="..\..\server\kmani\kmani\ldaTopics20and2commonsorted.xml">
+   </PIN>
+   <PIN pinname="Read" visible="1">
+   </PIN>
+   <PIN pinname="Content" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="62" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="10140" top="1272" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="10140" top="1272" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="61" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="6276" top="756" width="4140" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6276" top="756" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\server\kmani\all_pages_bookID20.xml">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="file.txt">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Text Formats (*.csv, *.dtd, *.html, *.txt, *.xml)||*.csv;*.dtd;*.html;*.htm;*.txt;*.xml||Text (*.txt)||*.txt||XML (*.xml)||*.xml||CSV (*.csv)||*.csv||DTD (*.dtd)||*.dtd||HTML (*.html, *.htm)||*.html;*.htm|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="61" srcpinname="Output String" dstnodeid="63" dstpinname="Filename">
+   </LINK>
+   <NODE systemname="XPath (XML)" nodename="XPath (XML)" componentmode="Hidden" id="60">
+   <BOUNDS type="Node" left="8052" top="2448" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XPath Query" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Base Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="XML Input" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="59">
+   <BOUNDS type="Node" left="8004" top="1140" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="61" srcpinname="Output String" dstnodeid="59" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="59" srcpinname="OnChange" dstnodeid="63" dstpinname="Read">
+   </LINK>
+   <LINK srcnodeid="63" srcpinname="Content" dstnodeid="60" dstpinname="XML Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="58" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="8436" top="1944" width="2292" height="288">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8436" top="1944" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="//item">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="58" srcpinname="Output String" dstnodeid="60" dstpinname="XPath Query">
+   </LINK>
+   <NODE systemname="Reader (String)" filename="%VVVV%\lib\nodes\modules\String\Reader (String).v4p" nodename="Reader (String)" componentmode="Hidden" id="69">
+   <BOUNDS type="Node" left="2172" top="6096" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" slicecount="1" visible="1" values="..\..\server\kmani\kmani\ldaTopics20and2commonsorted.xml">
+   </PIN>
+   <PIN pinname="Read" visible="1">
+   </PIN>
+   <PIN pinname="Content" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="67" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1224" top="5316" width="4140" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1224" top="5316" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\server\kmani\ldaTopics20and2.xml">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="file.txt">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Text Formats (*.csv, *.dtd, *.html, *.txt, *.xml)||*.csv;*.dtd;*.html;*.htm;*.txt;*.xml||Text (*.txt)||*.txt||XML (*.xml)||*.xml||CSV (*.csv)||*.csv||DTD (*.dtd)||*.dtd||HTML (*.html, *.htm)||*.html;*.htm|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="67" srcpinname="Output String" dstnodeid="69" dstpinname="Filename">
+   </LINK>
+   <NODE systemname="XPath (XML)" nodename="XPath (XML)" componentmode="Hidden" id="66">
+   <BOUNDS type="Node" left="1980" top="7236" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XPath Query" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Base Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="XML Input" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="65">
+   <BOUNDS type="Node" left="2952" top="5700" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="67" srcpinname="Output String" dstnodeid="65" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="65" srcpinname="OnChange" dstnodeid="69" dstpinname="Read">
+   </LINK>
+   <LINK srcnodeid="69" srcpinname="Content" dstnodeid="66" dstpinname="XML Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="64" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2364" top="6804" width="1296" height="300">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2364" top="6804" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="//word">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="64" srcpinname="Output String" dstnodeid="66" dstpinname="XPath Query">
+   </LINK>
+   <NODE systemname="Reader (String)" filename="%VVVV%\lib\nodes\modules\String\Reader (String).v4p" nodename="Reader (String)" componentmode="Hidden" id="75">
+   <BOUNDS type="Node" left="16752" top="1500" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" slicecount="1" visible="1" values="..\..\server\kmani\kmani\ldaTopics20and2commonsorted.xml">
+   </PIN>
+   <PIN pinname="Read" visible="1">
+   </PIN>
+   <PIN pinname="Content" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="74" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="19668" top="1236" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="19668" top="1236" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="73" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="15804" top="720" width="4140" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="15804" top="720" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\server\kmani\allsentences_model_sortedByYear.xml">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="file.txt">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Text Formats (*.csv, *.dtd, *.html, *.txt, *.xml)||*.csv;*.dtd;*.html;*.htm;*.txt;*.xml||Text (*.txt)||*.txt||XML (*.xml)||*.xml||CSV (*.csv)||*.csv||DTD (*.dtd)||*.dtd||HTML (*.html, *.htm)||*.html;*.htm|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="73" srcpinname="Output String" dstnodeid="75" dstpinname="Filename">
+   </LINK>
+   <NODE systemname="XPath (XML)" nodename="XPath (XML)" componentmode="Hidden" id="72">
+   <BOUNDS type="Node" left="17580" top="2412" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XPath Query" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Base Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="XML Input" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="71">
+   <BOUNDS type="Node" left="17532" top="1104" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="73" srcpinname="Output String" dstnodeid="71" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="71" srcpinname="OnChange" dstnodeid="75" dstpinname="Read">
+   </LINK>
+   <LINK srcnodeid="75" srcpinname="Content" dstnodeid="72" dstpinname="XML Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="70" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="17964" top="1908" width="2292" height="288">
+   </BOUNDS>
+   <BOUNDS type="Node" left="17964" top="1908" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="//text">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="70" srcpinname="Output String" dstnodeid="72" dstpinname="XPath Query">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="83" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="4488" top="6624" width="732" height="264">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4488" top="6624" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="//score">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="85" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1944" top="8112" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1944" top="8112" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="|&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;|">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="topic">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="66" srcpinname="Output" dstnodeid="85" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="86" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="4104" top="7884" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4104" top="7884" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="|&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;|">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="score">
+   </PIN>
+   <PIN pinname="Input String" slicecount="10" values="0.697,0.753,0.673,0.59,0.335,0.339,0.381,0.356,0.36,0.458">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="88">
+   <BOUNDS type="Node" left="384" top="1524" width="1836" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="384" top="1524" width="1872" height="504">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|all basic metadata of book|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE id="84" systemname="XPath (XML)" nodename="XPath (XML)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <PIN pinname="Output" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="XML Input" visible="1" pintype="Input" slicecount="1" values="|&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;|">
+   </PIN>
+   <BOUNDS type="Node" left="4104" top="7056" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XPath Query" visible="1" slicecount="1" pintype="Input" values="text">
+   </PIN>
+   <PIN pinname="Base Element" visible="1" slicecount="1" pintype="Input" values="||">
+   </PIN>
+   <PIN pinname="Output Pins" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Create Output Pins" pintype="Configuration" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Validate on Parse" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Resolve Externals" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="XML Index" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="Query Index" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="" pintype="Output">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="84" srcpinname="Output" dstnodeid="86" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="69" srcpinname="Content" dstnodeid="84" dstpinname="XML Input">
+   </LINK>
+   <LINK srcnodeid="83" srcpinname="Output String" dstnodeid="84" dstpinname="XPath Query">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="98" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2472" top="3432" width="1116" height="312">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2472" top="3432" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="|&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;|">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="54" srcpinname="Output" dstnodeid="98" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="99" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="7752" top="2916" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7752" top="2916" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="|&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;|">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="pageNumber">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="60" srcpinname="Output" dstnodeid="99" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="100" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="12168" top="3276" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="12168" top="3276" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="|&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;|">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="47" srcpinname="Output" dstnodeid="100" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="XPath (XML)" nodename="XPath (XML)" componentmode="Hidden" id="102">
+   <BOUNDS type="Node" left="13512" top="3048" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XPath Query" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Base Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="XML Input" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="42" srcpinname="Content" dstnodeid="102" dstpinname="XML Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="101" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="13896" top="2544" width="2292" height="288">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13896" top="2544" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="//page">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="101" srcpinname="Output String" dstnodeid="102" dstpinname="XPath Query">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="103" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="13596" top="3792" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="13596" top="3792" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="|&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;|">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="102" srcpinname="Output" dstnodeid="103" dstpinname="Input String">
+   </LINK>
+   <NODE systemname="Reader (String)" filename="%VVVV%\lib\nodes\modules\String\Reader (String).v4p" nodename="Reader (String)" componentmode="Hidden" id="112">
+   <BOUNDS type="Node" left="5928" top="6180" width="1536" height="276">
+   </BOUNDS>
+   <PIN pinname="Filename" slicecount="1" visible="1" values="..\..\server\kmani\kmani\ldaTopics20and2commonsorted.xml">
+   </PIN>
+   <PIN pinname="Read" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Content" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="5928" top="6180">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="111" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="5928" top="5292" width="4140" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5928" top="5292" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\server\kmani\Complex.xml">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="file.txt">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|All Text Formats (*.csv, *.dtd, *.html, *.txt, *.xml)||*.csv;*.dtd;*.html;*.htm;*.txt;*.xml||Text (*.txt)||*.txt||XML (*.xml)||*.xml||CSV (*.csv)||*.csv||DTD (*.dtd)||*.dtd||HTML (*.html, *.htm)||*.html;*.htm|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="111" srcpinname="Output String" dstnodeid="112" dstpinname="Filename">
+   </LINK>
+   <NODE systemname="XPath (XML)" nodename="XPath (XML)" componentmode="Hidden" id="110">
+   <BOUNDS type="Node" left="5928" top="7644" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XPath Query" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Base Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="XML Input" visible="1">
+   </PIN>
+   <PIN pinname="Validate on Parse" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="112" srcpinname="Content" dstnodeid="110" dstpinname="XML Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="106" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="5928" top="8136" width="888" height="372">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5928" top="8136" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="|&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;|">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="topic">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="110" srcpinname="Output" dstnodeid="106" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="113" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8676" top="5652" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8676" top="5652" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="113" srcpinname="Y Output Value" dstnodeid="112" dstpinname="Read">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="120" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="6564" top="7116" width="1020" height="288">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6564" top="7116" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|//topics/item |">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="121" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7908" top="6660" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7908" top="6660" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="121" srcpinname="Y Output Value" dstnodeid="110" dstpinname="Validate on Parse">
+   </LINK>
+   <LINK srcnodeid="120" srcpinname="Output String" dstnodeid="110" dstpinname="XPath Query">
+   </LINK>
+   <NODE nodename="AsXElement (XML)" componentmode="Hidden" id="139" systemname="AsXElement (XML)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll">
+   <BOUNDS type="Node" left="7080" top="9468" width="2010" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7080" top="9468" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="XML" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Element" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetElements (XElement ByXPath)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="GetElements (XElement ByXPath)" componentmode="Hidden" id="138">
+   <BOUNDS type="Node" left="7080" top="10488" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1">
+   </PIN>
+   <PIN pinname="Elements" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="7080" top="10488">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="139" srcpinname="Element" dstnodeid="138" dstpinname="Element">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="137" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="7533" top="10057" width="1110" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7533" top="10057" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="//topics">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="MyChildTag/MyChildsChildTag">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="137" srcpinname="Output String" dstnodeid="138" dstpinname="XPath">
+   </LINK>
+   <NODE systemname="Element (XElement Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XElement Split)" componentmode="Hidden" id="136">
+   <BOUNDS type="Node" left="7080" top="11112" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1">
+   </PIN>
+   <PIN pinname="Children Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Name" visible="1">
+   </PIN>
+   <PIN pinname="Children" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="7080" top="11112">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="138" srcpinname="Elements" dstnodeid="136" dstpinname="Element">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="140" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="8472" top="12324" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8472" top="12324" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Children Bin Size|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="136" srcpinname="Children Bin Size" dstnodeid="140" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="XQuery (XML)" filename="%VVVV%\addonpack\lib\nodes\plugins\XQueryNode.dll" nodename="XQuery (XML)" componentmode="Hidden" id="142">
+   <BOUNDS type="Node" left="7692" top="8820" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Alias" slicecount="1" values="doc.xml">
+   </PIN>
+   <PIN pinname="Query" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="143" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="8340" top="8388" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8340" top="8388" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|let $items := document(&quot;doc.xml&quot;)/sentencesWithTopics/item/topics&cr;&lf;let $count := count($items/item)&cr;&lf;return&cr;&lf;&lt;result&gt;&cr;&lf;   &lt;count&gt;{$count}&lt;/count&gt;&cr;&lf;   &cr;&lf;   &lt;items&gt;&cr;&lf;      {&cr;&lf;&tab;     for $item in $items&cr;&lf;         return &lt;item&gt;{$item}&lt;/item&gt;&cr;&lf;      }&cr;&lf;   &lt;/items&gt;&cr;&lf;   &cr;&lf;&lt;/result&gt;|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="143" srcpinname="Output String" dstnodeid="142" dstpinname="Query">
+   </LINK>
+   <LINK srcnodeid="112" srcpinname="Content" dstnodeid="142" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="142" srcpinname="Output" dstnodeid="139" dstpinname="XML">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="146">
+   <BOUNDS type="Node" left="5268" top="9552" width="1248" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5268" top="9552" width="1464" height="732">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|2838 topic items, 1001 sentences|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Element (XElement Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XElement Split)" componentmode="Hidden" id="149">
+   <BOUNDS type="Node" left="7080" top="11592" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Children Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Name" visible="1">
+   </PIN>
+   <PIN pinname="Children" visible="1">
+   </PIN>
+   <PIN pinname="Value" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="7080" top="11592">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="136" srcpinname="Children" dstnodeid="149" dstpinname="Element">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="150" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="7128" top="12432" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7128" top="12432" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Value">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="149" srcpinname="Value" dstnodeid="150" dstpinname="Input String">
+   </LINK>
+   </PATCH>

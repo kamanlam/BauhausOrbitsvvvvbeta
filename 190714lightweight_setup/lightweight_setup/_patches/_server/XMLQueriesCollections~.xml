@@ -1,0 +1,247 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="C:\Users\kman\Desktop\lightweight_setup\_patches\_server\XMLQueriesCollections.v4p" systemname="XMLQueriesCollections" filename="C:\Users\kman\Desktop\lightweight_setup\_patches\_server\XMLQueriesCollections.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="11292" top="3324" width="16248" height="8988">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="dx11.particles" Version="1.0.6">
+   </PACK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="196" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3030" top="5781" width="2730" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3030" top="5781" width="2790" height="975">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;- central node managing the tables&cr;&lf;can handle a spread of tables (to enable different layouts) stores them into a single xml|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="194" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3060" top="7131" width="2730" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3060" top="7131" width="2700" height="525">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|&lt;- gui for convenient manipulation&cr;&lf;supports drag&amp;drop, copy&amp;paste|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="183" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="2130" top="5376" width="690" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2130" top="5376" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Clear">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="214">
+   <BOUNDS type="Box" left="3696" top="5364" width="1716" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3696" top="5364" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="QueriesConstructor.xml">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="spreadtable.xml">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="|XML File (*.xml)||*.xml|">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="217">
+   <BOUNDS type="Box" left="1620" top="8664" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1620" top="8664" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Table">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="218">
+   <BOUNDS type="Box" left="8184" top="8052" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8184" top="8052" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="219">
+   <BOUNDS type="Box" left="2664" top="4344" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2664" top="4344" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Load">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (Node)" nodename="S (Node)" componentmode="Hidden" id="220">
+   <BOUNDS type="Node" left="2148" top="7968" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Send String" slicecount="1" values="QueriesConstructor">
+   </PIN>
+   <PIN pinname="Input Value" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="221">
+   <BOUNDS type="Box" left="3648" top="3900" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3648" top="3900" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Table (DataTable)" filename="..\plugins\DataTable V1.2 AnyCPU\plugins\Table.dll" nodename="Table (DataTable)" componentmode="Hidden" id="207">
+   <BOUNDS type="Node" left="1965" top="5796" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Commands" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Table" visible="1">
+   </PIN>
+   <PIN pinname="Clear" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Load" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Save" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="183" srcpinname="Y Output Value" dstnodeid="207" dstpinname="Clear">
+   </LINK>
+   <LINK srcnodeid="214" srcpinname="Output String" dstnodeid="207" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="207" srcpinname="Table" dstnodeid="217" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="219" srcpinname="Y Output Value" dstnodeid="207" dstpinname="Load">
+   </LINK>
+   <LINK srcnodeid="207" srcpinname="Table" dstnodeid="220" dstpinname="Input Value">
+   </LINK>
+   <LINK srcnodeid="221" srcpinname="Y Output Value" dstnodeid="207" dstpinname="Save">
+   </LINK>
+   <NODE systemname="TableView (DataTable)" filename="..\plugins\DataTable V1.2 AnyCPU\plugins\Table.dll" nodename="TableView (DataTable)" componentmode="Hidden" id="206">
+   <BOUNDS type="Node" left="1980" top="7131" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Table" visible="1" slicecount="1" values="||">
+   </PIN>
+   <BOUNDS type="Window" left="1884" top="3072" width="20364" height="4920">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1980" top="7131">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="207" srcpinname="Table" dstnodeid="206" dstpinname="Table">
+   </LINK>
+   <NODE systemname="InsertRow (DataTable Dynamic)" filename="..\plugins\DataTable V1.2 AnyCPU\plugins\Table.dll" nodename="InsertRow (DataTable Dynamic)" componentmode="Hidden" id="205">
+   <BOUNDS type="Node" left="6060" top="8712" width="2145" height="270">
+   </BOUNDS>
+   <PIN pinname="Table" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Name" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Type" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Insert" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="id" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="name" visible="1">
+   </PIN>
+   <PIN pinname="value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="218" srcpinname="Y Output Value" dstnodeid="205" dstpinname="Insert">
+   </LINK>
+   <NODE systemname="GetRow (DataTable Dynamic)" filename="..\plugins\DataTable V1.2 AnyCPU\plugins\Table.dll" nodename="GetRow (DataTable Dynamic)" componentmode="Hidden" id="197">
+   <BOUNDS type="Node" left="4545" top="8691" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Table" visible="1">
+   </PIN>
+   <PIN pinname="Name" slicecount="7" values="id,query,double,argument,xpath,xquery,xpath2">
+   </PIN>
+   <PIN pinname="Type" slicecount="7" values="System.Int32,System.String,System.Boolean,System.String,System.String,System.String,System.String">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="207" srcpinname="Table" dstnodeid="197" dstpinname="Table">
+   </LINK>
+   <NODE systemname="Info (DataTable)" filename="..\plugins\DataTable V1.2 AnyCPU\plugins\Table.dll" nodename="Info (DataTable)" componentmode="Hidden" id="189">
+   <BOUNDS type="Node" left="600" top="7131" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Table" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="600" top="7131">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="207" srcpinname="Table" dstnodeid="189" dstpinname="Table">
+   </LINK>
+   <NODE systemname="GetCell (DataTable Value)" filename="..\plugins\DataTable V1.2 AnyCPU\plugins\Table.dll" nodename="GetCell (DataTable Value)" componentmode="Hidden" id="188">
+   <BOUNDS type="Node" left="9630" top="8451" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9630" top="8451">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="GetColumn (DataTable Value)" filename="..\plugins\DataTable V1.2 AnyCPU\plugins\Table.dll" nodename="GetColumn (DataTable Value)" componentmode="Hidden" id="186">
+   <BOUNDS type="Node" left="5922" top="8295" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5922" top="8295">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="GetTable (DataTable Value)" filename="..\plugins\DataTable V1.2 AnyCPU\plugins\Table.dll" nodename="GetTable (DataTable Value)" componentmode="Hidden" id="185">
+   <BOUNDS type="Node" left="9594" top="7638" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="9594" top="7638">
+   </BOUNDS>
+   </NODE>
+   </PATCH>

@@ -1,0 +1,61 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190529 vvvv house of dome\_patches\_fx\_fxCollection.v4p" systemname="_fxCollection" filename="C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190529 vvvv house of dome\_patches\_render\_fxCollection.v4p">
+   <BOUNDS type="Window" left="23988" top="588" width="14220" height="13176">
+   </BOUNDS>
+   <NODE systemname="FXAA11 (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\FXAA11.tfx" nodename="FXAA11 (DX11.TextureFX)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="936" top="696" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="1">
+   <BOUNDS type="Node" left="2112" top="720" width="1224" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2112" top="720" width="1224" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|anti-alising filter|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <PACK Name="dx11" Version="1.3.1.1">
+   </PACK>
+   <PACK Name="dx11.particles" Version="1.0.6">
+   </PACK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <NODE systemname="2DLight (DX11.TextureFX)" filename="2DLight (DX11.Texture)\2DLight (DX11.TextureFX).v4p" nodename="2DLight (DX11.TextureFX)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="1128" top="2196" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="30300" top="3744" width="11544" height="6408">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="HighPass (DX11.TextureFX)" filename="Highpass\texture11\HighPass.tfx" nodename="HighPass (DX11.TextureFX)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="1116" top="1656" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="CrossStitching (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\CrossStitching.tfx" nodename="CrossStitching (DX11.TextureFX)" componentmode="Hidden" id="5">
+   <BOUNDS type="Node" left="1608" top="6780" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="HatchLine (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\HatchLine.tfx" nodename="HatchLine (DX11.TextureFX)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="1584" top="6120" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Slide (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Mixer\Slide.tfx" nodename="Slide (DX11.TextureFX)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="1416" top="2976" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Scanline (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\Scanline.tfx" nodename="Scanline (DX11.TextureFX)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="1608" top="6468" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="SetAlpha (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\SetAlpha.tfx" nodename="SetAlpha (DX11.TextureFX)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="2172" top="4260" width="100" height="100">
+   </BOUNDS>
+   </NODE>
+   </PATCH>

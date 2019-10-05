@@ -1,0 +1,245 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.12.dtd" >
+   <PATCH nodename="C:\Users\kman\Desktop\vvvv_deve\UI\Menu_touch.v4p" systemname="Menu_touch" filename="C:\Users\kman\Desktop\vvvv_deve\UI\Menu_touch.v4p">
+   <NODE systemname="TouchEvents (Touch Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="TouchEvents (Touch Split)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="2140" top="6220" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2140" top="6220" width="2000" height="2000">
+   </BOUNDS>
+   <PIN pinname="Touch Device" visible="1">
+   </PIN>
+   <PIN pinname="Event Type" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="Touch (Devices Window)" componentmode="Hidden" id="1" systemname="Touch (Devices Window)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll">
+   <BOUNDS type="Node" left="2140" top="4230" width="1830" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2140" top="4230" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Queue Mode" visible="1">
+   </PIN>
+   <PIN pinname="PositionXY" visible="1">
+   </PIN>
+   <PIN pinname="Device" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="2" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1500" top="3220" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1500" top="3220" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="3" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2140" top="3190" width="690" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2140" top="3190" width="690" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="Enabled">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="4" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="3100" top="1500" width="1890" height="795">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3100" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="None">
+   </PIN>
+   <PIN pinname="Style" slicecount="1" values="List">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="5" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="4000" top="2785" width="1035" height="645">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4000" top="2785" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" values="Discard">
+   </PIN>
+   <PIN pinname="Style" slicecount="1" values="List">
+   </PIN>
+   <PIN pinname="Output Enum" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="3970" top="2500" width="420" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3970" top="2500" width="960" height="255">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|Queue Mode|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="7" systemname="IOBox (Node)">
+   <BOUNDS type="Box" left="2140" top="5200" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2140" top="5200" width="0" height="0">
+   </BOUNDS>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="8" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4065" top="5215" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4065" top="5215" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <NODE componentmode="InABox" id="9" nodename="IOBOX (VALUE ADVANCED)" systemname="IOBox (Value Advanced)">
+   <BOUNDS height="0" left="3050" top="5125" type="Node" width="0">
+   </BOUNDS>
+   <BOUNDS height="160" left="7110" top="5040" type="Window" width="215">
+   </BOUNDS>
+   <BOUNDS height="465" left="3050" top="5125" type="Box" width="735">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" visible="1" slicecount="2" values="-0.143303804064617,-0.0975813177648039">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Size" slicecount="1" values="8">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" encoded="0" values="PositionXY">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="10" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2745" top="5500" width="405" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2745" top="5500" width="825" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="PositionXY">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="11" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="4035" top="5500" width="285" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4035" top="5500" width="285" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="Id">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="12" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="2140" top="5500" width="600" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2140" top="5500" width="600" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="Device">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="13" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="1770" top="7120" width="1170" height="1250">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1770" top="7120" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="TouchDown">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Style" slicecount="1" values="List">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Event Type|">
+   </PIN>
+   </NODE>
+   <NODE systemname="TouchStates (Touch Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="TouchStates (Touch Split)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="3320" top="6170" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3320" top="6170" width="2000" height="2000">
+   </BOUNDS>
+   <PIN pinname="Touch Device" visible="1">
+   </PIN>
+   <PIN pinname="PositionXY" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="3740" top="7180" width="800" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3740" top="7180" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="0" srcpinname="Event Type" dstnodeid="13" dstpinname="Input Enum">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Device" dstnodeid="0" dstpinname="Touch Device">
+   </LINK>
+   <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="1" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output Enum" dstnodeid="1" dstpinname="Mode">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output Enum" dstnodeid="1" dstpinname="Queue Mode">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Device" dstnodeid="7" dstpinname="Input Node">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="PositionXY" dstnodeid="9" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Device" dstnodeid="14" dstpinname="Touch Device">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="PositionXY" dstnodeid="15" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="Id" dstnodeid="8" dstpinname="Y Input Value">
+   </LINK>
+   <BOUNDS type="Window" left="-1" top="-1" width="5890" height="8680">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.0.3">
+   </PACK>
+   <PACK Name="Image" Version="0.2.0">
+   </PACK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <PACK Name="vvvv-Message (1)" Version="2.9.10">
+   </PACK>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.7">
+   </PACK>
+   <PACK Name="addonpack" Version="35.9.0">
+   </PACK>
+   </PATCH>

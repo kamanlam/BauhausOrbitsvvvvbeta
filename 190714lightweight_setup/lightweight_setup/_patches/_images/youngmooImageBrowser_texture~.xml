@@ -1,0 +1,299 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="C:\Users\kman\Desktop\lightweight_setup\_patches\_images\youngmooImageBrowser_texture.v4p" systemname="youngmooImageBrowser_texture" filename="C:\Users\kman\Desktop\lightweight_setup\_patches\_images\youngmooImageBrowser_texture.v4p" scrollx="1488" scrolly="0">
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="1" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="4272" top="4140" width="300" height="288">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4272" top="4140" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Is Valid|">
+   </PIN>
+   </NODE>
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="5040" top="5616" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Input 2" visible="1" slicecount="105" values="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="105" values="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1">
+   </PIN>
+   </NODE>
+   <NODE systemname="FileTexture (DX11 2d.Pooled)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d.Pooled)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="2628" top="3648" width="2568" height="276">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2628" top="3648" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Load In Background" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Filename" visible="1" slicecount="113" values="..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_100pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_101pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_102pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_103pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_104pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_105pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_106pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_107pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_108pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_109pg.dds,|..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_110pg .dds|,|..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_111pg .dds|,|..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_112pg .dds|,|..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_113pg .dds|,|..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_114pg .dds|,|..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_115pg(1) .dds|,|..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_115pg(2) .dds|,|..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_115pg(3) .dds|,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_116pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_117pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_118pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_118pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_119pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_119pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_120pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_120pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_121pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_121pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_124pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_124pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_125pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_125pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_125pg(3).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_125pg(4).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_125pg(5).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_126pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_126pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_126pg(3).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_127pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_128pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_128pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_129pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_129pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_129pg(3).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_130pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_130pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_130pg(3).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_130pg(4).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_131pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_131pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_131pg(3).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_131pg(4).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_132pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_133pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_133pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_133pg(3).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_135pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_136pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_136pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_136pg(3).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_137pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_42pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_48pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_49pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_50pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_51pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_52pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_53pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_54pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_55pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_56pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_57pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_58pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_59pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_60pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_61pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_62pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_63pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_64pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_65pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_66pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_67pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_67pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_67pg(3).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_68pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_69pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_70pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_71pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_72pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_73pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_74pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_75pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_76pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_77pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_78pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_79pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_83pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_84pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_85pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_86pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_87pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_88pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_89pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_90pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_91pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_92pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_93pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_94pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_95pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_96pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_97pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_98pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_99pg.dds">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Reload" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="SizeXY" visible="1">
+   </PIN>
+   <PIN pinname="Is Valid" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Count (Node)" nodename="Count (Node)" componentmode="Hidden" id="14">
+   <BOUNDS type="Node" left="6333" top="4596" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="8" values=",,,,,,,">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="15" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="6288" top="5031" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6288" top="5031" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="16">
+   <BOUNDS type="Node" left="5484" top="3684" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5484" top="3684" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1" slicecount="113" values="..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_100pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_101pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_102pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_103pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_104pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_105pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_106pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_107pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_108pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_109pg.dds,|..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_110pg .dds|,|..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_111pg .dds|,|..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_112pg .dds|,|..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_113pg .dds|,|..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_114pg .dds|,|..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_115pg(1) .dds|,|..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_115pg(2) .dds|,|..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_115pg(3) .dds|,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_116pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_117pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_118pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_118pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_119pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_119pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_120pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_120pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_121pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_121pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_124pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_124pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_125pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_125pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_125pg(3).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_125pg(4).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_125pg(5).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_126pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_126pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_126pg(3).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_127pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_128pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_128pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_129pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_129pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_129pg(3).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_130pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_130pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_130pg(3).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_130pg(4).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_131pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_131pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_131pg(3).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_131pg(4).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_132pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_133pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_133pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_133pg(3).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_135pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_136pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_136pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_136pg(3).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_137pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_42pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_48pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_49pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_50pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_51pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_52pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_53pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_54pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_55pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_56pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_57pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_58pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_59pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_60pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_61pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_62pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_63pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_64pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_65pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_66pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_67pg(1).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_67pg(2).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_67pg(3).dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_68pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_69pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_70pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_71pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_72pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_73pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_74pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_75pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_76pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_77pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_78pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_79pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_83pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_84pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_85pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_86pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_87pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_88pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_89pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_90pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_91pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_92pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_93pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_94pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_95pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_96pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_97pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_98pg.dds,..\..\database\Bauhausorbits\08_MalereiFotografieFilm\08_MalereiFotografieFilm_99pg.dds">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Reload" visible="1">
+   </PIN>
+   <PIN pinname="SizeXY" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="17">
+   <BOUNDS type="Node" left="4920" top="2580" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="C:\Users\kman\Desktop\lightweight_setup\database\Bauhausorbits\01_InternationaleArchitektur_DE\">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Vector (2d Split)" nodename="Vector (2d Split)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="5364" top="4836" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="X" visible="1" slicecount="105" values="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1">
+   </PIN>
+   <PIN pinname="Y" visible="1" slicecount="105" values="-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1">
+   </PIN>
+   <PIN pinname="XY" visible="1" slicecount="2" values="0,0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="19" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="5064" top="2892" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5064" top="2892" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Reload">
+   </LINK>
+   <NODE id="21" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="Switch">
+   </PIN>
+   <BOUNDS type="Box" left="3372" top="500" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3372" top="500" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Is Valid" dstnodeid="1" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="24" systemname="IOBox (String)" componentmode="InABox" nodename="IOBox (String)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="filenames">
+   </PIN>
+   <BOUNDS type="Box" left="4716" top="500" width="10284" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4716" top="500" width="750" height="240">
+   </BOUNDS>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="OnChange" dstnodeid="19" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="X" dstnodeid="6" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="18" srcpinname="Y" dstnodeid="6" dstpinname="Input 2">
+   </LINK>
+   <NODE id="25" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="scaleX">
+   </PIN>
+   <BOUNDS type="Box" left="5748" top="8136" width="750" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5748" top="8136" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="25" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="19" srcpinname="Y Output Value" dstnodeid="16" dstpinname="Reload">
+   </LINK>
+   <LINK srcnodeid="14" srcpinname="Count" dstnodeid="15" dstpinname="Y Input Value">
+   </LINK>
+   <NODE id="27" systemname="IOBox (Value Advanced)" componentmode="InABox" nodename="IOBox (Value Advanced)">
+   <PIN pinname="Descriptive Name" slicecount="1" values="TextureCount">
+   </PIN>
+   <BOUNDS type="Box" left="7128" top="8184" width="756" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7128" top="8184" width="750" height="240">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="15" srcpinname="Y Output Value" dstnodeid="27" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Texture Out" dstnodeid="14" dstpinname="Input">
+   </LINK>
+   <BOUNDS type="Window" left="6996" top="2508" width="18984" height="11664">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="28">
+   <BOUNDS type="Node" left="5868" top="4188" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="29">
+   <BOUNDS type="Box" left="7140" top="1164" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7140" top="1164" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|downsize factor|">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="29" srcpinname="Y Output Value" dstnodeid="28" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="16" srcpinname="SizeXY" dstnodeid="28" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="28" srcpinname="Output" dstnodeid="18" dstpinname="XY">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="30">
+   <BOUNDS type="Box" left="4380" top="8184" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4380" top="8184" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="SizeXY">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="28" srcpinname="Output" dstnodeid="30" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="31">
+   <BOUNDS type="Box" left="2268" top="8148" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2268" top="8148" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
+   </PIN>
+   <PIN pinname="Input Node" visible="1" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="33">
+   <BOUNDS type="Node" left="3792" top="1032" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="21" srcpinname="Y Output Value" dstnodeid="33" dstpinname="Switch">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Output String" dstnodeid="33" dstpinname="Input 2">
+   </LINK>
+   <NODE id="34" systemname="HSCB (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\HSCB.tfx" nodename="HSCB (DX11.TextureFX)" componentmode="Hidden">
+   <BOUNDS type="Node" left="2388" top="5724" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Contrast" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Brightness" slicecount="1" values="0.5">
+   </PIN>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Substitute (String)" nodename="Substitute (String)" componentmode="Hidden" id="38">
+   <BOUNDS type="Node" left="2892" top="1692" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="From" slicecount="1" values=".png">
+   </PIN>
+   <PIN pinname="To" slicecount="1" values=".dds">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="9" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="38" srcpinname="Output" dstnodeid="16" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="24" srcpinname="Output String" dstnodeid="17" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="33" srcpinname="Output" dstnodeid="38" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="34" srcpinname="Texture Out" dstnodeid="31" dstpinname="Input Node">
+   </LINK>
+   <NODE systemname="HighPass (DX11.TextureFX)" filename="Highpass\texture11\HighPass.tfx" nodename="HighPass (DX11.TextureFX)" componentmode="Hidden" id="44">
+   <BOUNDS type="Node" left="2544" top="4692" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Composite" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="contrast" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Texture Out" dstnodeid="44" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="44" srcpinname="Texture Out" dstnodeid="34" dstpinname="Texture In">
+   </LINK>
+   </PATCH>

@@ -1,0 +1,379 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="C:\Users\kman\Desktop\lightweight_setup\_patches\_UI\_selectBookDirByCovername.v4p" systemname="_selectBookDirByCovername" filename="C:\Users\kman\Desktop\lightweight_setup\_patches\_UI\_selectBookDirByCovername.v4p" scrollx="420" scrolly="768">
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="0" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="5469" top="3024" width="1755" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5469" top="3024" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="2" visible="1" values="|C:\Users\kman\OneDrive\Documents\___vvvv project\181224 vvvv stimulation project\180210 vvvv stimulation project\media\Klee|,..\..\media\Klee">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="1">
+   <BOUNDS type="Node" left="5484" top="3888" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="2">
+   <BOUNDS type="Node" left="5484" top="4353" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5484" top="4353" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="OnChange">
+   </PIN>
+   </NODE>
+   <NODE systemname="SubDir (File)" nodename="SubDir (File)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="3456" top="3516" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Directory" slicecount="1" visible="1" values="|..\..\..\..\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190701_final_production\media\_BookPages|">
+   </PIN>
+   <PIN pinname="Subdirectories" visible="1">
+   </PIN>
+   <PIN pinname="Update" slicecount="1" visible="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE systemname="Substitute (String)" nodename="Substitute (String)" componentmode="Hidden" id="4">
+   <BOUNDS type="Node" left="3492" top="4140" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="From" visible="1" slicecount="1" values="|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190701_final_production\media\_BookPages\|">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="3744" top="1848" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3744" top="1848" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\..\_BookPages">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="BookPagesDir">
+   </PIN>
+   </NODE>
+   <NODE systemname="Add (String)" nodename="Add (String)" componentmode="Hidden" id="6">
+   <BOUNDS type="Node" left="3924" top="2316" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" values="\">
+   </PIN>
+   <PIN pinname="Input 1" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (String)" nodename="Change (String)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="3972" top="3012" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="RegExpr (String)" nodename="RegExpr (String)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="2352" top="4800" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Regular Expression" slicecount="1" values="(^[^_]+)">
+   </PIN>
+   <PIN pinname="Match 1" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="FileName (File Split)" nodename="FileName (File Split)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="1644" top="2064" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" slicecount="1" visible="1" values="..\..\media\_BookCovers\1.jpg">
+   </PIN>
+   <PIN pinname="Shortname" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Sift (String)" nodename="Sift (String)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="1500" top="5568" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Filter" visible="1">
+   </PIN>
+   <PIN pinname="Filter Index" visible="1">
+   </PIN>
+   <PIN pinname="Comparison" slicecount="1" values="MatchesAny">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="11" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="1656" top="1500" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1656" top="1500" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\media\_BookCovers\1.jpg">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="file.foo">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Filename">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="SelectedFilenames">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="12" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="1788" top="6036" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1788" top="6036" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="2700" top="6612" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Index" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="14" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="2688" top="7584" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2688" top="7584" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="selectBookDir">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Shortname" dstnodeid="10" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Match 1" dstnodeid="10" dstpinname="Filter">
+   </LINK>
+   <LINK srcnodeid="11" srcpinname="Output String" dstnodeid="9" dstpinname="Filename">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Filter Index" dstnodeid="12" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output" dstnodeid="8" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="14" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Subdirectories" dstnodeid="13" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="10" srcpinname="Filter Index" dstnodeid="13" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output String" dstnodeid="3" dstpinname="Directory">
+   </LINK>
+   <LINK srcnodeid="3" srcpinname="Subdirectories" dstnodeid="4" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output" dstnodeid="4" dstpinname="From">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output String" dstnodeid="6" dstpinname="Input 1">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="0" dstpinname="Input String">
+   <LINKPOINT x="2844" y="7260">
+   </LINKPOINT>
+   <LINKPOINT x="5508" y="2076">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="1" srcpinname="OnChange" dstnodeid="2" dstpinname="Y Input Value">
+   </LINK>
+   <LINK srcnodeid="0" srcpinname="Output String" dstnodeid="1" dstpinname="Input">
+   </LINK>
+   <BOUNDS type="Window" left="8364" top="3192" width="8532" height="9084">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="15">
+   <BOUNDS type="Box" left="396" top="2736" width="696" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="396" top="2736" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="selectedBookIndexString">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="9" srcpinname="Shortname" dstnodeid="15" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="16">
+   <BOUNDS type="Box" left="3900" top="5772" width="2400" height="5256">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3900" top="5772" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="13">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="8" srcpinname="Match 1" dstnodeid="16" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="17">
+   <BOUNDS type="Box" left="1008" top="7152" width="1236" height="828">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1008" top="7152" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="13" srcpinname="Output" dstnodeid="17" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="7" srcpinname="OnChange" dstnodeid="3" dstpinname="Update">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Output String" dstnodeid="7" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="19">
+   <BOUNDS type="Box" left="7464" top="1740" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7464" top="1740" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="..\..\database\imageCurationCSV">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="ImgCSVDirectory">
+   </PIN>
+   </NODE>
+   <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="18">
+   <BOUNDS type="Node" left="7488" top="3768" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Directory" slicecount="1" visible="1" values="|..\..\..\..\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190701_final_production\media\_BookPages|">
+   </PIN>
+   <PIN pinname="Subdirectories" visible="1">
+   </PIN>
+   <PIN pinname="Update" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Short Filenames" visible="1">
+   </PIN>
+   <PIN pinname="Filenames" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="19" srcpinname="Output String" dstnodeid="18" dstpinname="Directory">
+   </LINK>
+   <NODE systemname="Sift (String)" nodename="Sift (String)" componentmode="Hidden" id="20">
+   <BOUNDS type="Node" left="7284" top="5616" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Filter" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Filter Index" visible="1">
+   </PIN>
+   <PIN pinname="Comparison" slicecount="1" values="MatchesAny">
+   </PIN>
+   <PIN pinname="Input Index" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="FileName (File Split)" nodename="FileName (File Split)" componentmode="Hidden" id="21">
+   <BOUNDS type="Node" left="7752" top="4152" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Shortname" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Short Filenames" dstnodeid="21" dstpinname="Filename">
+   </LINK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="22">
+   <BOUNDS type="Node" left="7008" top="6552" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Index" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="18" srcpinname="Filenames" dstnodeid="22" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="23">
+   <BOUNDS type="Box" left="6984" top="7788" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6984" top="7788" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="selectedCSVs">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="22" srcpinname="Output" dstnodeid="23" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Shortname" dstnodeid="20" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="21" srcpinname="Shortname" dstnodeid="20" dstpinname="Filter">
+   </LINK>
+   <LINK srcnodeid="20" srcpinname="Filter Index" dstnodeid="22" dstpinname="Index">
+   </LINK>
+   </PATCH>

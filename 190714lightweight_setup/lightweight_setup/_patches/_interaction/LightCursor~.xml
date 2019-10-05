@@ -1,0 +1,145 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190404 vvvv stimulation project\_patches\_interaction\LightCursor.v4p" systemname="LightCursor" filename="C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190306 vvvv stimulation project\_patches\_interaction\LightCursor.v4p">
+   <BOUNDS type="Window" left="35364" top="1728" width="11004" height="13224">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.3.1.1">
+   </PACK>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="3">
+   <BOUNDS type="Box" left="2790" top="4785" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2790" top="4785" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Layer">
+   </PIN>
+   <PIN pinname="Input Node" slicecount="1" values="||" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="4">
+   <BOUNDS type="Box" left="2790" top="930" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2790" top="930" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Node" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Mouse">
+   </PIN>
+   <PIN pinname="Output Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="5">
+   <BOUNDS type="Box" left="3720" top="1740" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3720" top="1740" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="10">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Size">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="6">
+   <BOUNDS type="Box" left="4275" top="1020" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4275" top="1020" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="Hor">
+   </PIN>
+   </NODE>
+   <NODE id="9" systemname="Cursor (DX11)" filename="%VVVV%\packs\dx11\nodes\modules\Cursor (DX11).v4p" nodename="Cursor (DX11)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="2775" top="2265" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="0" top="0" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="32820" top="2655" width="19545" height="14940">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Mouse" pintype="Input" visible="1">
+   </PIN>
+   <PIN pinname="Cursor Type" pintype="Input" visible="1">
+   </PIN>
+   <PIN pinname="Color" pintype="Input" visible="1" slicecount="1" values="|1.00000,1.00000,1.00000,1.00000|">
+   </PIN>
+   <PIN pinname="Size" pintype="Input" visible="1">
+   </PIN>
+   <PIN pinname="Selection" pintype="Input" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Enabled" pintype="Input" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Patch" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Layer" pintype="Output" visible="1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="6" srcpinname="Output Enum" dstnodeid="9" dstpinname="Cursor Type">
+   </LINK>
+   <LINK srcnodeid="5" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Size">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="9" dstpinname="Mouse">
+   </LINK>
+   <NODE systemname="Light (DX11 Point)" filename="%VVVV%\packs\dx11\nodes\modules\Light (DX11 Point).v4p" nodename="Light (DX11 Point)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="5040" top="3072" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Light Position" visible="1">
+   </PIN>
+   <PIN pinname="Layer" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="MouseStates (Mouse Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="MouseStates (Mouse Split)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="5472" top="1872" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5472" top="1872" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Mouse" visible="1">
+   </PIN>
+   <PIN pinname="Position (Projection) XY" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="4" srcpinname="Output Node" dstnodeid="11" dstpinname="Mouse">
+   </LINK>
+   <NODE systemname="xyZ (3d XY)" nodename="xyZ (3d XY)" componentmode="Hidden" id="12">
+   <BOUNDS type="Node" left="5076" top="2508" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XY" visible="1">
+   </PIN>
+   <PIN pinname="XYZ" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Position (Projection) XY" dstnodeid="12" dstpinname="XY">
+   </LINK>
+   <LINK srcnodeid="12" srcpinname="XYZ" dstnodeid="10" dstpinname="Light Position">
+   </LINK>
+   <NODE systemname="Group (DX11.Layer)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="Group (DX11.Layer)" componentmode="Hidden" id="13">
+   <BOUNDS type="Node" left="2820" top="3468" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2820" top="3468" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Layer 2" visible="1">
+   </PIN>
+   <PIN pinname="Layer 1" visible="1">
+   </PIN>
+   <PIN pinname="Layer Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="Layer" dstnodeid="13" dstpinname="Layer 2">
+   </LINK>
+   <LINK srcnodeid="9" srcpinname="Layer" dstnodeid="13" dstpinname="Layer 1">
+   </LINK>
+   <LINK srcnodeid="13" srcpinname="Layer Out" dstnodeid="3" dstpinname="Input Node">
+   </LINK>
+   <PACK Name="dx11.particles" Version="1.0.6">
+   </PACK>
+   </PATCH>

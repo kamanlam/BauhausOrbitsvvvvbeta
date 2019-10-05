@@ -1,0 +1,78 @@
+<?xml version="1.0" standalone="yes"?>
+<QueriesConstructor>
+  <xs:schema id="QueriesConstructor" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="QueriesConstructor" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="QueriesConstructor">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="id" type="xs:int" default="0" />
+                <xs:element name="query" type="xs:string" default="abc" />
+                <xs:element name="double" type="xs:boolean" default="false" />
+                <xs:element name="argument" type="xs:string" default="abc" />
+                <xs:element name="xpath" type="xs:string" default="abc" />
+                <xs:element name="xquery" type="xs:string" default="abc" />
+                <xs:element name="xpath2" type="xs:string" default="abc" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <QueriesConstructor>
+    <id>0</id>
+    <query>/sentencesAndTopics/</query>
+    <double>true</double>
+    <argument>@/#</argument>
+    <xpath>//text</xpath>
+    <xquery>let $items := document("doc.xml")/sentencesWithTopics/item/topics</xquery>
+    <xpath2>//topics</xpath2>
+  </QueriesConstructor>
+  <QueriesConstructor>
+    <id>1</id>
+    <query>/allSentencesForTopic/</query>
+    <double>false</double>
+    <argument>abc</argument>
+    <xpath>//text</xpath>
+    <xquery />
+    <xpath2>//sentence_id</xpath2>
+  </QueriesConstructor>
+  <QueriesConstructor>
+    <id>2</id>
+    <query>/allSentencesForTopicSortYear/</query>
+    <double>false</double>
+    <argument>abc</argument>
+    <xpath>//text</xpath>
+    <xquery />
+    <xpath2>//page</xpath2>
+  </QueriesConstructor>
+  <QueriesConstructor>
+    <id>3</id>
+    <query>/bookDetailsForSentence/</query>
+    <double>false</double>
+    <argument>1</argument>
+    <xpath>//book_id</xpath>
+    <xquery />
+    <xpath2 />
+  </QueriesConstructor>
+  <QueriesConstructor>
+    <id>4</id>
+    <query>/ldaTopicsForBooks/</query>
+    <double>true</double>
+    <argument>@/#</argument>
+    <xpath>//word</xpath>
+    <xquery />
+    <xpath2>//score</xpath2>
+  </QueriesConstructor>
+  <QueriesConstructor>
+    <id>2</id>
+    <query>/commonLdaTopicsForBooks/</query>
+    <double>true</double>
+    <argument>@/#</argument>
+    <xpath>//word</xpath>
+    <xquery />
+    <xpath2>//score</xpath2>
+  </QueriesConstructor>
+</QueriesConstructor>

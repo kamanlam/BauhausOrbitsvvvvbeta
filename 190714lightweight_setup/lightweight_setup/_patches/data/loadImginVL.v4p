@@ -1,0 +1,461 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="C:\Users\kman\Desktop\lightweight_setup\_patches\data\loadImginVL.v4p" systemname="loadImginVL" filename="C:\Users\kman\OneDrive\Documents\___vvvv project\181216 vvvv stimulation project\180210 vvvv stimulation project\_patches\data\loadImginVL.v4p" scrollx="192" scrolly="2784">
+   <BOUNDS type="Window" left="4236" top="516" width="15192" height="13176">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="17">
+   <BOUNDS type="Box" left="2670" top="1575" width="285" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2670" top="1575" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="UpdateDir">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="16">
+   <BOUNDS type="Node" left="4920" top="2955" width="645" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="4920" top="2955" width="645" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="change">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="47">
+   <BOUNDS type="Box" left="2304" top="8820" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2304" top="8820" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Out|">
+   </PIN>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="48">
+   <BOUNDS type="Box" left="5460" top="4728" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5460" top="4728" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|File Count|">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="61">
+   <BOUNDS type="Box" left="3930" top="1110" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3930" top="1110" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190306 vvvv stimulation project\media\MoholyNagyPNG|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Directory">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="66">
+   <BOUNDS type="Box" left="795" top="387" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="795" top="387" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Run">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="69">
+   <BOUNDS type="Node" left="3846" top="2568" width="2175" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="3846" top="2568" width="1185" height="270">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|mind Mask -&gt;|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Change (Animation)" nodename="Change (Animation)" componentmode="Hidden" id="82">
+   <BOUNDS type="Node" left="2655" top="1230" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="OnChange" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="66" srcpinname="Y Output Value" dstnodeid="82" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="82" srcpinname="OnChange" dstnodeid="17" dstpinname="Y Input Value">
+   </LINK>
+   <PACK Name="dx11.particles" Version="1.0.6">
+   </PACK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <NODE systemname="GetSpread (String)" nodename="GetSpread (String)" componentmode="Hidden" id="89">
+   <BOUNDS type="Node" left="2796" top="3960" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="244" values="|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_005.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_007.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_008.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_009.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_010.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_011.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_012.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_013.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_014.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_015.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_016.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_017.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_018.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_019.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_020.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_021.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_022.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_023.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_024.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_025.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_026.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_027.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_028.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_029.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_030.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_031.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_032.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_033.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_034.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_035.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_036.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_037.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_038.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_039.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_040.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_041.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_042.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_043.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_044.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_045.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_046.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_047.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_048.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_049.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_050.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_051.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_052.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_053.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_054.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_055.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_056.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_057.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_058.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_059.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_060.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_061.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_062.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_063.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_064.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_065.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_066.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_067.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_068.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_069.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_070.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_071.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_072.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_073.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_074.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_075.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_076.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_077.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_078.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_079.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_080.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_081.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_082.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_083.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_084.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_085.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_086.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_087.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_088.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_089.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_090.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_091.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_092.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_093.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_094.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_095.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_096.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_097.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_098.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_099.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_100.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_101.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_102.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_103.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_104.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_105.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_106.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_107.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_108.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_109.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_110.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_111.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_112.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_113.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_114.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_115.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_116.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_117.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_118.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_119.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_120.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_121.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_122.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_123.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_124.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_125.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_126.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_127.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_128.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_129.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_130.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_131.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_132.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_133.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_134.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_135.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_136.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_137.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_138.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_139.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_140.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_141.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_142.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_143.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_144.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_145.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_146.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_147.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_148.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_149.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_150.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_151.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_152.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_153.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_154.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_155.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_156.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_157.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_158.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_159.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_160.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_161.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_162.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_163.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_164.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_165.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_166.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_167.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_168.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_169.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_170.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_171.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_172.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_173.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_174.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_175.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_176.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_177.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_178.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_179.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_180.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_181.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_182.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_183.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_184.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_185.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_186.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_187.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_188.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_189.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_190.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_191.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_192.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_193.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_194.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_195.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_196.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_197.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_198.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_199.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_200.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_201.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_202.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_203.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_204.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_205.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_206.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_207.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_208.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_209.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_210.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_211.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_212.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_213.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_214.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_215.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_216.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_217.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_218.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_219.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_220.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_221.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_222.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_223.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_224.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_225.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_226.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_227.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_228.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_229.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_230.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_231.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_232.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_233.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_234.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_235.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_236.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_237.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_238.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_239.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_240.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_241.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_242.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_243.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_244.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_245.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_246.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_247.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_249.jpg|,|C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\media\_BookPages\14_VonMaterialzurArchitektur\14_moholy_nagy_vonMaterialzurArchitektur_Page_250.jpg|">
+   </PIN>
+   <PIN pinname="Count" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Offset" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="90">
+   <BOUNDS type="Box" left="6420" top="2676" width="396" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6420" top="2676" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="40">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="PageCountAllowed">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="90" srcpinname="Y Output Value" dstnodeid="89" dstpinname="Count">
+   </LINK>
+   <LINK srcnodeid="90" srcpinname="Y Output Value" dstnodeid="48" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="91">
+   <BOUNDS type="Box" left="1224" top="2508" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1224" top="2508" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="||">
+   </PIN>
+   </NODE>
+   <NODE systemname="Switch (String Input)" nodename="Switch (String Input)" componentmode="Hidden" id="92" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="1944" top="4776" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" visible="1">
+   </PIN>
+   <PIN pinname="Switch" visible="1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Input 1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="89" srcpinname="Output" dstnodeid="92" dstpinname="Input 2">
+   </LINK>
+   <LINK srcnodeid="91" srcpinname="Y Output Value" dstnodeid="92" dstpinname="Switch">
+   </LINK>
+   <NODE systemname="Dir (File)" nodename="Dir (File)" componentmode="Hidden" id="93">
+   <BOUNDS type="Node" left="3504" top="3000" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Mask" visible="1">
+   </PIN>
+   <PIN pinname="Directory" visible="1" slicecount="1" values="..\..\media\_BookPages\3_HolländischeArchitektur">
+   </PIN>
+   <PIN pinname="Filenames" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="93" dstpinname="Update">
+   </LINK>
+   <LINK srcnodeid="93" srcpinname="Filenames" dstnodeid="89" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="94">
+   <BOUNDS type="Box" left="3468" top="2268" width="600" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3468" top="2268" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="*.jpg">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="*.*">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="*.*">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Mask">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="94" srcpinname="Output String" dstnodeid="93" dstpinname="Mask">
+   </LINK>
+   <LINK srcnodeid="61" srcpinname="Output String" dstnodeid="93" dstpinname="Directory">
+   </LINK>
+   <NODE systemname="BuildTextureArray (DX11.TextureFX)" filename="%VVVV%\packs\InstanceNoodles\nodes\modules\DX11.TextureFX\BuildTextureArray (DX11.TextureFX)\BuildTextureArray (DX11.TextureFX).v4p" nodename="BuildTextureArray (DX11.TextureFX)" componentmode="Hidden" id="100">
+   <BOUNDS type="Node" left="6780" top="6744" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6780" top="6744" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Array Out" visible="1">
+   </PIN>
+   <PIN pinname="Mips" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Texture Slices Out" visible="1">
+   </PIN>
+   <PIN pinname="SizeXY" visible="1" slicecount="2" values="256,256">
+   </PIN>
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="FileTexture (DX11 2d.Pooled)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d.Pooled)" componentmode="Hidden" id="102">
+   <BOUNDS type="Node" left="912" top="4452" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="912" top="4452" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Load In Background" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Reload" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="89" srcpinname="Output" dstnodeid="102" dstpinname="Filename">
+   </LINK>
+   <NODE nodename="IOBox (Node)" componentmode="InABox" id="104">
+   <BOUNDS type="Box" left="624" top="8856" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="624" top="8856" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|Texture Array Out|">
+   </PIN>
+   <PIN pinname="Input Node" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="FileTexture (DX11 2d)" filename="%VVVV%\packs\dx11\nodes\plugins\base\VVVV.DX11.Nodes.dll" nodename="FileTexture (DX11 2d)" componentmode="Hidden" id="107">
+   <BOUNDS type="Node" left="2916" top="4512" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="2916" top="4512" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Filename" visible="1">
+   </PIN>
+   <PIN pinname="SizeXY" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="89" srcpinname="Output" dstnodeid="107" dstpinname="Filename">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="108">
+   <BOUNDS type="Box" left="6276" top="7596" width="792" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6276" top="7596" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="2">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="SizeXY">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="107" srcpinname="SizeXY" dstnodeid="108" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Divide (Value)" nodename="Divide (Value)" componentmode="Hidden" id="109">
+   <BOUNDS type="Node" left="3468" top="4920" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input 2" slicecount="1" visible="1" values="2">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="107" srcpinname="SizeXY" dstnodeid="109" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="109" srcpinname="Output" dstnodeid="100" dstpinname="SizeXY" linkstyle="VHV">
+   <LINKPOINT x="5564" y="5728">
+   </LINKPOINT>
+   <LINKPOINT x="5344" y="6188">
+   </LINKPOINT>
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="110">
+   <BOUNDS type="Box" left="3984" top="4584" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3984" top="4584" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="3">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="downsizedFactor">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="110" srcpinname="Y Output Value" dstnodeid="109" dstpinname="Input 2">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="111">
+   <BOUNDS type="Box" left="3348" top="7920" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3348" top="7920" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="downsizedSize">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="109" srcpinname="Output" dstnodeid="111" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="BuildTextureArray (DX11.TextureFX)" filename="%VVVV%\packs\InstanceNoodles\nodes\modules\DX11.TextureFX\BuildTextureArray (DX11.TextureFX)\BuildTextureArray (DX11.TextureFX).v4p" nodename="BuildTextureArray (DX11.TextureFX)" componentmode="Hidden" id="113">
+   <BOUNDS type="Node" left="924" top="7380" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="924" top="7380" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Texture" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Texture Array Out" visible="1">
+   </PIN>
+   <PIN pinname="Mips" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Texture Slices Out" visible="1">
+   </PIN>
+   <PIN pinname="SizeXY" visible="1" slicecount="2" values="256,256">
+   </PIN>
+   <PIN pinname="Enabled" visible="1" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="107" srcpinname="SizeXY" dstnodeid="113" dstpinname="SizeXY">
+   </LINK>
+   <LINK srcnodeid="113" srcpinname="Texture Array Out" dstnodeid="104" dstpinname="Input Node">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="114">
+   <BOUNDS type="Box" left="120" top="564" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="120" top="564" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="1">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Enabled">
+   </PIN>
+   <PIN pinname="Y Output Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="114" srcpinname="Y Output Value" dstnodeid="100" dstpinname="Enabled">
+   </LINK>
+   <LINK srcnodeid="114" srcpinname="Y Output Value" dstnodeid="113" dstpinname="Enabled">
+   </LINK>
+   <NODE systemname="HSCB (DX11.TextureFX)" filename="%VVVV%\packs\dx11\nodes\texture11\Filter\HSCB.tfx" nodename="HSCB (DX11.TextureFX)" componentmode="Hidden" id="115">
+   <BOUNDS type="Node" left="924" top="5376" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Texture In" visible="1">
+   </PIN>
+   <PIN pinname="Texture Out" visible="1">
+   </PIN>
+   <PIN pinname="Contrast" slicecount="1" values="0.5">
+   </PIN>
+   <PIN pinname="Saturation" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Brightness" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Enabled" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="102" srcpinname="Texture Out" dstnodeid="115" dstpinname="Texture In">
+   </LINK>
+   <LINK srcnodeid="115" srcpinname="Texture Out" dstnodeid="113" dstpinname="Texture">
+   </LINK>
+   <LINK srcnodeid="114" srcpinname="Y Output Value" dstnodeid="115" dstpinname="Enabled">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="116">
+   <BOUNDS type="Box" left="3384" top="3528" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3384" top="3528" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="15">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="116" srcpinname="Y Output Value" dstnodeid="89" dstpinname="Offset">
+   </LINK>
+   <LINK srcnodeid="113" srcpinname="Texture Slices Out" dstnodeid="47" dstpinname="Input Node">
+   </LINK>
+   </PATCH>

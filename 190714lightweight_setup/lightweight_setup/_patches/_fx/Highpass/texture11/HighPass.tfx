@@ -1,0 +1,94 @@
+//@author: vux
+//@help: template for texture fx
+//@tags: texture
+//@credits: 
+float2 R:TARGETSIZE; 
+
+Texture2D texture2d : PREVIOUS;
+float contrast = 0.5f;
+bool Composite;
+
+SamplerState linearSampler : IMMUTABLE
+{
+    Filter = MIN_MAG_MIP_LINEAR;
+    AddressU = Clamp;
+    AddressV = Clamp;
+};
+
+float overlay( float s, float d )
+{
+	return (d < 0.5) ? 2.0 * s * d : 1.0 - 2.0 * (1.0 - s) * (1.0 - d);
+}
+float3 overlay( float3 s, float3 d )
+{
+	float3 c;
+	c.x = overlay(s.x,d.x);
+	c.y = overlay(s.y,d.y);
+	c.z = overlay(s.z,d.z);
+	return c;
+}
+
+
+struct psInput
+{
+	float4 p : SV_Position;
+	float2 uv : TEXCOORD0;
+};
+
+
+float4 PS(psInput input) : SV_Target
+{
+	
+	float step_w = 1.0 / R.x;
+	float step_h = 1.0 / R.y;
+	
+	float4 original = texture2d.Sample(linearSampler,input.uv);
+	float2 offset[9];
+	float kernel [9];
+	
+	offset[ 0 ] = float2(-step_w, -step_h);
+	offset[ 1 ] = float2(0.0, -step_h);
+	offset[ 2 ] = float2(step_w, -step_h);
+	offset[ 3 ] = float2(-step_w, 0.0);
+	offset[ 4 ] = float2(0.0, 0.0);
+	offset[ 5 ] = float2(step_w, 0.0);
+	offset[ 6 ] = float2(-step_w, step_h);
+	offset[ 7 ] = float2(0.0, step_h);
+	offset[ 8 ] = float2(step_w, step_h);
+	kernel[ 0 ] = -1.;
+	kernel[ 1 ] = -1.;
+	kernel[ 2 ] = -1.;
+	kernel[ 3 ] = -1.;
+	kernel[ 4 ] = 8.;
+	kernel[ 5 ] = -1.;
+	kernel[ 6 ] = -1.;
+	kernel[ 7 ] = -1.;
+	kernel[ 8 ] = -1.;
+	
+	float3 col = 0;
+	 for( int i=0; i<9; i++ )
+   {
+    float4 tmp = texture2d.Sample(linearSampler,input.uv + offset[i]);
+    col += tmp.rgb * kernel[i];
+   }
+	
+	col = col * contrast + 0.5;
+	
+	if (Composite)
+	{
+		col = overlay (col,original.rgb);
+	}
+	
+	return float4 (col,original.a);
+}
+
+technique10 HighPass
+{
+	pass P0
+	{
+		SetPixelShader(CompileShader(ps_4_0,PS()));
+	}
+}
+
+
+

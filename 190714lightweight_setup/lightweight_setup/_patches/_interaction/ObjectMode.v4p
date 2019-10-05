@@ -1,0 +1,55 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50alpha35.12.dtd" >
+   <PATCH nodename="C:\Users\carmen\Desktop\180121 vvvv stimulation project\180104 vvvv stimulation project\_patches\interaction\ObjectMode.v4p" systemname="ObjectMode" filename="C:\Users\carmen\Desktop\180104 vvvv stimulation project\180104 vvvv stimulation project\_patches\interaction\ObjectMode.v4p">
+   <NODE systemname="GetState (AutomataUI Animation)" filename="%VVVV%\plugins\AutomataUI 1.7\AutomataUI.dll" nodename="GetState (AutomataUI Animation)" componentmode="Hidden" id="0">
+   <BOUNDS type="Node" left="1590" top="2295" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1590" top="2295" width="3000" height="3000">
+   </BOUNDS>
+   <PIN pinname="AutomataUI" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="State" slicecount="1" visible="1" values="Menu">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Enumerations)" componentmode="InABox" id="2" systemname="IOBox (Enumerations)">
+   <BOUNDS type="Box" left="2235" top="1860" width="1590" height="270">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2235" top="1860" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input Enum" slicecount="1" visible="1" values="ObjectMode">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="Init">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="2" srcpinname="Output Enum" dstnodeid="0" dstpinname="State">
+   </LINK>
+   <BOUNDS type="Window" left="-1" top="-1" width="3735" height="3895">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.0.3">
+   </PACK>
+   <PACK Name="Image" Version="0.2.0">
+   </PACK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <PACK Name="vvvv-Message (1)" Version="2.9.10">
+   </PACK>
+   <PACK Name="vvvv-ZeroMQ" Version="0.5.7">
+   </PACK>
+   <NODE systemname="R (Node)" nodename="R (Node)" componentmode="Hidden" id="3">
+   <BOUNDS type="Node" left="1725" top="750" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input Value" visible="1">
+   </PIN>
+   <PIN pinname="Receive String" slicecount="1" values="Automata_raw">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="3" srcpinname="Input Value" dstnodeid="0" dstpinname="AutomataUI">
+   </LINK>
+   <PACK Name="vvvv-Message - 1" Version="2.9.10">
+   </PACK>
+   <PACK Name="addonpack" Version="35.9.0">
+   </PACK>
+   </PATCH>

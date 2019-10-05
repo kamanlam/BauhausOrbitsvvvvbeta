@@ -1,0 +1,483 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta38.1.dtd" >
+   <PATCH nodename="C:\Users\kman\Desktop\lightweight_setup\_patches\_server\XMLParser.v4p" systemname="XMLParser" filename="C:\Users\kman\Google Drive\__BAUHAUSORBITS\REALIZATION\02_Person\Kaman\vvvv\190627 vvvv house of dome\_patches\_server\XMLParser.v4p" scrollx="0" scrolly="0">
+   <BOUNDS type="Window" left="6816" top="4308" width="16872" height="13224">
+   </BOUNDS>
+   <PACK Name="dx11" Version="1.3.1">
+   </PACK>
+   <PACK Name="dx11.particles" Version="1.0.6">
+   </PACK>
+   <PACK Name="vvvv-Message" Version="2.9.10">
+   </PACK>
+   <PACK Name="addonpack" Version="38.1.0">
+   </PACK>
+   <NODE systemname="XPath (XML)" nodename="XPath (XML)" componentmode="Hidden" id="110">
+   <BOUNDS type="Node" left="1056" top="2892" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XPath Query" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Base Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="XML Input" visible="1">
+   </PIN>
+   <PIN pinname="Validate on Parse" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="106">
+   <BOUNDS type="Box" left="1056" top="3864" width="1176" height="1116">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1056" top="3864" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="|&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;|">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Xpath1_output">
+   </PIN>
+   <PIN pinname="Input String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="120">
+   <BOUNDS type="Box" left="1692" top="2364" width="1020" height="288">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1692" top="2364" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="//book_id">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="XPath1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="121">
+   <BOUNDS type="Box" left="2400" top="1848" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2400" top="1848" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="121" srcpinname="Y Output Value" dstnodeid="110" dstpinname="Validate on Parse">
+   </LINK>
+   <LINK srcnodeid="120" srcpinname="Output String" dstnodeid="110" dstpinname="XPath Query">
+   </LINK>
+   <NODE nodename="AsXElement (XML)" componentmode="Hidden" id="139" systemname="AsXElement (XML)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll">
+   <BOUNDS type="Node" left="5652" top="2820" width="2010" height="270">
+   </BOUNDS>
+   <BOUNDS type="Box" left="5652" top="2820" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="XML" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Element" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetElements (XElement ByXPath)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="GetElements (XElement ByXPath)" componentmode="Hidden" id="138">
+   <BOUNDS type="Node" left="5652" top="3840" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1">
+   </PIN>
+   <PIN pinname="Elements" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="5652" top="3840">
+   </BOUNDS>
+   </NODE>
+   <LINK srcnodeid="139" srcpinname="Element" dstnodeid="138" dstpinname="Element">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="137" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="6105" top="3409" width="1110" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6105" top="3409" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="//topics">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="MyChildTag/MyChildsChildTag">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="GetElementsXpath">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="137" srcpinname="Output String" dstnodeid="138" dstpinname="XPath">
+   </LINK>
+   <NODE systemname="Element (XElement Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XElement Split)" componentmode="Hidden" id="136" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="5652" top="4464" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1">
+   </PIN>
+   <PIN pinname="Children Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Name" visible="1">
+   </PIN>
+   <PIN pinname="Children" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="5652" top="4464">
+   </BOUNDS>
+   <PIN pinname="Deep Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="138" srcpinname="Elements" dstnodeid="136" dstpinname="Element">
+   </LINK>
+   <NODE systemname="XQuery (XML)" filename="%VVVV%\addonpack\lib\nodes\plugins\XQueryNode.dll" nodename="XQuery (XML)" componentmode="Hidden" id="142">
+   <BOUNDS type="Node" left="5664" top="2268" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Alias" slicecount="1" values="doc.xml" visible="1">
+   </PIN>
+   <PIN pinname="Query" visible="1">
+   </PIN>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="143">
+   <BOUNDS type="Box" left="6264" top="1788" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6264" top="1788" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="|let $items := document(&quot;doc.xml&quot;)/sentencesWithTopics/item/topics&cr;&lf;let $count := count($items/item)&cr;&lf;return&cr;&lf;&lt;result&gt;&cr;&lf;   &lt;count&gt;{$count}&lt;/count&gt;&cr;&lf;   &cr;&lf;   &lt;items&gt;&cr;&lf;      {&cr;&lf;&tab;     for $item in $items&cr;&lf;         return &lt;item&gt;{$item}&lt;/item&gt;&cr;&lf;      }&cr;&lf;   &lt;/items&gt;&cr;&lf;   &cr;&lf;&lt;/result&gt;|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="XQuery">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="143" srcpinname="Output String" dstnodeid="142" dstpinname="Query">
+   </LINK>
+   <LINK srcnodeid="142" srcpinname="Output" dstnodeid="139" dstpinname="XML">
+   </LINK>
+   <NODE nodename="IOBox (String)" systemname="IOBox (String)" componentmode="InABox" id="146">
+   <BOUNDS type="Node" left="7884" top="2820" width="1248" height="240">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7884" top="2820" width="1464" height="732">
+   </BOUNDS>
+   <PIN pinname="Input String" visible="0" slicecount="1" values="|2838 topic items, 1001 sentences|">
+   </PIN>
+   <PIN pinname="Output String" visible="0">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   </NODE>
+   <NODE systemname="Element (XElement Split)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="Element (XElement Split)" componentmode="Hidden" id="149" hiddenwhenlocked="1">
+   <BOUNDS type="Node" left="5652" top="4944" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Children Bin Size" visible="1">
+   </PIN>
+   <PIN pinname="Name" visible="1">
+   </PIN>
+   <PIN pinname="Children" visible="1">
+   </PIN>
+   <PIN pinname="Value" visible="1">
+   </PIN>
+   <BOUNDS type="Box" left="5652" top="4944">
+   </BOUNDS>
+   <PIN pinname="Attributes Bin Size" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="136" srcpinname="Children" dstnodeid="149" dstpinname="Element">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="153">
+   <BOUNDS type="Box" left="1044" top="540" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1044" top="540" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="||">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="|&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;|">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="|XML Input|">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="153" srcpinname="Output String" dstnodeid="110" dstpinname="XML Input">
+   </LINK>
+   <LINK srcnodeid="153" srcpinname="Output String" dstnodeid="142" dstpinname="Input">
+   </LINK>
+   <NODE systemname="XPath (XML)" nodename="XPath (XML)" componentmode="Hidden" id="157">
+   <BOUNDS type="Node" left="2892" top="3024" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="XPath Query" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Base Element" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="XML Input" visible="1">
+   </PIN>
+   <PIN pinname="Validate on Parse" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="156">
+   <BOUNDS type="Box" left="2892" top="3516" width="888" height="372">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2892" top="3516" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="|&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;|">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="Multiline">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Xpath2_output">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="157" srcpinname="Output" dstnodeid="156" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="155">
+   <BOUNDS type="Box" left="3528" top="2496" width="1020" height="288">
+   </BOUNDS>
+   <BOUNDS type="Node" left="3528" top="2496" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" visible="1" values="//book_id">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="XPath2">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="154">
+   <BOUNDS type="Box" left="4152" top="1920" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="4152" top="1920" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" visible="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="154" srcpinname="Y Output Value" dstnodeid="157" dstpinname="Validate on Parse">
+   </LINK>
+   <LINK srcnodeid="155" srcpinname="Output String" dstnodeid="157" dstpinname="XPath Query">
+   </LINK>
+   <LINK srcnodeid="153" srcpinname="Output String" dstnodeid="157" dstpinname="XML Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="159">
+   <BOUNDS type="Box" left="8520" top="6996" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8520" top="6996" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="UniqueTopics">
+   </PIN>
+   </NODE>
+   <NODE systemname="Sift (String)" nodename="Sift (String)" componentmode="Hidden" id="158">
+   <BOUNDS type="Node" left="6228" top="7416" width="1944" height="276">
+   </BOUNDS>
+   <PIN pinname="Comparison" slicecount="1" values="ContainsAny">
+   </PIN>
+   <PIN pinname="Filter" visible="1" slicecount="2838" values="main,way,engin,primit,easili,thing,graphic,horn,rotat,european,fashion,near,divers,flower,breuer,shall,farmer,known,dessau,refin,type,start,pari,standard,reviv,world,catalogu,histor,drop,leaf,view,share,middl,detail,suffici,object,million,relax,exhibit,taylor,attent,principl,stand,bread,rule,consider,laundri,hog,fashion,near,european,wheel,decad,part,hour,antiqu,moment,rang,mechan,increas,craft,head,hand,drop,leaf,histor,view,middl,main,way,engin,share,freez,empir,mechan,regul,dispos,cole,effort,distinct,mechan,view,share,middl,grain,decor,sens,trend,came,meet,farmer,known,shall,public,rest,began,carri,shell,knowledg,factori,standard,cost,plain,slowli,elabor,bath,cleaner,vacuum,extend,reveal,pattern,process,cylind,serv,core,bodili,critic,slowli,plain,elabor,sphere,stove,later,sphere,stove,later,mechan,took,away,warp,reflect,implement,elabor,plain,slowli,adjust,oper,case,elabor,slowli,plain,believ,size,board,floor,histori,door,elabor,slowli,plain,reflect,implement,warp,foot,success,mediev,process,cylind,serv,extend,reveal,pattern,decor,trend,grain,warp,implement,reflect,mediev,success,foot,reflect,warp,implement,reflect,implement,warp,heen,ford,cloth,reflect,implement,warp,leg,center,frame,signific,remain,precis,elabor,slowli,plain,caus,explain,bank,consist,phase,long,reflect,warp,implement,elabor,slowli,plain,knowledg,shell,english,manufactur,ornament,carri,reflect,implement,warp,view,share,middl,mechan,task,automat,revolv,said,lie,rococo,illustr,littl,conscious,substanc,page,adapt,sleep,period,rule,bread,stand,court,draw,quarter,lost,knife,improv,meet,sens,came,thing,primit,easili,spring,mass,yale,step,compani,wooden,make,psycholog,cook,furnitur,american,eighteenth,fix,conveni,numer,believ,size,board,step,chest,entir,believ,size,board,later,stove,sphere,board,size,believ,given,care,number,adapt,societi,sleep,period,brought,pass,mediev,foot,success,machin,rise,driven,inventor,seat,chair,plain,make,wooden,elabor,slowli,psycholog,reflect,warp,implement,type,larg,furnitur,exhibit,million,relax,reflect,implement,warp,middl,view,share,end,fourteenth,post,reflect,warp,implement,extend,pattern,reveal,speed,napoleon,earli,believ,size,board,deriv,hound,museum,combin,separ,instrument,mechan,took,away,mechan,away,took,particular,condit,style,frame,center,leg,cultur,differ,heat,machin,rise,driven,mediev,foot,success,hand,head,craft,speed,earli,napoleon,driven,rise,machin,iron,enter,swing,floor,histori,door,reflect,warp,implement,combin,instrument,separ,question,wood,soon,cloth,ford,heen,reflect,warp,implement,room,institut,live,number,given,care,later,stove,sphere,implement,reflect,warp,critic,core,bodili,long,consist,phase,illustr,littl,rococo,english,manufactur,ornament,standard,cost,factori,hand,head,craft,surviv,lock,comment,elabor,slowli,plain,cultur,differ,heat,warp,implement,reflect,warp,implement,reflect,cultur,heat,differ,slowli,elabor,plain,long,phase,consist,took,mechan,away,hotel,class,feel,divers,flower,breuer,away,mechan,took,way,main,engin,later,stove,sphere,perform,born,ornament,plan,english,manufactur,reflect,implement,warp,manag,therma,scientif,larg,furnitur,type,product,rais,reflect,chain,warp,implement,warp,reflect,implement,consider,hog,laundri,suggest,offer,surfac,industri,chicago,state,surround,store,strong,london,go,hack,head,hand,craft,away,took,mechan,regular,wide,reduc,revolv,lie,said,england,franc,introduc,plan,perform,born,took,mechan,away,chicago,state,industri,ad,year,shop,head,hand,craft,implement,warp,reflect,tabl,bathroom,mobil,slowli,elabor,plain,breuer,flower,divers,surfac,offer,suggest,page,conscious,substanc,standard,start,pari,mediev,success,foot,ford,heen,regener,pack,ground,cloth,centuri,franc,seventeenth,chicago,state,industri,field,similar,industri,bathroom,mobil,tabl,tabl,bathroom,mobil,psycholog,make,wooden,upholster,manner,solut,conscious,substanc,page,psycholog,make,wooden,gradual,complex,emerg,instrument,combin,separ,laundri,consider,hog,mechan,automat,task,warp,implement,reflect,link,motor,york,warp,implement,reflect,facil,colour,speak,relax,exhibit,million,believ,critic,bodili,board,size,core,heat,differ,cultur,elabor,slowli,plain,elabor,slowli,plain,laundri,hog,consider,kept,bath,steam,outlin,name,taken,million,relax,elabor,exhibit,plain,slowli,moment,hour,antiqu,woman,seat,section,began,rest,public,warp,implement,reflect,warp,implement,reflect,bodili,critic,core,compress,balanc,write,core,critic,bodili,given,care,number,year,ad,shop,sphere,later,stove,histor,drop,leaf,soon,question,wood,reflect,warp,implement,regener,ground,pack,distinct,mechan,effort,water,plant,shower,graphic,horn,rotat,caus,explain,bank,movabl,free,furnitur,earth,safe,machineri,england,franc,introduc,built,propos,carpet,rais,product,chain,rais,product,chain,stove,later,sphere,divers,flower,breuer,class,feel,hotel,hath,america,lead,believ,size,board,industri,similar,field,believ,size,board,took,away,glass,stone,model,mechan,implement,warp,reflect,slowli,elabor,warp,plain,reflect,implement,implement,reflect,warp,implement,reflect,warp,critic,core,bodili,horn,rotat,graphic,reflect,implement,warp,america,hath,lead,gothic,age,lack,fruit,adopt,plow,age,gothic,lack,vacuum,white,henri,store,strong,surround,follow,atmospher,run,sphere,later,stove,fruit,adopt,plow,center,leg,frame,stabl,piec,growth,size,board,believ,regener,pack,ground,henri,white,vacuum,refin,dessau,state,chicago,industri,type,factori,standard,cost,antiqu,moment,hour,cook,compani,step,reduc,regular,wide,implement,warp,reflect,gradual,emerg,complex,engin,main,way,knowledg,shell,carri,warp,reflect,implement,inventor,seat,chair,product,chain,rais,mechan,conveyor,household,craft,head,hand,cloth,ford,heen,knowledg,shell,carri,suppli,home,master,reflect,implement,warp,chair,inventor,seat,cast,have,clear,chair,seat,inventor,electr,date,tion,recent,film,earliest,report,time,save,implement,warp,reflect,illustr,rococo,littl,histori,floor,door,mechan,took,away,name,outlin,taken,known,shall,farmer,hotel,class,feel,mechan,away,took,head,hand,craft,devalu,car,hous,illustr,littl,rococo,room,institut,live,model,glass,stone,detail,suffici,object,carri,shell,knowledg,believ,size,board,ground,regener,pack,demand,market,comfort,year,shop,ad,implement,warp,reflect,implement,warp,reflect,conceiv,symbol,line,given,care,number,board,believ,size,seat,inventor,chair,chair,seat,inventor,bake,civil,journal,recent,earliest,film,travel,right,imit,door,histori,floor,sens,came,meet,rococo,illustr,littl,process,serv,cylind,suggest,surfac,offer,mediev,foot,success,task,mechan,automat,skin,upper,right,imit,continu,travel,number,care,given,primit,easili,thing,rapid,train,hors,lock,surviv,comment,height,john,instal,engin,way,main,way,engin,main,reviv,world,catalogu,journal,civil,bake,mechan,distinct,effort,model,glass,stone,cost,factori,standard,numer,fix,conveni,gothic,lack,age,postur,street,given,cabinet,number,care,divers,breuer,flower,assembl,narrow,everyday,museum,deriv,hound,shell,knowledg,carri,signific,precis,remain,hog,laundri,consider,object,detail,suffici,reflect,warp,implement,board,believ,size,white,henri,vacuum,regard,connect,devic,cloth,heen,ford,reflect,implement,warp,machin,rise,driven,main,long,consist,phase,way,engin,forc,land,equilibrium,standard,start,pari,save,time,report,rest,public,began,reduc,regular,wide,climat,system,root,precis,signific,remain,farmer,known,shall,creativ,outlook,philadelphia,suggest,offer,surfac,farmer,shall,known,catalogu,world,reviv,decor,grain,trend,collaps,display,light,deriv,museum,hound,safe,machineri,earth,phase,long,consist,regener,pack,ground,regener,pack,ground,section,seat,woman,state,industri,chicago,took,away,mechan,centuri,nineteenth,half,seat,section,woman,craft,head,hand,carri,shell,knowledg,gradual,emerg,complex,frame,center,leg,elabor,slowli,plain,manufactur,ornament,english,sphere,later,stove,sphere,later,stove,sphere,later,stove,london,go,hack,pack,ground,regener,york,go,link,motor,hack,london,machin,rise,driven,later,sphere,stove,regard,devic,connect,journey,describ,wash,philadelphia,outlook,creativ,away,mechan,took,period,adapt,sleep,size,believ,board,write,balanc,compress,plain,slowli,elabor,fix,conveni,numer,rest,public,began,plain,elabor,slowli,wide,regular,reduc,consider,laundri,hog,style,particular,condit,start,standard,pari,way,main,engin,object,detail,suffici,regul,dispos,cole,adjust,case,oper,ford,heen,cloth,convert,soil,rail,nineteenth,centuri,half,larg,furnitur,type,taylor,principl,particular,condit,style,attent,conveyor,household,mechan,number,given,care,serv,process,cylind,chain,product,rais,england,introduc,franc,middl,share,view,effort,distinct,mechan,chain,rais,product,connect,devic,regard,late,worker,tast,atmospher,run,follow,number,given,care,success,mediev,foot,introduc,franc,england,generat,british,stool,driven,rise,machin,number,given,care,rais,product,chain,institut,live,room,said,revolv,lie,consider,laundri,hog,reflect,warp,implement,number,care,given,implement,reflect,warp,implement,reflect,warp,seat,chair,inventor,frame,center,leg,instrument,separ,combin,museum,deriv,hound,follow,atmospher,run,museum,deriv,hound,post,gothic,end,fourteenth,lack,age,adopt,plow,fruit,foot,success,mediev,later,stove,sphere,lie,said,revolv,film,earliest,recent,standard,start,pari,floor,histori,door,hack,london,go,date,tion,electr,model,stone,glass,ornament,manufactur,english,yale,spring,mass,way,main,engin,forc,equilibrium,ration,land,portabl,pressur,serv,cylind,start,pari,process,standard,slowli,plain,elabor,hog,consider,laundri,implement,warp,given,care,number,reflect,took,elabor,away,mechan,plain,slowli,elabor,slowli,plain,plain,elabor,slowli,away,took,mechan,implement,warp,plain,slowli,elabor,reflect,reflect,warp,implement,reflect,warp,implement,earli,speed,napoleon,long,consist,phase,pack,regener,ground,factori,standard,regener,ground,cost,pack,pack,regener,ground,head,craft,hand,museum,deriv,hound,bathroom,tabl,mobil,lock,decor,grain,centuri,piec,million,relax,exhibit,societi,john,height,instal,dessau,knife,lost,improv,dessau,dessau,industri,state,chicago,white,henri,vacuum,collaps,display,light,hous,hous,home,master,suppli,furnitur,hound,deriv,museum,numer,conveni,fix,dessau,speak,colour,facil,rotat,bread,page,substanc,conscious,museum,hound,deriv,london,hack,dessau,dessau,dessau,rule,bread,stand,dessau,improv,knife,lost,dessau,dessau,white,vacuum,dessau,henri,furnitur,dessau,dessau,dessau,believ,size,board,continu,skin,upper,bathroom,tabl,mobil,empir,year,wooden,make,psycholog,display,light,collaps,page,substanc,conscious,europ,claim,railroad,eighteenth,american,furnitur,eighteenth,american,furnitur,climat,system,root,core,bodili,critic,line,decor,grain,perform,born,plan,decor,grain,field,similar,industri,grain,decor,pari,later,stove,sphere,carpet,built,propos,societi,continu,skin,upper,rococo,illustr,littl,museum,deriv,hound,given,care,number,land,equilibrium,forc,rule,stand,bread,societi,decor,grain,head,hand,franc,centuri,imit,right,travel,industri,state,chicago,root,climat,system,eighteenth,furnitur,american,lead,littl,rococo,illustr,hath,america,similar,field,industri,warp,reflect,implement,skin,upper,continu,light,collaps,display,plain,slowli,elabor,height,john,instal,knife,lost,improv,middl,rang,water,water,dessau,size,believ,board,grain,decor,late,piec,grain,decor,eighteenth,american,furnitur,piec,grain,decor,grain,decor,decor,grain,furnitur,field,similar,industri,decor,grain,lost,improv,knife,knife,lost,improv,dessau,farm,close,agricultur,clean,patent,institut,room,live,year,core,colour,speak,facil,critic,bodili,grain,decor,rule,stand,bread,improv,knife,lost,dessau,year,year,rang,empir,numer,conveni,fix,light,collaps,display,moholi,hard,nagi,lock,room,live,institut,tion,electr,date,empir,empir,furnitur,middl,bodili,critic,core,care,given,number,societi,decor,grain,reflect,implement,warp,furnitur,american,eighteenth,warp,implement,reflect,franc,england,introduc,grain,decor,decor,grain,rotat,centuri,sphere,stove,later,agricultur,farm,close,room,institut,live,tabl,bathroom,mobil,hound,museum,deriv,conscious,page,substanc,field,industri,similar,travel,imit,right,reflect,implement,warp,improv,knife,lost,bathroom,mobil,tabl,rotat,light,collaps,display,head,hand,hound,deriv,museum,age,gothic,lack,museum,grain,decor,hound,deriv,furnitur,middl,kitchen,gothic,lack,age,henri,vacuum,white,piec,system,climat,root,nagi,hard,moholi,plan,born,perform,dessau,similar,industri,field,distinct,effort,museum,deriv,hound,agricultur,farm,close,stand,bread,rule,core,critic,bodili,empir,moholi,hard,nagi,separ,instrument,combin,board,size,believ,dessau,railroad,claim,europ,grain,decor,grain,decor,centuri,franc,piec,furnitur,decor,suppli,grain,master,home,furnitur,english,franc,centuri,given,number,care,american,furnitur,eighteenth,hand,head,empir,shell,carri,knowledg,conscious,page,substanc,railroad,europ,claim,continu,upper,skin,rococo,littl,illustr,decor,grain,grain,decor,state,chicago,industri,stand,rule,bread,decor,grain,gothic,age,lack,furnitur,nagi,hard,moholi,display,light,collaps,climat,root,system,tabl,bathroom,mobil,heat,differ,hand,head,furnitur,american,eighteenth,field,similar,industri,page,conscious,substanc,year,improv,light,collaps,display,knife,lost,piec,differ,heat,slowli,plain,elabor,wooden,psycholog,make,field,industri,similar,page,substanc,conscious,system,root,climat,societi,furnitur,eighteenth,american,number,care,given,empir,numer,fix,conveni,live,institut,room,conscious,substanc,page,eighteenth,american,furnitur,middl,dessau,dessau,dessau,clean,dessau,patent,empir,hack,london,railroad,claim,europ,warp,implement,reflect,effort,distinct,museum,deriv,hound,rotat,centuri,franc,pari,grain,decor,ration,pressur,portabl,dessau,suppli,home,master,decor,grain,claim,europ,railroad,rotat,societi,franc,centuri,centuri,lack,age,gothic,water,gothic,age,lack,dessau,pari,distinct,effort,vacuum,white,henri,rotat,institut,live,room,land,equilibrium,forc,distinct,effort,born,perform,plan,height,john,instal,given,care,number,imit,right,travel,piec,industri,similar,field,line,line,equilibrium,land,forc,institut,room,live,line,line,knife,improv,lost,effort,distinct,wooden,make,psycholog,travel,right,imit,furnitur,eighteenth,american,furnitur,illustr,littl,rococo,perform,born,plan,travel,right,imit,right,travel,imit,tion,electr,date,moholi,hard,nagi,distinct,effort,dessau,vacuum,white,henri,psycholog,wooden,make,close,farm,agricultur,live,institut,room,furnitur,white,henri,vacuum,land,forc,equilibrium,combin,separ,instrument,late,water,grain,decor,psycholog,wooden,make,effort,distinct,year,dessau,psycholog,wooden,make,light,display,collaps,lock,conscious,substanc,page,chicago,industri,home,master,suppli,state,line,believ,size,board,wooden,psycholog,make,dessau,dessau,knife,lost,improv,railroad,claim,europ,dessau,climat,root,system,plan,born,perform,system,climat,root,rotat,later,sphere,stove,bathroom,mobil,tabl,psycholog,wooden,make,franc,centuri,centuri,franc,sphere,stove,later,franc,england,introduc,stove,sphere,later,later,sphere,stove,rococo,illustr,littl,year,john,height,instal,land,forc,equilibrium,empir,pari,land,equilibrium,forc,piec,deriv,hound,museum,tion,electr,date,light,collaps,display,care,given,number,piec,effort,distinct,chicago,state,industri,middl,grain,decor,exhibit,million,relax,instal,john,height,empir,hound,museum,deriv,care,given,number,bathroom,tabl,mobil,dessau,dessau,dessau,dessau,dessau,year,care,number,given,care,number,given,shell,knowledg,carri,care,number,given,forc,land,equilibrium,tion,electr,date,effort,distinct,core,critic,bodili,effort,distinct,line,english,forc,land,equilibrium,implement,warp,reflect,gothic,age,lack,make,psycholog,wooden,head,hand,dessau,differ,heat,centuri,reflect,implement,warp,vacuum,conveni,numer,fix,chicago,state,industri,industri,chicago,state,decor,grain,decor,grain,pari,centuri,franc,distinct,effort,moholi,hard,nagi,wooden,make,psycholog,warp,implement,reflect,colour,speak,facil,centuri,franc,pari,centuri,franc,american,eighteenth,societi,furnitur,year,decor,grain,empir,bread,rule,stand,hard,nagi,moholi,size,believ,board,critic,bodili,core,grain,decor,differ,heat,room,institut,live,right,imit,travel,portabl,ration,pressur,furnitur,hand,head,line,skin,upper,continu,stove,sphere,later,substanc,page,conscious,psycholog,make,wooden,introduc,england,franc,system,root,climat,master,home,suppli,shell,carri,knowledg,portabl,pressur,ration,agricultur,farm,close,upper,skin,continu,piec,industri,chicago,state,relax,million,exhibit,system,climat,root,middl,middl,master,suppli,home,make,psycholog,wooden,conscious,substanc,page,portabl,pressur,ration,page,substanc,conscious,page,substanc,conscious,societi,collaps,display,light,empir,littl,illustr,rococo,carri,shell,knowledg,right,imit,travel,field,industri,similar,london,hack,suppli,master,home,effort,distinct,display,collaps,light,franc,piec,centuri,middl,water,moholi,hard,nagi,hack,london,middl,lead,america,hath,decor,grain,middl,born,perform,differ,plan,heat,deriv,museum,hound,forc,land,equilibrium,vacuum,rule,bread,stand,forc,equilibrium,land,board,size,believ,critic,bodili,core,furnitur,substanc,conscious,page,mobil,bathroom,tabl,vacuum,number,care,given,travel,right,imit,portabl,pressur,ration,moholi,hard,nagi,differ,heat,museum,hound,deriv,given,number,care,hound,deriv,collaps,display,light,museum,conscious,page,substanc,decor,grain,grain,decor,heat,differ,rang,societi,centuri,franc,mobil,bathroom,tabl,colour,speak,facil,bread,believ,board,size,rule,bread,stand,distinct,effort,root,climat,system,littl,illustr,rococo,upper,skin,continu,believ,size,board,carri,knowledg,shell,tabl,bathroom,mobil,rang,display,collaps,light,collaps,display,light,right,travel,imit,american,furnitur,eighteenth,dessau,london,hack,industri,chicago,state,number,care,given,english,improv,lost,knife,room,live,institut,hack,london,given,care,number,hard,moholi,nagi,size,board,believ,instrument,combin,separ,fix,conveni,numer,imit,travel,right,colour,fix,facil,speak,conveni,numer,railroad,europ,claim,slowli,plain,elabor,enter,iron,swing,enter,iron,swing,slowli,elabor,plain,hound,deriv,museum,reflect,implement,warp,lead,america,hath,line,hound,deriv,museum,line,perform,born,mobil,bathroom,tabl,plan,line,rang,conscious,substanc,page,exhibit,million,relax,centuri,bodili,core,critic,system,climat,root,furnitur,water,water,water,year,stove,sphere,later,decor,grain,pari,travel,right,imit,hound,deriv,museum,imit,right,travel,eighteenth,american,furnitur,field,similar,industri,state,chicago,industri,upper,skin,continu,deriv,hound,museum,piec,knife,lost,improv,dessau,year,centuri,franc,year,london,hack,room,institut,live,continu,upper,skin,introduc,england,franc,illustr,littl,rococo,hous,wooden,make,psycholog,patent,clean,grain,decor,close,agricultur,farm,lack,gothic,age,eighteenth,furnitur,american,franc,centuri">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1001" values="mainwayengin,primiteasilithinggraphichornrotat,europeanfashionnear,diversflowerbreuer,shallfarmerknown,dessaurefintype,startparistandard,revivworldcataloguhistordropleaf,viewsharemiddl,detailsufficiobject,millionrelaxexhibit,taylorattentprincipl,standbreadrule,considerlaundrihog,fashionneareuropean,wheeldecadpart,hourantiqumoment,rangmechanincreas,craftheadhand,dropleafhistor,viewmiddlmainwayenginshare,freezempirmechan,reguldisposcole,effortdistinctmechan,viewsharemiddl,graindecorsenstrendcamemeet,farmerknownshallpublicrestbegan,carrishellknowledg,factoristandardcost,plainslowlielabor,bathcleanervacuum,extendrevealpattern,processcylindserv,corebodilicritic,slowliplainelabor,spherestovelater,spherestovelater,mechantookaway,warpreflectimplement,elaborplainslowli,adjustopercase,elaborslowliplain,believsizeboardfloorhistoridoor,elaborslowliplain,reflectimplementwarp,footsuccessmediev,processcylindserv,extendrevealpattern,decortrendgrain,warpimplementreflect,medievsuccessfoot,reflectwarpimplement,reflectimplementwarp,heenfordcloth,reflectimplementwarp,legcenterframe,significremainprecis,elaborslowliplain,causexplainbank,consistphaselong,reflectwarpimplement,elaborslowliplain,knowledgshellenglishmanufacturornamentcarri,reflectimplementwarp,viewsharemiddl,mechantaskautomat,revolvsaidlie,rococoillustrlittl,conscioussubstancpage,adaptsleepperiod,rulebreadstand,courtdrawquarterlostknifeimprov,meetsenscame,thingprimiteasilispringmassyale,stepcompaniwoodenmakepsychologcook,furnituramericaneighteenth,fixconveninumer,believsizeboard,stepchestentir,believsizeboard,laterstovesphere,boardsizebeliev,givencarenumber,adaptsocietisleepperiodbroughtpass,medievfootsuccess,machinrisedriven,inventorseatchair,plainmakewoodenelaborslowlipsycholog,reflectwarpimplement,typelargfurnitur,exhibitmillionrelax,reflectimplementwarp,middlviewshare,endfourteenthpost,reflectwarpimplement,extendpatternrevealspeednapoleonearli,believsizeboard,derivhoundmuseum,combinseparinstrument,mechantookaway,mechanawaytook,particularconditstyle,framecenterleg,culturdifferheat,machinrisedriven,medievfootsuccess,handheadcraft,speedearlinapoleon,drivenrisemachin,ironenterswing,floorhistoridoor,reflectwarpimplement,combininstrumentsepar,questionwoodsoon,clothfordheen,reflectwarpimplement,roominstitutlive,numbergivencare,laterstovesphere,implementreflectwarp,criticcorebodili,longconsistphaseillustrlittlrococo,englishmanufacturornament,standardcostfactori,handheadcraft,survivlockcomment,elaborslowliplainculturdifferheat,warpimplementreflect,warpimplementreflect,culturheatdifferslowlielaborplain,longphaseconsist,tookmechanaway,hotelclassfeel,diversflowerbreuer,awaymechantook,waymainengin,laterstovesphere,performbornornamentplanenglishmanufactur,reflectimplementwarpmanagthermascientif,largfurniturtype,productraisreflectchainwarpimplement,warpreflectimplement,considerhoglaundri,suggestoffersurfac,industrichicagostate,surroundstorestrong,londongohack,headhandcraft,awaytookmechan,regularwidereduc,revolvliesaid,englandfrancintroduc,planperformborn,tookmechanaway,chicagostateindustri,adyearshop,headhandcraftimplementwarpreflect,tablbathroommobil,slowlielaborplain,breuerflowerdivers,surfacoffersuggest,pageconscioussubstanc,standardstartpari,medievsuccessfoot,fordheenregenerpackgroundcloth,centurifrancseventeenthchicagostateindustri,fieldsimilarindustri,bathroommobiltabl,tablbathroommobil,psychologmakewooden,upholstermannersolut,conscioussubstancpage,psychologmakewooden,gradualcomplexemerg,instrumentcombinsepar,laundriconsiderhog,mechanautomattask,warpimplementreflect,linkmotoryork,warpimplementreflect,facilcolourspeak,relaxexhibitmillion,believcriticbodiliboardsizecore,heatdiffercultur,elaborslowliplain,elaborslowliplain,laundrihogconsider,keptbathsteam,outlinnametaken,millionrelaxelaborexhibitplainslowli,momenthourantiqu,womanseatsection,beganrestpublic,warpimplementreflect,warpimplementreflect,bodilicriticcore,compressbalancwrite,corecriticbodili,givencarenumber,yearadshop,spherelaterstove,histordropleaf,soonquestionwood,reflectwarpimplement,regenergroundpack,distinctmechaneffort,waterplantshower,graphichornrotat,causexplainbank,movablfreefurnitur,earthsafemachineri,englandfrancintroduc,builtproposcarpet,raisproductchain,raisproductchain,stovelatersphere,diversflowerbreuer,classfeelhotel,hathamericalead,believsizeboard,industrisimilarfieldbelievsizeboard,tookawayglassstonemodelmechan,implementwarpreflect,slowlielaborwarpplainreflectimplement,implementreflectwarp,implementreflectwarp,criticcorebodili,hornrotatgraphic,reflectimplementwarp,americahathlead,gothicagelack,fruitadoptplow,agegothiclack,vacuumwhitehenri,storestrongsurround,followatmospherrun,spherelaterstove,fruitadoptplow,centerlegframe,stablpiecgrowth,sizeboardbeliev,regenerpackground,henriwhitevacuum,refindessaustatechicagoindustritype,factoristandardcost,antiqumomenthour,cookcompanistep,reducregularwide,implementwarpreflect,gradualemergcomplex,enginmainway,knowledgshellcarri,warpreflectimplement,inventorseatchair,productchainrais,mechanconveyorhousehold,craftheadhand,clothfordheen,knowledgshellcarri,supplihomemaster,reflectimplementwarp,chairinventorseat,casthaveclear,chairseatinventor,electrdatetion,recentfilmearliest,reporttimesave,implementwarpreflect,illustrrococolittl,historifloordoor,mechantookaway,nameoutlintakenknownshallfarmer,hotelclassfeel,mechanawaytook,headhandcraft,devalucarhous,illustrlittlrococo,roominstitutlive,modelglassstonedetailsufficiobject,carrishellknowledg,believsizeboard,groundregenerpack,demandmarketcomfort,yearshopad,implementwarpreflect,implementwarpreflect,conceivsymbolline,givencarenumber,boardbelievsize,seatinventorchair,chairseatinventor,bakeciviljournal,recentearliestfilm,travelrightimit,doorhistorifloor,senscamemeet,rococoillustrlittl,processservcylind,suggestsurfacoffer,medievfootsuccess,taskmechanautomat,skinupperrightimitcontinutravel,numbercaregiven,primiteasilithing,rapidtrainhors,locksurvivcomment,heightjohninstalenginwaymain,wayenginmain,revivworldcatalogu,journalcivilbake,mechandistincteffort,modelglassstone,costfactoristandard,numerfixconveni,gothiclackage,posturstreetgivencabinetnumbercare,diversbreuerflowerassemblnarroweveryday,museumderivhound,shellknowledgcarri,significprecisremain,hoglaundriconsider,objectdetailsuffici,reflectwarpimplement,boardbelievsize,whitehenrivacuum,regardconnectdevic,clothheenford,reflectimplementwarp,machinrisedriven,mainlongconsistphasewayengin,forclandequilibrium,standardstartpari,savetimereport,restpublicbegan,reducregularwide,climatsystemrootprecissignificremain,farmerknownshall,creativoutlookphiladelphia,suggestoffersurfac,farmershallknown,cataloguworldreviv,decorgraintrend,collapsdisplaylight,derivmuseumhound,safemachineriearth,phaselongconsist,regenerpackground,regenerpackground,sectionseatwoman,stateindustrichicago,tookawaymechancenturinineteenthhalf,seatsectionwoman,craftheadhandcarrishellknowledg,gradualemergcomplex,framecenterleg,elaborslowliplain,manufacturornamentenglish,spherelaterstove,spherelaterstove,spherelaterstove,londongohack,packgroundregener,yorkgolinkmotorhacklondon,machinrisedriven,laterspherestove,regarddevicconnect,journeydescribwash,philadelphiaoutlookcreativ,awaymechantook,periodadaptsleep,sizebelievboard,writebalanccompress,plainslowlielabor,fixconveninumerrestpublicbegan,plainelaborslowli,wideregularreduc,considerlaundrihog,styleparticularcondit,startstandardpari,waymainenginobjectdetailsuffici,reguldisposcole,adjustcaseoper,fordheencloth,convertsoilrail,nineteenthcenturihalf,largfurniturtype,taylorprinciplparticularconditstyleattent,conveyorhouseholdmechan,numbergivencare,servprocesscylind,chainproductrais,englandintroducfranc,middlshareview,effortdistinctmechan,chainraisproduct,connectdevicregard,lateworkertast,atmospherrunfollow,numbergivencare,successmedievfoot,introducfrancengland,generatbritishstool,drivenrisemachin,numbergivencare,raisproductchain,institutliveroom,saidrevolvlie,considerlaundrihog,reflectwarpimplement,numbercaregiven,implementreflectwarp,implementreflectwarp,seatchairinventor,framecenterleginstrumentseparcombin,museumderivhound,followatmospherrunmuseumderivhound,postgothicendfourteenthlackage,adoptplowfruit,footsuccessmediev,laterstovesphere,liesaidrevolv,filmearliestrecentstandardstartpari,floorhistoridoor,hacklondongo,datetionelectr,modelstoneglass,ornamentmanufacturenglishyalespringmass,waymainengin,forcequilibriumrationlandportablpressur,servcylindstartpariprocessstandard,slowliplainelabor,hogconsiderlaundri,implementwarpgivencarenumberreflect,tookelaborawaymechanplainslowli,elaborslowliplain,plainelaborslowli,awaytookmechan,implementwarpplainslowlielaborreflect,reflectwarpimplement,reflectwarpimplement,earlispeednapoleon,longconsistphase,packregenerground,factoristandardregenergroundcostpack,packregenerground,headcrafthand,museumderivhound,bathroomtablmobil,lock,decorgrain,centuri,piec,millionrelaxexhibit,societi,johnheightinstal,dessau,knifelostimprov,dessau,dessau,industristatechicago,whitehenrivacuum,collapsdisplaylight,hous,hous,homemastersuppli,furnitur,houndderivmuseum,numerconvenifix,dessau,speakcolourfacil,rotatbread,pagesubstancconscious,museumhoundderiv,londonhack,dessau,dessau,dessau,rulebreadstanddessau,improvknifelost,dessau,dessau,whitevacuumdessauhenri,furnitur,dessau,dessau,dessau,believsizeboard,continuskinupper,bathroomtablmobil,empiryear,woodenmakepsycholog,displaylightcollaps,pagesubstancconscious,europclaimrailroad,eighteenthamericanfurnitur,eighteenthamericanfurnitur,climatsystemroot,corebodilicritic,line,decorgrain,performbornplan,decorgrain,fieldsimilarindustri,graindecor,pari,laterstovesphere,carpetbuiltpropos,societi,continuskinupperrococoillustrlittl,museumderivhound,givencarenumber,landequilibriumforc,rulestandbread,societi,decorgrain,headhand,franccenturi,imitrighttravel,industristatechicago,rootclimatsystem,eighteenthfurnituramerican,leadlittlrococoillustrhathamerica,similarfieldindustri,warpreflectimplement,skinuppercontinu,lightcollapsdisplay,plainslowlielabor,heightjohninstal,knifelostimprov,middl,rang,water,water,dessau,sizebelievboard,graindecor,late,piecgraindecor,eighteenthamericanfurnitur,piec,graindecor,graindecor,decorgrain,furnitur,fieldsimilarindustri,decorgrain,lostimprovknife,knifelostimprov,dessau,farmcloseagricultur,cleanpatent,institutroomlive,year,corecolourspeakfacilcriticbodili,graindecor,rulestandbread,improvknifelost,dessau,year,year,rang,empir,numerconvenifix,lightcollapsdisplay,moholihardnagi,lock,roomliveinstitut,tionelectrdate,empir,empir,furnitur,middl,bodilicriticcore,caregivennumber,societi,decorgrain,reflectimplementwarp,furnituramericaneighteenth,warpimplementreflect,francenglandintroduc,graindecor,decorgrain,rotat,centuri,spherestovelater,agriculturfarmclose,roominstitutlive,tablbathroommobil,houndmuseumderiv,consciouspagesubstanc,fieldindustrisimilar,travelimitright,reflectimplementwarpimprovknifelost,bathroommobiltabl,rotat,lightcollapsdisplay,headhandhoundderivmuseum,agegothiclack,museumgraindecorhoundderiv,furnitur,middl,kitchen,gothiclackage,henrivacuumwhite,piec,systemclimatroot,nagihardmoholi,planbornperform,dessau,similarindustrifield,distincteffort,museumderivhound,agriculturfarmclose,standbreadrule,corecriticbodili,empir,moholihardnagi,separinstrumentcombin,boardsizebeliev,dessaurailroadclaimeurop,graindecor,graindecor,centurifranc,piec,furnitur,decorsuppligrainmasterhome,furnitur,english,franccenturi,givennumbercare,americanfurnitureighteenth,handhead,empir,shellcarriknowledg,consciouspagesubstanc,railroadeuropclaim,continuupperskin,rococolittlillustr,decorgrain,graindecor,statechicagoindustri,standrulebread,decorgrain,gothicagelack,furnitur,nagihardmoholi,displaylightcollaps,climatrootsystemtablbathroommobil,heatdiffer,handhead,furnituramericaneighteenth,fieldsimilarindustri,pageconscioussubstanc,year,improvlightcollapsdisplayknifelost,piec,differheat,slowliplainelabor,woodenpsychologmake,fieldindustrisimilar,pagesubstancconscious,systemrootclimat,societi,furnitureighteenthamerican,numbercaregiven,empir,numerfixconveni,liveinstitutroom,conscioussubstancpage,eighteenthamericanfurnitur,middl,dessau,dessau,dessau,cleandessaupatent,empir,hacklondon,railroadclaimeurop,warpimplementreflect,effortdistinct,museumderivhound,rotat,centurifranc,pari,graindecor,rationpressurportabl,dessau,supplihomemaster,decorgrain,claimeuroprailroad,rotat,societi,franccenturi,centuri,lackagegothic,water,gothicagelack,dessau,pari,distincteffort,vacuumwhitehenri,rotat,institutliveroom,landequilibriumforc,distincteffort,bornperformplan,heightjohninstal,givencarenumber,imitrighttravel,piec,industrisimilarfield,line,line,equilibriumlandforc,institutroomlive,line,line,knifeimprovlost,effortdistinct,woodenmakepsycholog,travelrightimit,furnitur,eighteenthamericanfurnitur,illustrlittlrococo,performbornplan,travelrightimit,righttravelimit,tionelectrdate,moholihardnagi,distincteffort,dessau,vacuumwhitehenri,psychologwoodenmake,closefarmagricultur,liveinstitutroom,furnitur,whitehenrivacuum,landforcequilibrium,combinseparinstrument,late,water,graindecor,psychologwoodenmake,effortdistinct,year,dessau,psychologwoodenmake,lightdisplaycollaps,lock,conscioussubstancpage,chicagoindustrihomemastersupplistate,line,believsizeboard,woodenpsychologmake,dessau,dessau,knifelostimprov,railroadclaimeurop,dessau,climatrootsystem,planbornperform,systemclimatroot,rotat,laterspherestove,bathroommobiltabl,psychologwoodenmake,franccenturi,centurifranc,spherestovelater,francenglandintroduc,stovespherelater,laterspherestove,rococoillustrlittl,year,johnheightinstal,landforcequilibrium,empir,pari,landequilibriumforc,piec,derivhoundmuseum,tionelectrdate,lightcollapsdisplay,caregivennumber,piec,effortdistinct,chicagostateindustri,middl,graindecor,exhibitmillionrelax,instaljohnheight,empir,houndmuseumderiv,caregivennumber,bathroomtablmobil,dessau,dessau,dessau,dessau,dessau,year,carenumbergiven,carenumbergiven,shellknowledgcarri,carenumbergiven,forclandequilibrium,tionelectrdate,effortdistinct,corecriticbodili,effortdistinct,line,english,forclandequilibrium,implementwarpreflect,gothicagelack,makepsychologwooden,headhand,dessau,differheat,centuri,reflectimplementwarp,vacuum,conveninumerfix,chicagostateindustri,industrichicagostate,decorgrain,decorgrain,pari,centurifranc,distincteffort,moholihardnagi,woodenmakepsycholog,warpimplementreflect,colourspeakfacil,centurifranc,pari,centurifranc,americaneighteenthsocietifurnitur,year,decorgrain,empir,breadrulestand,hardnagimoholi,sizebelievboard,criticbodilicore,graindecordifferheat,roominstitutlive,rightimittravel,portablrationpressur,furnitur,handhead,line,skinuppercontinu,stovespherelater,substancpageconscious,psychologmakewooden,introducenglandfranc,systemrootclimat,masterhomesuppli,shellcarriknowledg,portablpressurration,agriculturfarmclose,upperskincontinu,piec,industrichicagostaterelaxmillionexhibit,systemclimatroot,middl,middl,mastersupplihome,makepsychologwooden,conscioussubstancpage,portablpressurration,pagesubstancconscious,pagesubstancconscious,societi,collapsdisplaylight,empir,littlillustrrococo,carrishellknowledg,rightimittravel,fieldindustrisimilar,londonhack,supplimasterhome,effortdistinct,displaycollapslight,francpieccenturi,middl,water,moholihardnagi,hacklondon,middl,leadamericahath,decorgrainmiddl,bornperformdifferplanheat,derivmuseumhound,forclandequilibrium,vacuum,rulebreadstand,forcequilibriumland,boardsizebeliev,criticbodilicore,furnitur,substancconsciouspage,mobilbathroomtabl,vacuum,numbercaregiven,travelrightimit,portablpressurration,moholihardnagi,differheat,museumhoundderiv,givennumbercare,houndderivcollapsdisplaylightmuseum,consciouspagesubstanc,decorgrain,graindecorheatdiffer,rang,societi,centurifranc,mobilbathroomtabl,colourspeakfacil,bread,believboardsize,rulebreadstand,distincteffort,rootclimatsystem,littlillustrrococo,upperskincontinu,believsizeboard,carriknowledgshell,tablbathroommobil,rang,displaycollapslight,collapsdisplaylight,righttravelimit,americanfurnitureighteenth,dessau,londonhack,industrichicagostate,numbercaregiven,english,improvlostknife,roomliveinstitut,hacklondon,givencarenumber,hardmoholinagi,sizeboardbeliev,instrumentcombinsepar,fixconveninumer,imittravelright,colourfixfacilspeakconveninumer,railroadeuropclaim,slowliplainelabor,enterironswing,enterironswing,slowlielaborplain,houndderivmuseum,reflectimplementwarp,leadamericahath,line,houndderivmuseum,line,performbornmobilbathroomtablplan,line,rang,conscioussubstancpage,exhibitmillionrelaxcenturi,bodilicorecritic,systemclimatroot,furnitur,water,water,water,year,stovespherelater,decorgrain,pari,travelrightimit,houndderivmuseumimitrighttravel,eighteenthamericanfurnitur,fieldsimilarindustri,statechicagoindustri,upperskincontinu,derivhoundmuseum,piec,knifelostimprovdessau,year,centurifranc,yearlondonhack,roominstitutlive,continuupperskin,introducenglandfranc,illustrlittlrococo,hous,woodenmakepsycholog,patentclean,graindecor,closeagriculturfarm,lackgothicage,eighteenthfurnituramerican,franccenturi">
+   </PIN>
+   <PIN pinname="Filter Index" visible="1">
+   </PIN>
+   <PIN pinname="Input Index" visible="1">
+   </PIN>
+   <PIN pinname="Hits" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="169">
+   <BOUNDS type="Box" left="6336" top="7044" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6336" top="7044" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="170">
+   <BOUNDS type="Box" left="8268" top="8208" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="8268" top="8208" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="158" srcpinname="Input Index" dstnodeid="170" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="Occurrence (String)" filename="%VVVV%\addonpack\lib\nodes\plugins\Occurrence.dll" nodename="Occurrence (String)" componentmode="Hidden" id="171">
+   <BOUNDS type="Node" left="6264" top="6504" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6264" top="6504" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Unique" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="171" srcpinname="Unique" dstnodeid="159" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="171" srcpinname="Unique" dstnodeid="158" dstpinname="Filter">
+   </LINK>
+   <LINK srcnodeid="149" srcpinname="Value" dstnodeid="171" dstpinname="Input" linkstyle="VHV">
+   <LINKPOINT x="4724" y="6110">
+   </LINKPOINT>
+   <LINKPOINT x="4036" y="6322">
+   </LINKPOINT>
+   </LINK>
+   <LINK srcnodeid="171" srcpinname="Count" dstnodeid="169" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="175">
+   <BOUNDS type="Node" left="7680" top="8796" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Index" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="GetSlice (String)" nodename="GetSlice (String)" componentmode="Hidden" id="176">
+   <BOUNDS type="Node" left="5616" top="8760" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Index" visible="1" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Input" visible="1" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="110" srcpinname="Output" dstnodeid="176" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="158" srcpinname="Input Index" dstnodeid="176" dstpinname="Index">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="177">
+   <BOUNDS type="Box" left="5616" top="9516" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="5616" top="9516" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="From">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="176" srcpinname="Output" dstnodeid="177" dstpinname="Input String">
+   </LINK>
+   <LINK srcnodeid="158" srcpinname="Filter Index" dstnodeid="175" dstpinname="Index">
+   </LINK>
+   <LINK srcnodeid="171" srcpinname="Unique" dstnodeid="175" dstpinname="Input">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="178">
+   <BOUNDS type="Box" left="7704" top="9528" width="792" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7704" top="9528" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="To">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="175" srcpinname="Output" dstnodeid="178" dstpinname="Input String">
+   </LINK>
+   <NODE id="167" systemname="AsString (Object)" filename="%VVVV%\lib\nodes\plugins\VVVV.Nodes.dll" nodename="AsString (Object)" componentmode="Hidden" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="4800" top="4272" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="String" visible="1" pintype="Output">
+   </PIN>
+   <PIN pinname="Object" visible="1" pintype="Input" slicecount="1" values="||">
+   </PIN>
+   <BOUNDS type="Box" left="252" top="0" width="2400" height="1800">
+   </BOUNDS>
+   <BOUNDS type="Window" left="0" top="0" width="6000" height="4500">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Tag" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="138" srcpinname="Elements" dstnodeid="167" dstpinname="Object">
+   </LINK>
+   <LINK srcnodeid="167" srcpinname="String" dstnodeid="158" dstpinname="Input">
+   </LINK>
+   <NODE systemname="Occurrence (String)" filename="%VVVV%\addonpack\lib\nodes\plugins\Occurrence.dll" nodename="Occurrence (String)" componentmode="Hidden" id="184">
+   <BOUNDS type="Node" left="1068" top="3312" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="1068" top="3312" width="2400" height="2400">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Unique" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="110" srcpinname="Output" dstnodeid="184" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="184" srcpinname="Unique" dstnodeid="106" dstpinname="Input String">
+   </LINK>
+   </PATCH>

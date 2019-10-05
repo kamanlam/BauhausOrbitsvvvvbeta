@@ -1,0 +1,42 @@
+----------EXAMPLE QUERY---------------
+http://localhost:5000/all/
+http://localhost:5000/sentencesAndTopics/2/22
+
+----------START NEO4J---------------
+cd C:\Users\kman\Documents\neo4j-community-3.5.3
+cd bin
+.\neo4j start
+
+----------START SERVER---------------
+cd  C:\Users\kman\Documents\server
+py .\server1.py
+
+----------XQUERY---------------
+let $items := document("doc.xml")/sentencesWithTopics/item/topics
+let $count := count($items/item)
+dd<result>\AQ1
+]
+   <count>{$count}</count>
+   
+   <items>
+      {
+	     for $item in $items
+         return <item>{$item}</item>
+      }
+   </items>
+   
+</result>
+
+----------API AUTOMATA---------------
+0 On1 1 Do1
+0 On2 2 Do2
+0 On3 3 Do3
+1 On0 0 Do0
+1 On2 2 Do2
+1 On3 3 Do3
+2 On0 0 Do0
+2 On1 1 Do1
+2 On3 3 Do3
+3 On0 0 Do0
+3 On1 1 Do1
+3 On2 2 Do2
